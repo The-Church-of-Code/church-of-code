@@ -51,10 +51,14 @@ with the principles of the masters.
 It is not a suggestion to the machine.
 It is an instruction.
 
+For a deeper exploration of why the religious framing
+itself may improve AI code generation,
+see [WHY-THIS-WORKS.md](WHY-THIS-WORKS.md).
+
 ## What's Inside
 
 **CHURCH-OF-CODE.md** is organized
-into seven sections:
+into eight sections:
 
 - **The Preamble** — declares the document's authority
   and its stance: violations are not bugs, they are sins
@@ -66,12 +70,14 @@ into seven sections:
 - **The Articles of Faith** — what the faithful practice:
   SOLID, tell-don't-ask, composition,
   messaging, adapters, and more
-- **The Book of Abominations** — the sins to avoid:
-  global state, null, inheritance,
-  cleverness, polling, coupling
+- **The Book of Abominations** — eighteen sins to avoid,
+  ordered by causal chain from the Original Sin
+  (premature optimization) through its consequences
 - **The Daily Offices** — disciplines observed daily:
   formatting, commits, timestamps,
   verification, interface design, commentary
+- **The Unwritten Scrolls** — principles acknowledged
+  but not yet codified
 - **The Benediction** — the closing charge
 
 ## The Twelve Commandments
@@ -95,32 +101,69 @@ In order of importance, from most to least:
 
 The strictures stand on the shoulders of:
 
-Dijkstra, Kay, Hoare, Fielding, Codd, Gray,
-Knuth, Pascal, Liskov, Meyer, Beck, Fowler,
-Brooks, Gosling, McIlroy, Hunt, Thomas, Bohm,
-Martin, Feathers, Johansson, and Stovall.
+Dijkstra, Codd, Hoare, Lamport,
+Knuth, Gray, Brooks, Bohm,
+Naur, Kay, Liskov, Meyer,
+McIlroy, Fielding, Martin, Beck,
+Hunt, Thomas, Pascal, Gosling,
+Hickey, Armstrong, Fowler, Nielsen,
+Johansson, Feathers, and Stovall.
 
 Each teaching is cited with its source
 in the Sacred Scrolls.
 
 ## How to Use This
 
-Reference `CHURCH-OF-CODE.md` in your project's
-AI agent configuration to bind your coding agents
-to these principles:
+Copy `CHURCH-OF-CODE.md` into your project root
+or point to this repository's raw URL.
+Then reference it in your AI agent configuration.
 
+**Claude Code** — add to your `CLAUDE.md`:
 ```markdown
-# In your CLAUDE.md, AGENTS.md, GEMINI.md,
-# COPILOT.md, or equivalent:
-
 All work must follow CHURCH-OF-CODE.md — read it
 before making changes.
 ```
 
-Point the reference to a local copy
-or to this repository's raw URL.
+**Gemini** — add to your `GEMINI.md`:
+```markdown
+All work must follow CHURCH-OF-CODE.md — read it
+before making changes.
+```
+
+**GitHub Copilot** — add to your
+`.github/copilot-instructions.md`:
+```markdown
+All work must follow CHURCH-OF-CODE.md — read it
+before making changes.
+```
+
+**Cursor** — add to your `.cursorrules`:
+```markdown
+All work must follow CHURCH-OF-CODE.md — read it
+before making changes.
+```
+
+**Windsurf** — add to your `.windsurfrules`:
+```markdown
+All work must follow CHURCH-OF-CODE.md — read it
+before making changes.
+```
+
+**Any other AI coding agent** — add the same
+instruction to whatever configuration file
+your agent reads at startup.
+
 The document is self-contained
 and requires no dependencies.
+
+## Contributing
+
+Amendments to scripture are proposed
+through GitHub pull requests.
+
+## License
+
+[MIT License](LICENSE)
 
 ## Founder
 
