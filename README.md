@@ -1,4 +1,4 @@
-# The Church of Code — Canons
+# The Church of Code
 
 > *This church is its own denomination.*
 
@@ -43,7 +43,7 @@ Fielding, Meyer, Beck, or Martin —
 because that wisdom was never
 the dominant signal in the corpus.
 
-**The canons exist to supply that signal.**
+**This church exists to supply that signal.**
 
 When referenced by an AI coding agent,
 this document overrides the model's trained instincts
