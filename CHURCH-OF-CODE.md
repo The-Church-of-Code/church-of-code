@@ -279,7 +279,20 @@ it is the fruit of great effort.
 The master's kata looks effortless
 because it has been practiced ten thousand times.
 
-### IX. Atomicity
+### IX. Generality
+
+*Never generalize before exploratory duplication.*
+
+Premature generalization slows progress
+as surely as premature optimization —
+they are twin sins, born of the same impatience.
+Let the pattern reveal itself through repetition.
+Three instances of similar code is not a crisis —
+it is a chrysalis.
+Abstract when the shape is clear,
+not when you merely suspect a shape might emerge.
+
+### X. Atomicity
 
 *Design so you rarely need it.*
 
@@ -295,20 +308,7 @@ But when the operation truly cannot be decomposed —
 when atomicity is genuinely required —
 embrace it without apology.
 
-### XI. Generality
-
-*Never generalize before exploratory duplication.*
-
-Premature generalization slows progress
-as surely as premature optimization —
-they are twin sins, born of the same impatience.
-Let the pattern reveal itself through repetition.
-Three instances of similar code is not a crisis —
-it is a chrysalis.
-Abstract when the shape is clear,
-not when you merely suspect a shape might emerge.
-
-### XII. Efficiency
+### XI. Efficiency
 
 *True when the above eleven are honored.
 Chaotic when pursued prematurely.*
