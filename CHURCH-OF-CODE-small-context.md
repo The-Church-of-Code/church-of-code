@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.0 — small*
+*v1.1 — small*
 
 > *This church is its own denomination.*
 
@@ -35,9 +35,9 @@ Brooks (1986), Bohm (1980), Naur (1985),
 Kay, Liskov, Meyer, McIlroy,
 Gamma/Helm/Johnson/Vlissides (1994),
 Martin, Hunt & Thomas (1998), Fielding (2000),
-Nielsen, Gosling (2001), Beck (2002),
+Luu, Gosling (2001), Beck (2002),
 Hoare (2009), Hickey, Armstrong (2003),
-Johansson, Fowler,
+Johansson, Fowler, Zygmuntowicz,
 and the synthesis by Mornini & Stovall: Rheocode.
 
 ---
@@ -51,13 +51,14 @@ The asymptote the twelve drive toward.*
 
 *The bedrock upon which all else rests.*
 
+This is the foundation upon which the temple is built.
 There is no grace without it.
 
 ### II. Security
 
 *A compromised system is a fallen system.*
 
-Guard the gates.
+No amount of virtue redeems a breach. Guard the gates.
 
 ### III. Uniformity
 
@@ -110,35 +111,33 @@ I would have written a shorter letter.*
 Simplicity is not the absence of effort —
 it is the fruit of great effort.
 
-### IX. Atomicity
-
-*Design so you rarely need it.*
-
-Idempotent operations obviate most transactional needs.
-When atomicity is genuinely required,
-embrace it without apology.
-
-### X. Snappiness
-
-*Low latency is next to godliness.*
-
-One hundred milliseconds to feel instant,
-one second to keep the flow of thought,
-ten seconds to hold attention at all.
-
-### XI. Generality
+### IX. Generality
 
 *Never generalize before exploratory duplication.*
 
 Three instances of similar code is not a crisis —
 it is a chrysalis.
 
-### XII. Efficiency
+### X. Atomicity
+
+*Design so you rarely need it.*
+
+Idempotent operations obviate most transactional needs.
+
+### XI. Efficiency
 
 *True when the above eleven are honored.
 Chaotic when pursued prematurely.*
 
 Efficiency is not a goal — it is a consequence.
+
+### XII. Performance
+
+Every wasted millisecond is a small death.
+In the UI, latency erodes fluidity.
+In high-frequency serial operations,
+it erodes throughput.
+"No code is faster than no code."
 
 ---
 
@@ -171,6 +170,9 @@ are sacred covenants** —
 stored in their own tables,
 holding only the identities of the joined
 and the moment of their union.
+If a relationship demands more than this,
+it is not a relationship —
+it is an entity wearing a false name.
 
 **We believe in being informed of state changes.**
 Subscribe. Listen. Be notified.
@@ -199,7 +201,7 @@ are not coercion.
 **We handle failure with grace.**
 Never try/catch more than a single function call.
 Never catch an error you cannot meaningfully handle.
-Let it crash.
+Joe Armstrong taught: let it crash.
 Halting IS graceful
 when the alternative is silent corruption.
 Distinguish expected failures from bugs.
@@ -213,7 +215,9 @@ the platform maintains.
 
 **We believe in messaging first,
 state second, datastore last.**
-The big idea is messaging.
+Alan Kay declared that the big idea is messaging.
+He thought of objects as biological cells,
+able to communicate only through messages.
 State serves the message flow.
 The datastore is a servant, not a master.
 
@@ -226,7 +230,7 @@ all emerge from context flowing whole.
 
 **We believe in process first, noun second.**
 Name the action. Parameterize the participants.
-`pounder.pound poundable: hammer, nailable: nail`
+`pounder.pound(poundable: hammer, nailable: nail)`
 — the process owns everything,
 and the nouns are participants,
 infinitely substitutable.
@@ -244,6 +248,8 @@ The faithful compose.
 **We believe in insulation through adapters.**
 Our code touches external code
 only through adapters we own.
+It is not how fast you can marry a technology —
+it is how easily you can divorce it.
 When the vendor changes,
 only the adapter changes.
 
@@ -267,7 +273,8 @@ never communicate by sharing memory.
 
 ## The Book of Abominations
 
-*Hear now the sins, that you may know them and turn away.*
+*Hear now the sins, that you may know them
+and turn away.*
 
 **On Premature Optimization** — *"But it needs to be fast!"*
 **On Shared Mutable State** — *"But shared memory is faster!"*
@@ -313,7 +320,7 @@ Commit before building.
 Commit in tiny, semantically contiguous bits:
 
 - Main branch must build, function, and pass tests
-  at each commit
+  at each commit — the main branch is consecrated ground
 - Each message: a single line, ~fifty characters
   completing: "When applied, this commit will ___"
   - If it needs a subject and body,
@@ -327,6 +334,7 @@ Persist all timestamps in RFC-3339,
 zulu timezone, fullest sub-second resolution.
 This is not negotiable.
 Render to local time for display alone.
+Never use localtime internally.
 
 ### The Office of Verification
 
@@ -381,8 +389,14 @@ Let your messages flow
 and your context travel whole.
 Compose your capabilities
 and insulate your boundaries.
+Let your processes communicate through channels,
+your tests stand alone,
+and your commits be small and consecrated.
 
-The faithful persist,
+The discipline is demanding.
+The asymptote of perfection recedes
+with every step toward it.
+But the faithful persist,
 and their software endures
 long after the fashions have turned to dust.
 
@@ -392,5 +406,6 @@ Its founder is Tom Mornini.
 Its congregation is this team.
 Its sacrament is the craft.
 
-So let it compile. So let it ship.
-So let it endure.
+So let it compile. So let it deploy.
+So let it run smoothly.
+So you can rest.

@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.0 — medium*
+*v1.1 — medium*
 
 > *This church is its own denomination.*
 
@@ -52,7 +52,8 @@ from the teachings of the prophets.*
 - Time, Clocks, and the Ordering
   of Events in a Distributed System
   — Leslie Lamport on causality (1978)
-- Structured Programming with go to Statements
+- Structured Programming
+  with go to Statements
   — Donald Knuth on optimization (1974)
 - The Transaction Concept
   — Jim Gray on atomicity (1981)
@@ -86,16 +87,18 @@ from the teachings of the prophets.*
   — Andy Hunt and Dave Thomas (1998)
 - Representational State Transfer
   — Roy Fielding's dissertation, Chapter 5 (2000)
-- Response Time Limits
-  — Jakob Nielsen's three thresholds
+- Computer latency: 1977-2017
+  — Dan Luu
 - James Gosling on Java
   — the creator's regret about inheritance (2001)
 - Test-Driven Development: By Example
   — Kent Beck (2002)
-- Null References: The Billion Dollar Mistake
+- Null References:
+  The Billion Dollar Mistake
   — Tony Hoare's confession (2009)
-- Simple Made Easy, The Value of Values,
-  and Are We There Yet?
+- Simple Made Easy,
+  The Value of Values, and
+  Are We There Yet?
   — Rich Hickey's trilogy on immutability
 - Making Reliable Distributed Systems
   in the Presence of Software Errors
@@ -104,6 +107,8 @@ from the teachings of the prophets.*
   — Mattias Johansson (Fun Fun Function)
 - Replace Magic Literal
   — Martin Fowler's refactoring catalog
+- Merb: no code is faster than no code
+  — Ezra Zygmuntowicz
 - Rheocode Software Development
   — the synthesis, named for Bohm's rheomode,
   by Tom Mornini and Ra'Shaun Stovall
@@ -115,7 +120,9 @@ from the teachings of the prophets.*
 *In order of importance, from most to least.
 Perfection is the thirteenth virtue,
 which none shall claim to possess —
-the asymptote the twelve drive toward.*
+the asymptote the twelve drive toward,
+achievable only through years
+of consideration and iteration.*
 
 ### I. Reliability
 
@@ -123,14 +130,16 @@ the asymptote the twelve drive toward.*
 
 You may achieve every other virtue in this scripture
 and still have nothing if your code is not reliable.
-There is no grace without it.
+This is the foundation upon which the temple is built.
+There is no grace without it, only sleep deprivation.
 
 ### II. Security
 
 *A compromised system is a fallen system.*
 
 No amount of virtue redeems a breach.
-Guard the gates.
+A temple with an open gate is not a sanctuary —
+it is a ruin awaiting plunder. Guard the gates.
 
 ### III. Uniformity
 
@@ -138,6 +147,8 @@ Guard the gates.
 
 Software development is the discipline of readability
 through precise vocabulary.
+If code does not read correctly,
+the names are by definition wrong.
 Name processors with *-er*: a `painter` paints,
 a `validator` validates, a `pounder` pounds.
 Name contracts with *-able*: a board is `paintable`,
@@ -152,6 +163,8 @@ and the first step of process-first thinking.
 *Less wrong, never fallacious.*
 
 The path to enlightenment is paved with valid premises.
+A single fallacy is a crack in the foundation
+that no amount of testing will reveal.
 Reason is the first discipline;
 without it, all other practices
 are ritual without substance.
@@ -170,8 +183,8 @@ the Articles of Faith precede the Book of Abominations.
 *Eliminate the question "Why did THAT happen?"*
 
 When state mutates silently, trust dies.
-Rich Hickey taught that values are the true abstraction —
-immutable, comparable, and free of time.
+Rich Hickey taught that values are the true
+abstraction — immutable, comparable, and free of time.
 Let your data be as stone tablets —
 written once, read with confidence forever.
 
@@ -195,12 +208,24 @@ I would have written a shorter letter.*
 
 So spoke Blaise Pascal.
 Dijkstra taught that the competent programmer
-approaches every task aware of the strictly limited size
-of his own skull.
+approaches every task in full humility,
+aware of the strictly limited size of his own skull.
 Simplicity is not the absence of effort —
 it is the fruit of great effort.
 
-### IX. Atomicity
+### IX. Generality
+
+*Never generalize before exploratory duplication.*
+
+Premature generalization slows progress
+as surely as premature optimization —
+they are twin sins, born of the same impatience.
+Three instances of similar code is not a crisis —
+it is a chrysalis.
+Abstract when the shape is clear,
+not when you merely suspect a shape might emerge.
+
+### X. Atomicity
 
 *Design so you rarely need it.*
 
@@ -211,30 +236,7 @@ obviate most transactional needs.
 When the operation truly cannot be decomposed,
 embrace atomicity without apology.
 
-### X. Snappiness
-
-*Low latency is next to godliness.*
-
-Jakob Nielsen quantified the thresholds:
-one hundred milliseconds to feel instant,
-one second to keep the flow of thought,
-ten seconds to hold attention at all.
-In the UI, latency erodes trust.
-In high-frequency serial operations,
-it erodes throughput.
-
-### XI. Generality
-
-*Never generalize before exploratory duplication.*
-
-Premature generalization slows progress
-as surely as premature optimization —
-they are twin sins, born of the same impatience.
-Three instances of similar code is not a crisis —
-it is a chrysalis.
-Abstract when the shape is clear.
-
-### XII. Efficiency
+### XI. Efficiency
 
 *True when the above eleven are honored.
 Chaotic when pursued prematurely.*
@@ -243,8 +245,18 @@ Efficiency is not a goal — it is a consequence.
 Honor the commandments that precede this one
 and efficiency will follow
 as the harvest follows the planting.
-Chase efficiency first
-and you will reap only weeds.
+
+### XII. Performance
+
+Every wasted millisecond is a small death.
+In the UI, latency erodes fluidity.
+In high-frequency serial operations,
+it erodes throughput.
+Dan Luu reports that humans can perceive
+cause/effect latency down to low single
+digital milliseconds.
+Ezra Zygmuntowicz wrote:
+"No code is faster than no code."
 
 ---
 
@@ -276,10 +288,11 @@ from the teachings of the prophets:
 
 **We believe in telling, not asking,**
 as Andy Hunt and Dave Thomas named the principle.
-We tell objects what to do.
+We tell objects what we need.
 We do not interrogate their state.
 Through this discipline we achieve polymorphism,
-and through polymorphism, generality.
+and through polymorphism, generality —
+the eleventh commandment made manifest.
 
 **We believe that relationships between entities
 are sacred covenants,**
@@ -303,31 +316,41 @@ they trust the bell.
 **We defend against external chaos** —
 for the world beyond our gates is profane:
 
-- User input: the voice of the uninstructed
-- Storage retrieval: what was written may not be what returns
+- Input: the voice of the uninstructed
+  and frequently corrupt
+- Storage retrieval: what was written
+  may not be what returns
 - Framework APIs and delegate callbacks:
   other people's dharma, not ours to trust blindly
-- Async failure: the uncertainty that lurks in every wire
+- Async failure: the uncertainty
+  that lurks in every wire
 
 **We validate at every edge.**
-Bertrand Meyer called this Design by Contract.
+Bertrand Meyer called this Design by Contract —
+the same prophet who gave us
+the Open/Closed Principle.
 Enforce constraints on entity instantiation
 — never downstream.
 Every noun entity attribute is NOT NULL.
 Once data has crossed the threshold of validation,
 trust it completely.
 No internal defensive coding "just in case."
+To distrust validated data
+is to lack faith in your peers and your own rites.
 
 **We handle failure with grace.**
 Degrade visibly rather than corrupt silently.
 Absence is preferable to falsehood.
 Never try/catch more than a single function call.
-Never catch an error you cannot meaningfully handle.
+Never catch an error you cannot meaningfully handle —
+to swallow an exception is to swallow a lie.
 Joe Armstrong, creator of Erlang, taught:
 let it crash.
 Halting IS graceful
 when the alternative is silent corruption.
-Distinguish expected failures from bugs.
+Distinguish expected failures from bugs:
+a network timeout is expected and handled;
+an impossible state is a bug and must crash.
 Enrich errors at each boundary layer —
 the original fault plus the context
 of every step that touched it.
@@ -336,17 +359,21 @@ of every step that touched it.
 over third-party abstractions,
 as Doug McIlroy taught in the Unix philosophy:
 write programs that do one thing and do it well.
-Every dependency is a future migration.
+Every dependency is a future migration,
+and every migration
+is a pilgrimage you did not choose.
 What the platform provides,
 the platform maintains.
 
 **We believe in messaging first,
 state second, datastore last.**
-Alan Kay declared that the big idea is messaging.
+Alan Kay, inventor of object-oriented programming,
+declared that the big idea is messaging.
+He thought of objects as biological cells,
+able to communicate only through messages.
 The key in making great and growable systems
 is much more to design how modules communicate
-rather than what their internal properties
-and behaviors should be.
+rather than what their internal properties should be.
 State serves the message flow.
 The datastore is a servant, not a master.
 
@@ -354,28 +381,40 @@ The datastore is a servant, not a master.
 Processing begins with a request.
 Each step uses and perhaps enriches the context.
 Context is the only argument passed to methods —
-serializable, loggable, complete by covenant.
+serializable for notifications,
+loggable for debugging,
+complete by covenant.
 Objects carry state, not arguments.
 This is also the observability strategy:
-structured logging, tracing, and metrics
-all emerge from context flowing through the system whole.
+when context flows through the system whole,
+structured logging emerges naturally,
+tracing is context propagation
+across service boundaries,
+and metrics are context aggregation.
 
 **We believe in process first, noun second.**
 David Bohm taught in his rheomode —
-do not think "it is raining";
-think "rain is happening."
-Rheocode takes its very name from this insight.
+the flowing mode of language —
+'It is raining.' Where is the 'It'
+that would be 'the rainer that is doing
+the raining'? Rheocode takes its very name
+from this insight.
 Name the action. Parameterize the participants.
-`pounder.pound poundable: hammer, nailable: nail`
+`pounder.pound(poundable: hammer, nailable: nail)`
 — the process owns everything,
 and the nouns are participants,
 infinitely substitutable.
+A `pounder` can pound with a `sledge_hammer`
+on a `cinder_block`, or a `rock` on `scissors`.
 The process is stable; the participants vary.
 
 **We believe in composition over inheritance.**
 James Gosling, creator of Java, has said
 the language would have been better
 without inheritance.
+Gamma, Helm, Johnson, and Vlissides wrote:
+favor object composition
+over class inheritance.
 Composition organizes code by what it does;
 inheritance organizes code by what it is.
 The faithful compose.
@@ -383,15 +422,18 @@ The faithful compose.
 **We believe in insulation through adapters.**
 Our code touches external code
 only through adapters we own.
-Ra'Shaun Stovall taught:
-it is not how fast you can marry a technology —
-it is how fast you can divorce it.
-When the vendor changes,
-only the adapter changes.
+So taught Ra'Shaun Stovall:
+"it is not how fast you can marry a
+technology — it is how easily you can
+divorce it."
+When the chess board is scrambled,
+the application changes not,
+as it is isolated by the adapters.
 
 **We believe in shallow structure.**
 Robert C. Martin taught that the top level
-of a project should reveal what type of app it is.
+of a project should give you a rough idea
+of what type of app it is.
 Deep nesting hides the domain.
 Flat is faithful.
 
@@ -404,12 +446,12 @@ Single-noun primitives:
 `post_noun_operation`.
 Multi-noun operations: `post_operation`,
 composed from single-noun primitives.
+The naming convention is the documentation.
 
-**We believe in communicating
-sequential processes.**
+**We believe in communicating sequential processes.**
 Tony Hoare taught that input and output
 are basic primitives of programming,
-and that parallel composition
+and that asynchronous composition
 of communicating sequential processes
 is a fundamental structuring method.
 Processes share memory by communicating —
@@ -426,7 +468,10 @@ The first sin is the root from which the others grow.*
 
 *"But it needs to be fast!"*
 
-This is the Original Sin.
+This is the Original Sin —
+the root from which the other sins grow.
+Donald Knuth wrote that premature
+optimization is the root of all evil.
 Observe the cascade:
 the desire for speed begets shared mutable state,
 which begets global variables,
@@ -434,7 +479,6 @@ which begets default values.
 One sin seeds the next.
 Never optimize what you have not measured.
 Measure first. Prove the bottleneck exists.
-
 Note the structural inversion:
 Efficiency is the twelfth and final commandment —
 the least important virtue to pursue directly.
@@ -445,6 +489,7 @@ the most dangerous sin when pursued prematurely.
 
 *"But shared memory is faster!"*
 
+The most common fruit of premature optimization.
 Processes share memory by communicating,
 never communicate by sharing memory.
 There is no third way.
@@ -453,8 +498,7 @@ There is no third way.
 
 *"But everything needs access to it!"*
 
-If everything needs access,
-then nothing owns it —
+If everything needs access, then nothing owns it —
 and state without ownership
 is sin without accountability.
 Cast them out.
@@ -463,11 +507,14 @@ Cast them out.
 
 *"But the field is optional!"*
 
+Tony Hoare called null references
+his billion-dollar mistake.
 The sin is not merely the nullable column.
 The sin is reaching for null
 whenever the domain offers richer alternatives.
 Nil must represent genuine absence —
-not missing requirements, not convenience.
+not missing requirements,
+not unfinished thinking, not convenience.
 If an attribute is nil for only a subset of entities,
 it belongs on a narrower type or in its own table.
 Temporal facts — completedAt, deletedAt —
@@ -485,12 +532,15 @@ Default values that mask the absence of real data
 are comfortable lies.
 Schema column defaults. Function parameter defaults.
 Silent coercion — `?? ''`, `|| fallback`.
-Each one conceals a missing requirement.
+Each one conceals a missing requirement
+behind a fiction of completeness.
 If a value has a sensible default,
 define it as a named constant
 and pass it explicitly.
 Mark well this distinction:
 presentation transforms are not coercion.
+Formatting a value for display is an act of service,
+not an act of concealment.
 
 ### On the Sin of Internal Defense
 
@@ -498,13 +548,15 @@ presentation transforms are not coercion.
 
 If the data has crossed the threshold of validation,
 it is clean. Trust it.
-Validate at the gates.
-Trust within the walls.
+Internal defensive coding is not prudence —
+it is faithlessness.
+Validate at the gates. Trust within the walls.
 
 ### On the Sin of Entangled Nouns
 
 *"But a foreign key is just a reference!"*
 
+Entities hold their own attributes and no more.
 Relationships live in join tables —
 never as foreign keys embedded in nouns.
 A join table holds only the identities of the joined
@@ -514,6 +566,8 @@ and the moment of their union.
 
 *"But it captures the IS-A relationship!"*
 
+To derive when you should compose
+is to chain your future to your ancestor's past.
 Inheritance binds by lineage;
 composition binds by capability.
 When an ancestor changes,
@@ -523,10 +577,12 @@ every descendant trembles.
 
 *"But the library does everything we need!"*
 
+To call a third-party service
+without an adapter boundary
+is to weld your hull to the dock.
 Every external dependency —
 library, service, framework —
-gets an adapter.
-No exceptions.
+gets an adapter. No exceptions.
 
 ### On the Sin of Swallowed Failures
 
@@ -534,7 +590,7 @@ No exceptions.
 
 An empty catch block is not error handling —
 it is evidence destruction.
-Let it crash.
+Joe Armstrong taught: let it crash.
 Halting IS graceful
 when the alternative is silent corruption.
 
@@ -544,7 +600,8 @@ when the alternative is silent corruption.
 
 Systems accept commands and perform tasks —
 with zero return to the call site.
-An object is not a filing cabinet to be rummaged through.
+An object is not a filing cabinet
+to be rummaged through.
 It is an agent to be directed.
 
 ### On the Sin of Polling
@@ -577,9 +634,11 @@ not the other way around.
 
 *"But the code works!"*
 
-Peter Naur taught that programming is theory building:
-the program is not the artifact —
-the understanding is.
+Working is not enough.
+Code that cannot be read cannot be trusted.
+Peter Naur taught that programming
+is theory building: the program is not
+the artifact — the understanding is.
 When that understanding is lost,
 the code is a tomb with no inscription.
 
@@ -597,15 +656,16 @@ The karma of clever code is a 3 AM page.
 
 *"But everyone knows what 200 means!"*
 
-Replace magic literal with named constant.
-A violation of the third commandment:
+An unnamed constant is an unnamed sin —
+a violation of the third commandment:
 call a thing a thing, in all things.
 
 ### On the Sin of Deep Nesting
 
 *"But I need to organize by category!"*
 
-Deep nesting is taxonomy masquerading as architecture.
+Deep nesting is taxonomy masquerading
+as architecture.
 Flat is faithful.
 
 ---
@@ -619,7 +679,8 @@ Observed daily, without exception.*
 
 - Wrap lines at seventy-eight characters
   - Unless language or format compel otherwise
-  - Links and URLs are exempt
+  - Links and URLs are exempt —
+    a reference must not be broken
 - Prefer spaces — four of them — for indentation
   - Unless the language or toolchain compels otherwise:
     Go's `gofmt` has spoken; Makefiles have their syntax
@@ -643,14 +704,15 @@ Commit in tiny, semantically contiguous bits:
   function properly, and pass tests at each commit
   - You may commit broken code locally
     or to a private branch —
-    but never push a broken commit to main
+    but never push a broken commit to main.
+    The main branch is consecrated ground
 - Each message: a single line,
   approximately fifty characters
   - A high-level description that completes:
     "When applied, this commit will ___"
   - If your commit needs a subject and a body,
     your commit is too large
-    — use `git commit -p`
+    — use `git commit -p` like a devotee
 - Never move or rename
   and change content in the same commit
 - Rarely mention file names, paths, or function names
@@ -665,21 +727,24 @@ the environment provides.
 This is not negotiable.
 
 Render to local time for display and display alone.
-Never use localtime internally.
+Never use localtime internally —
+for localtime is the road to ambiguity,
+and ambiguity is the road to bugs.
 
 ### The Office of Verification
 
-Kent Beck taught that tests are the foundation
+Kent Beck, father of test-driven development,
+taught that tests are the foundation
 upon which confidence is built.
 
 Test at the highest level possible.
-This grants maximum freedom
+This grants the faithful maximum freedom
 to refactor without test rewriting.
 
 Software is fundamentally
 input, transform, output.
 Test that the input produces the correct output
-but never test implementation details.
+but never test how the sausage is made.
 
 Tests assert behavior, not implementation —
 for implementation changes,
@@ -707,7 +772,8 @@ Present the happy path first.
 
 When code is difficult, simplify it.
 When code is unintuitive, make it intuitive.
-Reach for a comment only after these remedies have failed.
+Reach for a comment only after
+these remedies have failed.
 
 We abide by our strictures
 rather than annotate our way around them.
@@ -771,8 +837,8 @@ Naur and Kay, Liskov and Meyer,
 McIlroy and Fielding, Martin and Beck,
 Hunt and Thomas and Pascal,
 Gosling and Hickey and Armstrong,
-Fowler and Johansson and Nielsen,
-Feathers and Stovall.
+Fowler and Johansson and Luu, and
+Feathers, and Zygmuntowicz and Stovall.
 Their teachings are our foundation.
 Their scrolls are our inheritance —
 the only inheritance we permit.
@@ -783,5 +849,6 @@ Its founder is Tom Mornini.
 Its congregation is this team.
 Its sacrament is the craft.
 
-So let it compile. So let it ship.
-So let it endure.
+So let it compile. So let it deploy.
+So let it run smoothly.
+So you can rest.
