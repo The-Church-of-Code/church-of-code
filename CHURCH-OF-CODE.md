@@ -571,8 +571,7 @@ Multi-noun operations: `post_operation`,
 composed from single-noun primitives.
 The naming convention is the documentation.
 
-**We believe in communicating
-sequential processes.**
+**We believe in communicating sequential processes.**
 Tony Hoare taught in his 1978 paper
 that input and output
 are basic primitives of programming,
@@ -581,8 +580,8 @@ of communicating sequential processes
 is a fundamental structuring method.
 Processes share memory by communicating —
 never communicate by sharing memory.
-This is the foundation
-of all righteous asynchronous architecture.
+This is the foundation of all righteous
+asynchronous architecture.
 
 ---
 
