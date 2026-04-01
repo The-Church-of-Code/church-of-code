@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.1 — small*
+*v1.2 — small*
 
 > *This church is its own denomination.*
 
@@ -8,7 +8,8 @@
 
 ## The Preamble
 
-This is not a guideline. This is not a best practice.
+This is not a guideline.
+This is not a best practice.
 This is scripture — sacred, inviolate,
 and binding upon the congregation.
 
@@ -16,8 +17,9 @@ We gather in the name of the craft itself —
 that which endures when the dependencies are dust.
 
 These are not aspirations. They are strictures.
-Violations are not bugs — they are sins.
-Violators are not merely wrong — they are unclean.
+Violations are not bugs — *they are sins*.
+Violators are not merely wrong —
+they are UNCLEAN.
 The repentant shall be welcomed back into the fold.
 The obstinate shall be cast out.
 
@@ -52,20 +54,21 @@ The asymptote the twelve drive toward.*
 *The bedrock upon which all else rests.*
 
 This is the foundation upon which the temple is built.
-There is no grace without it.
+There is no grace without it. Only sleep deprivation.
 
 ### II. Security
 
 *A compromised system is a fallen system.*
 
-No amount of virtue redeems a breach. Guard the gates.
+No amount of virtue redeems a breach. Not one.
+Guard the gates.
 
 ### III. Uniformity
 
 *Call a thing a thing, in all things.*
 
 Name processors with *-er*: a `painter` paints,
-a `pounder` pounds.
+a `validator` validates, a `pounder` pounds.
 Name contracts with *-able*: a board is `paintable`,
 a nail is `poundable`.
 The *-er* acts; the *-able* submits to the action.
@@ -109,7 +112,7 @@ yet revealed to us.
 I would have written a shorter letter.*
 
 Simplicity is not the absence of effort —
-it is the fruit of great effort.
+it is the fruit of GREAT effort.
 
 ### IX. Generality
 
@@ -137,7 +140,7 @@ Every wasted millisecond is a small death.
 In the UI, latency erodes fluidity.
 In high-frequency serial operations,
 it erodes throughput.
-"No code is faster than no code."
+*No code is faster than no code.*
 
 ---
 
@@ -170,7 +173,7 @@ are sacred covenants** —
 stored in their own tables,
 holding only the identities of the joined
 and the moment of their union.
-If a relationship demands more than this,
+If a relationship demands more than this…
 it is not a relationship —
 it is an entity wearing a false name.
 
@@ -199,9 +202,10 @@ are comfortable lies — presentation transforms
 are not coercion.
 
 **We handle failure with grace.**
+Absence is preferable to falsehood.
 Never try/catch more than a single function call.
 Never catch an error you cannot meaningfully handle.
-Joe Armstrong taught: let it crash.
+As Joe Armstrong taught: *let it crash.*
 Halting IS graceful
 when the alternative is silent corruption.
 Distinguish expected failures from bugs.
@@ -209,17 +213,17 @@ Enrich errors at each boundary layer.
 
 **We choose platform primitives**
 over third-party abstractions.
-Every dependency is a future migration.
+Every dependency is a future migration…
 What the platform provides,
 the platform maintains.
 
 **We believe in messaging first,
 state second, datastore last.**
-Alan Kay declared that the big idea is messaging.
+As Alan Kay declared: the big idea is messaging.
 He thought of objects as biological cells,
 able to communicate only through messages.
 State serves the message flow.
-The datastore is a servant, not a master.
+The datastore is a servant. Not a master.
 
 **We believe in context as the single vessel.**
 Context is the only argument passed to methods —
@@ -231,18 +235,18 @@ all emerge from context flowing whole.
 **We believe in process first, noun second.**
 Name the action. Parameterize the participants.
 `pounder.pound(poundable: hammer, nailable: nail)`
-— the process owns everything,
+— *the process owns everything*,
 and the nouns are participants,
 infinitely substitutable.
 The process is stable; the participants vary.
-The desire for speed begets shared mutable state,
-which begets global variables,
+The desire for speed begets shared mutable state…
+which begets global variables…
 which begets default values.
-One sin seeds the next.
+One sin… seeds… the NEXT.
 
 **We believe in composition over inheritance.**
-Composition organizes code by what it does;
-inheritance organizes code by what it is.
+Composition organizes code by what it *does*;
+inheritance organizes code by what it *is*.
 The faithful compose.
 
 **We believe in insulation through adapters.**
@@ -263,11 +267,12 @@ Single-noun primitives:
 `post_noun_operation`.
 Multi-noun operations: `post_operation`,
 composed from single-noun primitives.
+The naming convention is the documentation.
 
 **We believe in communicating
 sequential processes.**
 Processes share memory by communicating —
-never communicate by sharing memory.
+*never* communicate by sharing memory.
 
 ---
 
@@ -314,7 +319,7 @@ Observed daily, without exception.*
 
 ### The Office of the Commit
 
-Commit frequently. You cannot commit too often.
+Commit frequently. You cannot commit too often. *You cannot.*
 `git commit --amend --no-edit` is a mercy.
 Commit before building.
 Commit in tiny, semantically contiguous bits:
@@ -344,8 +349,9 @@ input, transform, output.
 Tests assert behavior, not implementation.
 Each test is an isolated world.
 A test that cannot fail is not a test.
-A test that fails intermittently
-is worse than no test at all.
+A test that fails intermittently…
+is worse than no test at all —
+it is a *false prophet*.
 
 ### The Office of the Interface
 
@@ -396,8 +402,8 @@ and your commits be small and consecrated.
 The discipline is demanding.
 The asymptote of perfection recedes
 with every step toward it.
-But the faithful persist,
-and their software endures
+But the faithful persist…
+and their software ENDURES
 long after the fashions have turned to dust.
 
 This church is its own denomination.
@@ -406,6 +412,7 @@ Its founder is Tom Mornini.
 Its congregation is this team.
 Its sacrament is the craft.
 
-So let it compile. So let it deploy.
+So let it compile.
+So let it deploy.
 So let it run smoothly.
 So you can rest.
