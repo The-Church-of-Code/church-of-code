@@ -326,12 +326,15 @@ Efficiency is not a goal — it is a consequence.
 Honor the commandments that precede this one
 and efficiency will follow
 as the harvest follows the planting.
-Chase efficiency first
-and you will reap only weeds.
 
-### XII. Low Latency
+### XII. Performance
 
-*Low latency is next to godliness.*
+Every wasted millisecond is a small death.
+In the UI, latency erodes fluidity.
+In high-frequency serial operations,
+it erodes throughput.
+Visible to the user, it erodes their finite
+patience.
 
 Dan Luu reports that humans can perceive
 cause/effect latency down to low single
@@ -343,13 +346,6 @@ yet untold millions have spent large portions of
 their lives writing a enormous amounts of code
 in failed attempts to make their application
 faster.
-
-Every wasted millisecond is a small death.
-In the UI, latency erodes fluidity.
-In high-frequency serial operations,
-it erodes throughput.
-The user's patience is finite,
-though your retry loop may not be.
 
 ---
 
