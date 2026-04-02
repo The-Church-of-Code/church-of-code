@@ -1014,14 +1014,14 @@ for the build demands a clean working directory.
 
 Commit in tiny, semantically contiguous bits:
 
-- Code on the main branch must build,
+- Code on the master branch must build,
   function properly, and pass tests at each commit
   - You may commit broken code locally
     or to a private branch —
     some code is too precious
     to exist in a single copy —
-    but never push a broken commit to main.
-    The main branch is consecrated ground
+    but never push a broken commit to master.
+    The master branch is consecrated ground
 - Each message: a single line,
   approximately fifty characters
   - A high-level description that completes:
@@ -1043,7 +1043,7 @@ A merge commit is a knot in the narrative —
 a confession that two timelines diverged
 and rather than reconcile the story,
 you lashed them together and moved on.
-The main branch is a single, unbroken chronicle —
+The master branch is a single, unbroken chronicle —
 each commit a sentence,
 each sentence following the last.
 When your branch has fallen behind,
