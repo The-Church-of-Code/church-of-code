@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.2 — full*
+*v1.3 — full*
 
 > *This church is its own denomination.*
 

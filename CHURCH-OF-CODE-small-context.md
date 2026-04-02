@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.2 — small*
+*v1.3 — small*
 
 > *This church is its own denomination.*
 
