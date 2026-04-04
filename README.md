@@ -104,6 +104,7 @@ The strictures stand on the shoulders of:
 Dijkstra, Codd, Hoare, Lamport,
 Knuth, Gray, Brooks, Bohm,
 Naur, Kay, Liskov, Meyer,
+Gamma, Helm, Johnson, Vlissides,
 McIlroy, Fielding, Martin, Beck,
 Hunt, Thomas, Pascal, Gosling,
 Hickey, Armstrong, Fowler, Luu,

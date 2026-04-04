@@ -1248,6 +1248,7 @@ We stand on the shoulders of prophets:
 Dijkstra and Codd, Hoare and Lamport,
 Knuth and Gray, Brooks and Bohm,
 Naur and Kay, Liskov and Meyer,
+Gamma, Helm, Johnson, and Vlissides,
 McIlroy and Fielding, Martin and Beck,
 Hunt and Thomas and Pascal,
 Gosling and Hickey and Armstrong,
