@@ -169,7 +169,7 @@ and is the first to be trimmed.
   Article: Handle-failure in small, since sins are header-only)
 - "This church is its own denomination" (Benediction)
 - Dijkstra telescopes epigraph (all three sizes)
-- "So let it compile. So let it ship. So let it endure." (closing)
+- "So let it compile. So let it deploy. So let it run smoothly. So you can rest." (closing)
 - Roman numeral commandment format
 - "We believe in..." creedal openings for all Articles
 
