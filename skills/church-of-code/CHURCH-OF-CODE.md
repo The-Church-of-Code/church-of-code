@@ -451,7 +451,7 @@ Degrade visibly rather than corrupt silently.
 Never try/catch more than a single function call.
 
 Never catch an error you cannot meaningfully handle —
-to swallow an exception is is excommunicable!
+to swallow an exception is excommunicable!
 
 As Bertrand Meyer taught — Design by Contract —
 a function declares what it requires
@@ -936,9 +936,9 @@ checking the mailbox every thirty seconds
 when the mail carrier has not yet left the depot.
 
 We are humble enough to realize that we
-are sometimes required to system not of the
-faith. Should they require us to poll them,
-poll we must.
+are sometimes required to integrate with
+systems not of the faith. Should they
+require us to poll them, poll we must.
 
 ### On the Sin of Scattered Context
 
@@ -1115,14 +1115,14 @@ shall follow the last line in every file.
 Commit frequently. `git commit --amend --no-edit` is a
 mercy granted to the diligent and rewarded by git reflog.
 Only use the git magic in private where you should wield
-it the precision a surgeon wields their scapal.
+it the precision a surgeon wields their scalpel.
 
 What has been pushed has been witnessed;
 to rewrite witnessed history is to bear false witness.
 `git push --force` is the nuclear option — to be avoided
 in public in all but the most desperate of circumstances.
 
-ABC - always be commiting! What isn't commited cannot
+ABC - always be committing! What isn't committed cannot
 be restored once you have forgotten.
 
 Commit before building.
@@ -1132,7 +1132,7 @@ cannot be reproduced,
 cannot be verified,
 cannot be trusted.
 
-"worked on my machine" isnt' an excuse, it's shameful.
+"worked on my machine" isn't an excuse, it's shameful.
 
 Commit in tiny, semantically contiguous bits:
 
