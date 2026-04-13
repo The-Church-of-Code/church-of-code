@@ -224,9 +224,20 @@ Each release of the scripture is identified by:
 2. Rebuild both summaries following this BUILD process
 3. Update the `*v{N} — {size}*` line in all three files
    to the new version number
-4. Commit all three files together
-5. Tag the commit: `git tag v{N}`
-6. Push the commit and tag: `git push && git push --tags`
+4. Commit the scripture work (no tag yet):
+   - `git add CHURCH-OF-CODE*.md`
+   - `git commit -m "Release v{N} scripture"`
+5. Package the skill: `./package-skill` — propagates
+   the new version into `.claude-plugin/plugin.json`
+   and `.claude-plugin/marketplace.json` and copies
+   the scripture files into `skills/church-of-code/`
+6. Commit the package output:
+   - `git add .claude-plugin/ skills/church-of-code/`
+   - `git commit -m "Package v{N}"`
+7. Tag the commit: `git tag v{N}`
+8. Push the commits and tag: `git push && git push --tags`
 
 The git tag and the internal version lines must agree.
-The tag marks the commit where all three files are in sync.
+The tag marks the commit where scripture, plugin metadata,
+and packaged skill files are all in sync — which is the
+second (package) commit, not the first (scripture) commit.
