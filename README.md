@@ -186,7 +186,7 @@ through GitHub pull requests.
 
 ## Founder
 
-Tom Mornini — founder of The Church of Code.
+Tom Mornini — High Priest, The Church of Code.
 
 ---
 
