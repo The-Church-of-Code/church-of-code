@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+# Package the Church of Code scripture as a Claude Code plugin-wrapped skill.
+#
+# Copies the canonical scripture files from the repo root into
+# skills/church-of-code/ and propagates the scripture version into
+# plugin.json and marketplace.json.
+#
+# This script does NOT regenerate the scripture variants themselves — see
+# BUILD.md for that manual, AI-judgment rebuild process. It only packages
+# whatever is currently at the repo root into skill shape.
+
+set -euo pipefail
+
+REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd "$REPO_ROOT"
+
+SOURCES=(
+  "CHURCH-OF-CODE.md"
+  "CHURCH-OF-CODE-medium-context.md"
+  "CHURCH-OF-CODE-small-context.md"
+)
+
+SKILL_DIR="skills/church-of-code"
+PLUGIN_JSON=".claude-plugin/plugin.json"
+MARKETPLACE_JSON=".claude-plugin/marketplace.json"
+SKILL_MD="$SKILL_DIR/SKILL.md"
+
+fail() { echo "package-skill: $*" >&2; exit "${2:-1}"; }
+
+# 1. Preflight — canonical sources must exist.
+for src in "${SOURCES[@]}"; do
+  [[ -f "$src" ]] || fail "missing canonical scripture: $src" 2
+done
+
+# 2. Preflight — plugin metadata must exist (hand-authored, not generated).
+for meta in "$PLUGIN_JSON" "$MARKETPLACE_JSON" "$SKILL_MD"; do
+  [[ -f "$meta" ]] || fail "missing plugin metadata: $meta" 3
+done
+
+# 3. Extract version from full scripture. Line 3 is literally "*v1.6 — full*"
+#    (em-dash U+2014, not hyphen).
+VERSION_LINE="$(sed -n '3p' CHURCH-OF-CODE.md)"
+if [[ ! "$VERSION_LINE" =~ ^\*v([0-9]+(\.[0-9]+)*)[[:space:]]+(—|-)[[:space:]]+full\*$ ]]; then
+  fail "cannot parse version from line 3 of CHURCH-OF-CODE.md: $VERSION_LINE" 4
+fi
+VERSION="${BASH_REMATCH[1]}"
+
+# 4. Verify all three scripture variants carry the same version.
+for src in "${SOURCES[@]}"; do
+  grep -q "^\*v${VERSION} — " "$src" \
+    || fail "version mismatch in $src (expected v${VERSION})" 5
+done
+
+# 5. Write the scripture version into plugin.json and marketplace.json.
+#    Targets ONLY the "version" field; every other JSON field is
+#    hand-authored and left untouched. A missing version field is a hard
+#    fail — the script refuses to guess where to insert it.
+write_json_version() {
+  local file="$1"
+  grep -q '"version"[[:space:]]*:' "$file" \
+    || fail "$file has no \"version\" field — add one and re-run." 6
+  local tmp="${file}.tmp.$$"
+  sed -E 's/("version"[[:space:]]*:[[:space:]]*")[^"]*(")/\1'"${VERSION}"'\2/' \
+    "$file" > "$tmp"
+  mv "$tmp" "$file"
+}
+write_json_version "$PLUGIN_JSON"
+write_json_version "$MARKETPLACE_JSON"
+
+# 6. Copy canonical sources into the skill directory.
+mkdir -p "$SKILL_DIR"
+for src in "${SOURCES[@]}"; do
+  cp -f "$src" "$SKILL_DIR/$src"
+done
+
+# 7. Report.
+echo "package-skill: ok — Church of Code plugin v${VERSION} assembled"
+echo "    scripture copied into $SKILL_DIR/"
+echo "    next: git add .claude-plugin/ $SKILL_DIR/ && git commit -m \"Package v${VERSION}\""
