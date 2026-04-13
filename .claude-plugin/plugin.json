@@ -1,0 +1,20 @@
+{
+  "name": "church-of-code",
+  "description": "The Church of Code scripture — a ranked hierarchy of commandments, articles of faith, abominations, and daily offices, bundled as a Claude Code skill in three context-size variants.",
+  "version": "1.6",
+  "author": {
+    "name": "Tom Mornini",
+    "email": "tmornini@me.com"
+  },
+  "homepage": "https://github.com/tmornini/church-of-code",
+  "repository": "https://github.com/tmornini/church-of-code",
+  "license": "MIT",
+  "keywords": [
+    "scripture",
+    "best-practices",
+    "reliability",
+    "software-engineering",
+    "principles",
+    "skill"
+  ]
+}

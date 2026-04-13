@@ -1,0 +1,20 @@
+{
+  "name": "church-of-code-marketplace",
+  "description": "Distribution marketplace for the Church of Code scripture skill",
+  "owner": {
+    "name": "Tom Mornini",
+    "email": "tmornini@me.com"
+  },
+  "plugins": [
+    {
+      "name": "church-of-code",
+      "description": "The Church of Code scripture — ranked commandments, articles, abominations, and offices, bundled as a skill in three context-size variants.",
+      "version": "1.6",
+      "source": "./",
+      "author": {
+        "name": "Tom Mornini",
+        "email": "tmornini@me.com"
+      }
+    }
+  ]
+}
