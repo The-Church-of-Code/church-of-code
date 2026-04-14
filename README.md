@@ -175,6 +175,75 @@ This path is Claude Code-specific;
 other agents use the file-and-reference
 approach above.
 
+## Editorial Rules
+
+The scripture's internal consistency
+is maintained through a small set of editorial
+rules, applied whenever amendments are proposed.
+
+### Sacred Scrolls ordering
+
+The Sacred Scrolls are ordered by how often
+each prophet is cited in the body of the scripture,
+most-cited first.
+Ties break chronologically by work date,
+earliest first.
+Each prophet is represented by their top
+one or two works.
+
+Every name mention in the body counts as a citation,
+including parenthetical attributions in bullet lists
+and principle-name references
+that point at a specific contributor
+(e.g., "Interface Segregation" counts for Martin).
+The counting is strict:
+one reference per mention, not one per section.
+
+The benediction roll call mirrors this order,
+with a leading wisdom-prophets line
+(Confucius, Pascal, Wittgenstein)
+that acknowledges philosophical foundations
+before the software prophets.
+
+### Prophet citation density
+
+Each commandment, article, sin, and office
+cites at most one or two prophets.
+The S.O.L.I.D. article is the documented exception:
+its bulleted letter-by-letter attributions
+(Martin, Meyer, Liskov) are factual contributions
+rather than doctrinal appeals,
+and are not counted against the limit.
+
+### Metaphor density
+
+Metaphors that do cognitive work
+the plain doctrine cannot are preserved.
+Metaphors that merely restate
+what was just said are cut.
+"The baton in a relay"
+shows context propagation;
+"stone tablets" was trimmed because
+"immutable" already said it.
+
+### Serpent voice
+
+Each Abomination opens with an echoing objection
+(*"Faster. Faster."*)
+and at most one sentence of ventriloquism
+addressing the reader's internal tempter.
+Extended monologue is trimmed —
+the point lands on the echo,
+not the elaboration.
+
+### Preamble register
+
+The opening confessional is first-person collective
+("we have crafted it ourselves")
+rather than outward-pointing at "heathens."
+The scripture joins the reader
+rather than standing above them.
+
 ## Contributing
 
 Amendments to scripture are proposed
