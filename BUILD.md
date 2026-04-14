@@ -124,11 +124,12 @@ earns its keep survives. Cuts are surgical.
 
 **Goal**: ~2/3 byte reduction from original.
 
-This requires a **structural transformation**, not just trimming.
-The small version is not merely shorter — it reorganizes content
-so that unique doctrine from 3 Abominations migrates into the
-Articles where it logically belongs, and the Abominations section
-collapses to a compact roster.
+The small version is not merely shorter — it collapses the
+Abominations section to a compact roster. The three teachings
+historically migrated from sins to Articles are already in the
+source Articles of Faith (hoisted in v1.8+), so no build-time
+migration is required. The reduction is a natural consequence
+of the source structure.
 
 ### Section-by-section
 
