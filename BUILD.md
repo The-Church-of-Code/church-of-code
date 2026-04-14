@@ -8,6 +8,28 @@ regenerated following this process.
 
 ---
 
+## Build Principle
+
+**Each rebuild is from scratch.** The medium and small variants
+are not edited incrementally from their previous versions — they
+are derived freshly from the current canonical source
+(`CHURCH-OF-CODE.md`) every time the full changes.
+
+Using a previous variant (e.g., the v1.N-1 medium) as a
+compression template risks carrying stale trim decisions
+forward. A cut that was right for v1.N-1 may be wrong for v1.N
+if the full document has changed around it. Every rebuild
+starts from the current full, applies the Medium Context
+Strategy below to produce the new medium, then applies the
+Small Context Strategy to the new medium to produce the new
+small.
+
+The prior variants exist only as git history — they are
+reference points for byte-count targets and tonal consistency,
+never as templates for the next rebuild.
+
+---
+
 ## The Three Files
 
 | File | Size Variant | Target |
