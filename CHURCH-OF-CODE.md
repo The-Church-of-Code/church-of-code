@@ -1129,9 +1129,6 @@ A merge commit is a knot in the narrative —
 a confession that two timelines diverged
 and rather than reconcile the story,
 you lashed them together and moved on.
-The master branch is a single, unbroken
-chronicle — each commit a sentence,
-each sentence following the last.
 When your branch has fallen behind,
 rebase it upon the current truth.
 The result shall be clear, simple,
@@ -1165,8 +1162,7 @@ of test rewriting.
 Software is fundamentally
 input, transform, output.
 Test that the input produces the correct output
-but never test how the sausage is made —
-for sausage is unclean meat.
+but never test how the sausage is made.
 
 Tests assert behavior, not implementation —
 for implementation changes,
@@ -1182,9 +1178,7 @@ It is a comfort object.
 
 A test that fails intermittently…
 is worse than no test at all —
-it is a *false prophet*,
-and false prophets corrode the trust of the congregation
-more surely than any honest failure.
+it is a *false prophet*.
 
 ### The Office of the Interface
 
