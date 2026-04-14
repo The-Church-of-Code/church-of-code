@@ -304,9 +304,7 @@ not when you merely suspect a shape might emerge.
 
 *Design so you rarely need it.*
 
-As Jim Gray taught —
-the prophet who received the Turing Award
-for his work on transaction processing —
+As Jim Gray taught:
 atomicity means all actions as one, or none at all.
 Yet idempotent operations
 obviate most transactional needs.
