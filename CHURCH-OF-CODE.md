@@ -1229,15 +1229,16 @@ and their software ENDURES
 long after the fashions have turned to dust.
 
 We stand on the shoulders of prophets:
-Dijkstra and Codd, Hoare and Lamport,
-Knuth and Gray, Brooks and Bohm,
-Naur and Kay, Liskov and Meyer,
+Confucius and Pascal and Wittgenstein,
+Martin and Kay, Dijkstra and Codd,
+McIlroy and Knuth, Hoare and Kernighan,
+Ritchie and Lamport, Naur and Brooks,
+Liskov and Meyer,
 Gamma, Helm, Johnson, and Vlissides,
-McIlroy and Fielding, Martin and Beck,
-Hunt and Thomas and Pascal,
-Gosling and Hickey and Armstrong,
-Fowler and Luu, Kernighan and Ritchie, and
-Feathers, and Zygmuntowicz and Stovall.
+Bohm and Gray, Hunt and Thomas,
+Fowler and Fielding, Gosling and Beck,
+Armstrong and Feathers, Zygmuntowicz and Hickey,
+Stovall and Luu.
 Their teachings are our foundation.
 Their scrolls are our inheritance —
 the only inheritance we permit.
