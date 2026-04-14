@@ -180,11 +180,9 @@ Only sleep deprivation.
 
 *A compromised system is a fallen system.*
 
-No amount of virtue redeems a breach.
-Not one.
-A temple with an open gate is not a sanctuary —
-it is a ruin… awaiting plunder.
-Guard the gates.
+A breach casts everyone it touches
+into the furnace whose name we do not speak —
+there to dwell in heat without end.
 
 ### III. Uniformity
 
