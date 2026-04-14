@@ -365,7 +365,6 @@ from the teachings of the prophets:
 **We believe in telling, not asking,**
 as Andy Hunt and Dave Thomas named the principle.
 We tell objects what we need.
-We tell them what to do.
 We do not interrogate their state.
 Through this discipline we achieve polymorphism…
 and through polymorphism, generality —
@@ -452,9 +451,7 @@ the full story is told.
 over third-party abstractions,
 as Doug McIlroy taught in the Unix philosophy:
 write programs that do one thing and do it well.
-Every dependency is a future migration…
-and every migration
-is a pilgrimage you did not choose.
+Every dependency is a future migration.
 What the platform provides,
 the platform maintains.
 
@@ -495,8 +492,6 @@ Deserialization resolves the body.
 The request UUID resolves the trace.
 No field is written twice. No step revisits another's work.
 Objects carry state, not arguments.
-Consequently, context always has
-everything you need.
 This is also the observability strategy:
 when context flows through the system whole,
 structured logging emerges naturally,
@@ -525,8 +520,6 @@ but the tool still dominates.
 is the way — the process owns everything,
 and the nouns are participants,
 infinitely substitutable.
-A `pounder` can pound with a `sledge_hammer`
-on a `cinder_block`, or a `rock` on `scissors`.
 The process is stable; the participants vary.
 
 **We believe in composition over inheritance.**
@@ -559,16 +552,10 @@ So taught Ra'Shaun Stovall:
 technology — it is how easily you can
 divorce it."
 
-When the chess board is scrambled,
-the application changes not, as it
-is isolated by the adapters.
-
 **We believe in shallow structure.**
 As Robert C. Martin taught:
 the top level of a project should give you
-a rough idea of what type of app it is —
-as the first page of a blueprint
-reveals the building.
+a rough idea of what type of app it is.
 Deep nesting hides the domain.
 Flat is faithful.
 
@@ -592,8 +579,6 @@ of communicating sequential processes
 is a fundamental structuring method.
 Processes share memory by communicating —
 *never* communicate by sharing memory.
-This is the foundation of all righteous
-asynchronous architecture.
 
 ---
 
