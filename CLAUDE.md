@@ -33,7 +33,7 @@ When the full scripture changes, both variants must be regenerated. Read BUILD.m
 1. Book of Abominations (largest cut)
 2. Sacred Scrolls
 3. Twelve Commandments
-4. Articles of Faith (absorb unique abomination content for small)
+4. Articles of Faith
 5. Daily Offices
 6. Preamble and Benediction (last — ensures proportion)
 7. Byte-count check
@@ -42,12 +42,12 @@ When the full scripture changes, both variants must be regenerated. Read BUILD.m
 
 **Editorial rules**: For the complete set of rules applied to amendments of the canonical scripture (Sacred Scrolls ordering, prophet citation density, metaphor density, serpent voice, preamble register), see [README.md](README.md#editorial-rules).
 
-**Small variant structural transformation**: The 3 sins with unique doctrine (Premature Optimization, Null, Default Values) migrate their content into relevant Articles, allowing Abominations to collapse to header-only form.
+**Small variant structural transformation**: In v1.8+, the 3 unique-doctrine teachings (Premature Optimization cascade, Null row-absence, Default Values coercion distinction) are hoisted into the Articles of Faith in the canonical source, so the small variant inherits them naturally. The small variant's only structural transformation is collapsing Abominations to header-only form (`**On [Name]** — *"[italic objection]"*`), relying on the Articles to carry the doctrine.
 
 **Verification** (after each variant):
 - `wc -c` — byte count within ±5% of target
 - `grep -c '^### [IVX]'` — exactly 12 commandments
-- `grep -c '^\*\*We '` — exactly 16 articles
+- `grep -c '^\*\*We '` — exactly 17 articles
 - All 18 sin names present
 - `grep -c '^### The Office'` — exactly 6 offices
 - `grep -c '"But '` — exactly 18 italic objections
