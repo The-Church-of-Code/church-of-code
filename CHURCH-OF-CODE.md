@@ -43,132 +43,6 @@ The obstinate shall be cast out.
 
 ---
 
-## The Sacred Scrolls
-
-*The texts from which these strictures descend,
-gathered by Tom Mornini — founder of this church —
-from the teachings of the prophets.*
-
-- [The Principles of OOD][solid-principles]
-  — Robert C. Martin's original SOLID treatise
-- [Solid Relevance][solid-relevance]
-  — the same prophet, revisiting his teachings
-  twenty years hence
-- [The Early History of Smalltalk][smalltalk],
-  [The Big Idea Is Messaging][messaging-email],
-  and [The Meaning of OOP][kay-oop]
-  — Alan Kay on objects and messages (1971)
-- [The Humble Programmer][humble-programmer]
-  — Edsger Dijkstra's Turing Award lecture (1972)
-- [A Relational Model of Data][relational-model]
-  — Edgar F. Codd's revelation (1970)
-- [A Research UNIX Reader][unix-reader]
-  — Doug McIlroy on the Unix philosophy
-- [Structured Programming
-  with go to Statements][premature-opt]
-  — Donald Knuth on optimization (1974)
-- [Communicating Sequential Processes][csp]
-  — Tony Hoare's foundational paper (1978)
-- [Null References:
-  The Billion Dollar Mistake][billion-dollar]
-  — Tony Hoare's confession (2009)
-- [The C Programming Language][k-and-r]
-  — Brian Kernighan and Dennis Ritchie (K&R)
-    on simplicity, clarity, and the shortest path (1978)
-- [Time, Clocks, and the Ordering
-  of Events in a Distributed System][time-clocks]
-  — Leslie Lamport on causality (1978)
-- [Programming as Theory Building][theory-building]
-  — Peter Naur on understanding
-  over documentation (1985)
-- [No Silver Bullet][no-silver-bullet]
-  — Fred Brooks on essence and accident (1986)
-- [Data Abstraction and Hierarchy][liskov-87]
-  and [A Behavioral Notion of Subtyping][liskov-94]
-  — Barbara Liskov on substitution
-- [Object-Oriented Software Construction][oosc]
-  and [Applying Design by Contract][dbc]
-  — Bertrand Meyer on openness and contracts
-- [Design Patterns][design-patterns]
-  — Gamma, Helm, Johnson, and Vlissides (1994)
-- [The Analects][analects]
-  — Confucius on the Rectification of Names (~500 BCE)
-- [Lettres Provinciales][provinciales]
-  — Blaise Pascal on brevity (1657)
-- [Tractatus Logico-Philosophicus][tractatus]
-  — Ludwig Wittgenstein on language and world (1921)
-- [Wholeness and the Implicate Order][rheomode]
-  — David Bohm on the rheomode (1980)
-- [The Transaction Concept][transaction-concept]
-  — Jim Gray on atomicity (1981)
-- [Tell, Don't Ask][tell-dont-ask]
-  — Andy Hunt and Dave Thomas (1998)
-- [Replace Magic Literal][magic-literal]
-  — Martin Fowler's refactoring catalog
-- [Representational State Transfer][rest]
-  — Roy Fielding's dissertation, Chapter 5 (2000)
-- [James Gosling on Java][gosling]
-  — the creator's regret about inheritance (2001)
-- [Test-Driven Development: By Example][tdd]
-  — Kent Beck (2002)
-- [Making Reliable Distributed Systems
-  in the Presence of Software Errors][armstrong-thesis]
-  — Joe Armstrong on letting it crash (2003)
-- [Working Effectively with Legacy Code][feathers]
-  — Michael Feathers, who coined the SOLID acronym (2004)
-- [Merb: no code is faster than no code][merb]
-  — Ezra Zygmuntowicz
-- [Simple Made Easy][simple-made-easy],
-  [The Value of Values][value-of-values], and
-  [Are We There Yet?][are-we-there-yet]
-  — Rich Hickey's trilogy on immutability
-- [Rheocode Software Development][rheocode]
-  — the synthesis, named for Bohm's rheomode
-  — Tom Mornini and Ra'Shaun Stovall (2016)
-- [Computer latency: 1977-2017][input-lag]
-  — Dan Luu on latency
-
-[humble-programmer]: https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
-[relational-model]: https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf
-[csp]: https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf
-[time-clocks]: https://lamport.azurewebsites.net/pubs/time-clocks.pdf
-[premature-opt]: https://pic.plover.com/knuth-GOTO.pdf
-[transaction-concept]: https://jimgray.azurewebsites.net/papers/thetransactionconcept.pdf
-[no-silver-bullet]: https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf
-[rheomode]: https://www.routledge.com/Wholeness-and-the-Implicate-Order/Bohm/p/book/9780415289795
-[theory-building]: https://pages.cs.wisc.edu/~remzi/Naur.pdf
-[smalltalk]: http://worrydream.com/EarlyHistoryOfSmalltalk/
-[messaging-email]: http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html
-[kay-oop]: http://www.purl.org/stefan_ram/pub/doc_kay_oop_en
-[liskov-87]: https://dl.acm.org/doi/10.1145/62138.62141
-[liskov-94]: https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf
-[oosc]: https://bertrandmeyer.com/OOSC2/
-[dbc]: https://se.inf.ethz.ch/~meyer/publications/computer/contract.pdf
-[unix-reader]: https://www.cs.dartmouth.edu/~doug/reader.pdf
-[design-patterns]: https://www.pearson.com/en-us/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780201633610
-[solid-principles]: http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
-[solid-relevance]: https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html
-[tell-dont-ask]: https://media.pragprog.com/articles/tell-dont-ask.pdf
-[rest]: https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
-[input-lag]: https://danluu.com/input-lag/
-[gosling]: https://www.artima.com/intv/gosling3.html
-[tdd]: https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533
-[billion-dollar]: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
-[simple-made-easy]: https://www.infoq.com/presentations/Simple-Made-Easy/
-[value-of-values]: https://www.infoq.com/presentations/Value-Values/
-[are-we-there-yet]: https://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey/
-[armstrong-thesis]: https://erlang.org/download/armstrong_thesis_2003.pdf
-[k-and-r]: https://www.pearson.com/en-us/subject-catalog/p/c-programming-language/P200000000370/9780131103627
-[magic-literal]: https://refactoring.com/catalog/replaceMagicLiteral.html
-[merb]: https://en.wikipedia.org/wiki/Merb
-[rheocode]: https://docs.google.com/presentation/d/1wA8qGe9fXHTPv_t6FsoV_EQz5V9u9CP7EL0zYSNQ5Nw
-[analects]: https://en.wikipedia.org/wiki/Analects
-[provinciales]: https://en.wikipedia.org/wiki/Lettres_provinciales
-[tractatus]: https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus
-[feathers]: https://en.wikipedia.org/wiki/SOLID
-
----
-
 ## The Twelve Commandments
 
 *In order of importance, from most to least.
@@ -1189,6 +1063,132 @@ and the management of change over time —
 is a discipline the faithful practice
 but this scripture has not yet codified.
 Future scrolls will address it.
+
+---
+
+## The Sacred Scrolls
+
+*The texts from which these strictures descend,
+gathered by Tom Mornini — founder of this church —
+from the teachings of the prophets.*
+
+- [The Principles of OOD][solid-principles]
+  — Robert C. Martin's original SOLID treatise
+- [Solid Relevance][solid-relevance]
+  — the same prophet, revisiting his teachings
+  twenty years hence
+- [The Early History of Smalltalk][smalltalk],
+  [The Big Idea Is Messaging][messaging-email],
+  and [The Meaning of OOP][kay-oop]
+  — Alan Kay on objects and messages (1971)
+- [The Humble Programmer][humble-programmer]
+  — Edsger Dijkstra's Turing Award lecture (1972)
+- [A Relational Model of Data][relational-model]
+  — Edgar F. Codd's revelation (1970)
+- [A Research UNIX Reader][unix-reader]
+  — Doug McIlroy on the Unix philosophy
+- [Structured Programming
+  with go to Statements][premature-opt]
+  — Donald Knuth on optimization (1974)
+- [Communicating Sequential Processes][csp]
+  — Tony Hoare's foundational paper (1978)
+- [Null References:
+  The Billion Dollar Mistake][billion-dollar]
+  — Tony Hoare's confession (2009)
+- [The C Programming Language][k-and-r]
+  — Brian Kernighan and Dennis Ritchie (K&R)
+    on simplicity, clarity, and the shortest path (1978)
+- [Time, Clocks, and the Ordering
+  of Events in a Distributed System][time-clocks]
+  — Leslie Lamport on causality (1978)
+- [Programming as Theory Building][theory-building]
+  — Peter Naur on understanding
+  over documentation (1985)
+- [No Silver Bullet][no-silver-bullet]
+  — Fred Brooks on essence and accident (1986)
+- [Data Abstraction and Hierarchy][liskov-87]
+  and [A Behavioral Notion of Subtyping][liskov-94]
+  — Barbara Liskov on substitution
+- [Object-Oriented Software Construction][oosc]
+  and [Applying Design by Contract][dbc]
+  — Bertrand Meyer on openness and contracts
+- [Design Patterns][design-patterns]
+  — Gamma, Helm, Johnson, and Vlissides (1994)
+- [The Analects][analects]
+  — Confucius on the Rectification of Names (~500 BCE)
+- [Lettres Provinciales][provinciales]
+  — Blaise Pascal on brevity (1657)
+- [Tractatus Logico-Philosophicus][tractatus]
+  — Ludwig Wittgenstein on language and world (1921)
+- [Wholeness and the Implicate Order][rheomode]
+  — David Bohm on the rheomode (1980)
+- [The Transaction Concept][transaction-concept]
+  — Jim Gray on atomicity (1981)
+- [Tell, Don't Ask][tell-dont-ask]
+  — Andy Hunt and Dave Thomas (1998)
+- [Replace Magic Literal][magic-literal]
+  — Martin Fowler's refactoring catalog
+- [Representational State Transfer][rest]
+  — Roy Fielding's dissertation, Chapter 5 (2000)
+- [James Gosling on Java][gosling]
+  — the creator's regret about inheritance (2001)
+- [Test-Driven Development: By Example][tdd]
+  — Kent Beck (2002)
+- [Making Reliable Distributed Systems
+  in the Presence of Software Errors][armstrong-thesis]
+  — Joe Armstrong on letting it crash (2003)
+- [Working Effectively with Legacy Code][feathers]
+  — Michael Feathers, who coined the SOLID acronym (2004)
+- [Merb: no code is faster than no code][merb]
+  — Ezra Zygmuntowicz
+- [Simple Made Easy][simple-made-easy],
+  [The Value of Values][value-of-values], and
+  [Are We There Yet?][are-we-there-yet]
+  — Rich Hickey's trilogy on immutability
+- [Rheocode Software Development][rheocode]
+  — the synthesis, named for Bohm's rheomode
+  — Tom Mornini and Ra'Shaun Stovall (2016)
+- [Computer latency: 1977-2017][input-lag]
+  — Dan Luu on latency
+
+[humble-programmer]: https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
+[relational-model]: https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf
+[csp]: https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf
+[time-clocks]: https://lamport.azurewebsites.net/pubs/time-clocks.pdf
+[premature-opt]: https://pic.plover.com/knuth-GOTO.pdf
+[transaction-concept]: https://jimgray.azurewebsites.net/papers/thetransactionconcept.pdf
+[no-silver-bullet]: https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf
+[rheomode]: https://www.routledge.com/Wholeness-and-the-Implicate-Order/Bohm/p/book/9780415289795
+[theory-building]: https://pages.cs.wisc.edu/~remzi/Naur.pdf
+[smalltalk]: http://worrydream.com/EarlyHistoryOfSmalltalk/
+[messaging-email]: http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html
+[kay-oop]: http://www.purl.org/stefan_ram/pub/doc_kay_oop_en
+[liskov-87]: https://dl.acm.org/doi/10.1145/62138.62141
+[liskov-94]: https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf
+[oosc]: https://bertrandmeyer.com/OOSC2/
+[dbc]: https://se.inf.ethz.ch/~meyer/publications/computer/contract.pdf
+[unix-reader]: https://www.cs.dartmouth.edu/~doug/reader.pdf
+[design-patterns]: https://www.pearson.com/en-us/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780201633610
+[solid-principles]: http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
+[solid-relevance]: https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html
+[tell-dont-ask]: https://media.pragprog.com/articles/tell-dont-ask.pdf
+[rest]: https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+[input-lag]: https://danluu.com/input-lag/
+[gosling]: https://www.artima.com/intv/gosling3.html
+[tdd]: https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533
+[billion-dollar]: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
+[simple-made-easy]: https://www.infoq.com/presentations/Simple-Made-Easy/
+[value-of-values]: https://www.infoq.com/presentations/Value-Values/
+[are-we-there-yet]: https://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey/
+[armstrong-thesis]: https://erlang.org/download/armstrong_thesis_2003.pdf
+[k-and-r]: https://www.pearson.com/en-us/subject-catalog/p/c-programming-language/P200000000370/9780131103627
+[magic-literal]: https://refactoring.com/catalog/replaceMagicLiteral.html
+[merb]: https://en.wikipedia.org/wiki/Merb
+[rheocode]: https://docs.google.com/presentation/d/1wA8qGe9fXHTPv_t6FsoV_EQz5V9u9CP7EL0zYSNQ5Nw
+[analects]: https://en.wikipedia.org/wiki/Analects
+[provinciales]: https://en.wikipedia.org/wiki/Lettres_provinciales
+[tractatus]: https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus
+[feathers]: https://en.wikipedia.org/wiki/SOLID
 
 ---
 
