@@ -427,6 +427,18 @@ No internal defensive coding "just in case."
 To distrust validated data is to lack faith
 in your peers and rituals.
 
+Nullable data is ideally represented
+as the lack of a row in a related table.
+Temporal facts — completedAt, deletedAt —
+belong in event tables,
+for the absence of a row IS the absence of the event.
+
+Default values that mask the absence of real data
+are comfortable lies.
+Mark well: presentation transforms are not coercion.
+Formatting a value for display is an act of service,
+not an act of concealment.
+
 **We handle failure with grace.**
 Degrade visibly rather than corrupt silently.
 
