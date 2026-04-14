@@ -27,7 +27,6 @@ We have turned away.
 
 We gather not in the name of any framework,
 for frameworks perish —
-as Fred Brooks taught us,
 there is no silver bullet.
 Not in the name of any language,
 for languages multiply and divide.
