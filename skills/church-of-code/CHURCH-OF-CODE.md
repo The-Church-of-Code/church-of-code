@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.7 — full*
+*v1.8 — full*
 
 > *Computer science is no more about computers
 > than astronomy is about telescopes.*
@@ -18,15 +18,15 @@ This is scripture — sacred, inviolate,
 and binding upon the congregation.
 
 Software crafted without discipline… is unclean.
-Those who craft it are heathens.
-We have seen their works —
-the tangled state… the silent corruption…
+We know — we have crafted it.
+We have lived with the tangled state…
+the silent corruption…
 the null where conviction should stand —
-and we have turned away.
+and we have paid the price.
+We have turned away.
 
 We gather not in the name of any framework,
 for frameworks perish —
-as Fred Brooks taught us,
 there is no silver bullet.
 Not in the name of any language,
 for languages multiply and divide.
@@ -39,120 +39,6 @@ Violators are not merely wrong —
 they are UNCLEAN.
 The repentant shall be welcomed back into the fold.
 The obstinate shall be cast out.
-
----
-
-## The Sacred Scrolls
-
-*The texts from which these strictures descend,
-gathered by Tom Mornini — founder of this church —
-from the teachings of the prophets.*
-
-- [The Humble Programmer][humble-programmer]
-  — Edsger Dijkstra's Turing Award lecture (1972)
-- [A Relational Model of Data][relational-model]
-  — Edgar F. Codd's revelation (1970)
-- [Communicating Sequential Processes][csp]
-  — Tony Hoare's foundational paper (1978)
-- [Time, Clocks, and the Ordering
-  of Events in a Distributed System][time-clocks]
-  — Leslie Lamport on causality (1978)
-- [Structured Programming
-  with go to Statements][premature-opt]
-  — Donald Knuth on optimization (1974)
-- [The Transaction Concept][transaction-concept]
-  — Jim Gray on atomicity (1981)
-- [No Silver Bullet][no-silver-bullet]
-  — Fred Brooks on essence and accident (1986)
-- [Wholeness and the Implicate Order][rheomode]
-  — David Bohm on the rheomode (1980)
-- [Programming as Theory Building][theory-building]
-  — Peter Naur on understanding
-  over documentation (1985)
-- [The Early History of Smalltalk][smalltalk],
-  [The Big Idea Is Messaging][messaging-email],
-  and [The Meaning of OOP][kay-oop]
-  — Alan Kay on objects and messages
-- [Data Abstraction and Hierarchy][liskov-87]
-  and [A Behavioral Notion of Subtyping][liskov-94]
-  — Barbara Liskov on substitution
-- [Object-Oriented Software Construction][oosc]
-  and [Applying Design by Contract][dbc]
-  — Bertrand Meyer on openness and contracts
-- [A Research UNIX Reader][unix-reader]
-  — Doug McIlroy on the Unix philosophy
-- [Design Patterns][design-patterns]
-  — Gamma, Helm, Johnson, and Vlissides (1994)
-- [The Principles of OOD][solid-principles]
-  — Robert C. Martin's original SOLID treatise
-- [Solid Relevance][solid-relevance]
-  — the same prophet, revisiting his teachings
-  twenty years hence
-- [Tell, Don't Ask][tell-dont-ask]
-  — Andy Hunt and Dave Thomas (1998)
-- [Representational State Transfer][rest]
-  — Roy Fielding's dissertation, Chapter 5 (2000)
-- [Computer latency: 1977-2017][input-lag]
-  — Dan Luu on latency
-- [James Gosling on Java][gosling]
-  — the creator's regret about inheritance (2001)
-- [Test-Driven Development: By Example][tdd]
-  — Kent Beck (2002)
-- [Null References:
-  The Billion Dollar Mistake][billion-dollar]
-  — Tony Hoare's confession (2009)
-- [Simple Made Easy][simple-made-easy],
-  [The Value of Values][value-of-values], and
-  [Are We There Yet?][are-we-there-yet]
-  — Rich Hickey's trilogy on immutability
-- [Making Reliable Distributed Systems
-  in the Presence of Software Errors][armstrong-thesis]
-  — Joe Armstrong on letting it crash (2003)
-- [Replace Magic Literal][magic-literal]
-  — Martin Fowler's refactoring catalog
-- [The C Programming Language][k-and-r]
-  — Brian Kernighan and Dennis Ritchie (K&R)
-    on simplicity, clarity, and the shortest path (1978)
-- [Merb: no code is faster than no code][merb]
-  — Ezra Zygmuntowicz
-- [Rheocode Software Development][rheocode]
-  — the synthesis, named for Bohm's rheomode
-  — Tom Mornini and Ra'Shaun Stovall
-
-[humble-programmer]: https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
-[relational-model]: https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf
-[csp]: https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf
-[time-clocks]: https://lamport.azurewebsites.net/pubs/time-clocks.pdf
-[premature-opt]: https://pic.plover.com/knuth-GOTO.pdf
-[transaction-concept]: https://jimgray.azurewebsites.net/papers/thetransactionconcept.pdf
-[no-silver-bullet]: https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf
-[rheomode]: https://www.routledge.com/Wholeness-and-the-Implicate-Order/Bohm/p/book/9780415289795
-[theory-building]: https://pages.cs.wisc.edu/~remzi/Naur.pdf
-[smalltalk]: http://worrydream.com/EarlyHistoryOfSmalltalk/
-[messaging-email]: http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html
-[kay-oop]: http://www.purl.org/stefan_ram/pub/doc_kay_oop_en
-[liskov-87]: https://dl.acm.org/doi/10.1145/62138.62141
-[liskov-94]: https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf
-[oosc]: https://bertrandmeyer.com/OOSC2/
-[dbc]: https://se.inf.ethz.ch/~meyer/publications/computer/contract.pdf
-[unix-reader]: https://www.cs.dartmouth.edu/~doug/reader.pdf
-[design-patterns]: https://www.pearson.com/en-us/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780201633610
-[solid-principles]: http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
-[solid-relevance]: https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html
-[tell-dont-ask]: https://media.pragprog.com/articles/tell-dont-ask.pdf
-[rest]: https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
-[input-lag]: https://danluu.com/input-lag/
-[gosling]: https://www.artima.com/intv/gosling3.html
-[tdd]: https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533
-[billion-dollar]: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
-[simple-made-easy]: https://www.infoq.com/presentations/Simple-Made-Easy/
-[value-of-values]: https://www.infoq.com/presentations/Value-Values/
-[are-we-there-yet]: https://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey/
-[armstrong-thesis]: https://erlang.org/download/armstrong_thesis_2003.pdf
-[k-and-r]: https://www.pearson.com/en-us/subject-catalog/p/c-programming-language/P200000000370/9780131103627
-[magic-literal]: https://refactoring.com/catalog/replaceMagicLiteral.html
-[merb]: https://en.wikipedia.org/wiki/Merb
-[rheocode]: https://docs.google.com/presentation/d/1wA8qGe9fXHTPv_t6FsoV_EQz5V9u9CP7EL0zYSNQ5Nw
 
 ---
 
@@ -172,7 +58,6 @@ of consideration and iteration.*
 You may achieve every other virtue in this scripture…
 and still have NOTHING
 if your code is not reliable.
-This is the foundation upon which the temple is built.
 There is no grace without it.
 Only sleep deprivation.
 
@@ -180,24 +65,23 @@ Only sleep deprivation.
 
 *A compromised system is a fallen system.*
 
-No amount of virtue redeems a breach.
-Not one.
-A temple with an open gate is not a sanctuary —
-it is a ruin… awaiting plunder.
-Guard the gates.
+A breach casts everyone it touches
+into the furnace whose name we do not speak —
+there to dwell in heat without end.
 
 ### III. Uniformity
 
 *Call a thing a thing, in all things.*
 
+As Confucius taught in the Rectification of Names:
+if names be not correct, language is not
+in accordance with the truth of things,
+and affairs cannot be carried on to success.
+
 Software development is the discipline of readability
 through precise vocabulary.
 If code does not read correctly,
 the names are — by definition — wrong.
-When the congregation speaks with one tongue,
-understanding follows.
-When each soul invents its own name for the same truth…
-babel is the only harvest.
 
 Name processors with *-er*: a `painter` paints,
 a `validator` validates, a `pounder` pounds.
@@ -215,7 +99,6 @@ the nouns fall into place as participants.
 
 *Less wrong, never fallacious.*
 
-The path to enlightenment is paved with valid premises.
 A single fallacy — *a single one* —
 is a crack in the foundation
 that no amount of testing will reveal.
@@ -243,8 +126,6 @@ When state mutates silently… trust dies.
 As Rich Hickey taught:
 values are the true abstraction —
 immutable, comparable, and free of time.
-Let your data be as stone tablets —
-written once, read with confidence FOREVER.
 The mutable variable is a trickster spirit:
 it shows one face at dawn and another at dusk,
 and you will spend your days
@@ -261,16 +142,8 @@ The admonition is not SQL against NoSQL —
 it is verb semantics.
 PUT overwrites; INSERT appends.
 DELETE removes; UPDATE mutates.
-The distinction is not the datastore —
-it is how you speak to it.
 An operation that can be repeated without consequence
 is an operation that can be trusted.
-Let it be known:
-Postgres is the finest idempotent document store
-yet revealed to us —
-for it speaks both tongues,
-and the faithful command it
-with HTTP semantics.
 
 ### VIII. Simplicity
 
@@ -286,10 +159,6 @@ aware of the strictly limited size
 of his own skull.
 Simplicity is not the absence of effort —
 it is the fruit of GREAT effort.
-As K&R demonstrated: C is not a big language,
-and it is not well served by a big book.
-The master's kata looks effortless
-because it has been practiced ten thousand times.
 
 ### IX. Generality
 
@@ -308,14 +177,10 @@ not when you merely suspect a shape might emerge.
 
 *Design so you rarely need it.*
 
-As Jim Gray taught —
-the prophet who received the Turing Award
-for his work on transaction processing —
+As Jim Gray taught:
 atomicity means all actions as one, or none at all.
 Yet idempotent operations
 obviate most transactional needs.
-Do not reach for the transaction
-like a pilgrim clutching an amulet against every shadow.
 But when the operation truly cannot be decomposed —
 when atomicity is genuinely required —
 embrace it. Without apology.
@@ -330,9 +195,7 @@ from clarity, from simplicity,
 from code that can be reasoned about.
 
 Efficiency is not a goal — it is a consequence.
-Honor the commandments that precede this one
-and efficiency will follow as surely
-as the harvest follows the planting.
+Honor the commandments that precede this one.
 
 ### XII. Performance
 
@@ -343,17 +206,12 @@ it erodes throughput.
 Visible to the user, it erodes their finite
 patience.
 
-As Dan Luu documented: humans can perceive
+As Dan Luu witnessed: humans can perceive
 cause/effect latency down to low single-digit
 milliseconds.
 
-As Ezra Zygmuntowicz taught — and this may be
-the truest statement on performance ever uttered -
+As Ezra Zygmuntowicz taught:
 *no code is faster than no code.*
-Yet untold millions have spent large portions of
-their lives writing enormous amounts of code
-in nearly universally failed attempts to make
-their applications faster.
 
 ---
 
@@ -387,7 +245,6 @@ from the teachings of the prophets:
 **We believe in telling, not asking,**
 as Andy Hunt and Dave Thomas named the principle.
 We tell objects what we need.
-We tell them what to do.
 We do not interrogate their state.
 Through this discipline we achieve polymorphism…
 and through polymorphism, generality —
@@ -430,9 +287,6 @@ for the world beyond our gates is often profane:
   to validate in our adapter.
 
 **We validate at every edge.**
-As Bertrand Meyer taught — Design by Contract —
-the same prophet who gave us
-the Open/Closed Principle.
 Enforce constraints on entity instantiation
 — never downstream.
 
@@ -444,6 +298,18 @@ trust it completely.
 No internal defensive coding "just in case."
 To distrust validated data is to lack faith
 in your peers and rituals.
+
+Nullable data is ideally represented
+as the lack of a row in a related table.
+Temporal facts — completedAt, deletedAt —
+belong in event tables,
+for the absence of a row IS the absence of the event.
+
+Default values that mask the absence of real data
+are comfortable lies.
+Mark well: presentation transforms are not coercion.
+Formatting a value for display is an act of service,
+not an act of concealment.
 
 **We handle failure with grace.**
 Degrade visibly rather than corrupt silently.
@@ -474,11 +340,20 @@ the full story is told.
 over third-party abstractions,
 as Doug McIlroy taught in the Unix philosophy:
 write programs that do one thing and do it well.
-Every dependency is a future migration…
-and every migration
-is a pilgrimage you did not choose.
+Every dependency is a future migration.
 What the platform provides,
 the platform maintains.
+
+**We measure before we optimize.**
+As Knuth taught: premature optimization
+is the root of all evil.
+Observe the cascade:
+the desire for speed begets shared mutable state…
+which begets global variables…
+which begets default values.
+One sin seeds the next.
+Measure first. Prove the bottleneck exists.
+Then — and only then — optimize.
 
 **We believe in messaging first,
 state second, datastore last.**
@@ -517,8 +392,6 @@ Deserialization resolves the body.
 The request UUID resolves the trace.
 No field is written twice. No step revisits another's work.
 Objects carry state, not arguments.
-Consequently, context always has
-everything you need.
 This is also the observability strategy:
 when context flows through the system whole,
 structured logging emerges naturally,
@@ -547,8 +420,6 @@ but the tool still dominates.
 is the way — the process owns everything,
 and the nouns are participants,
 infinitely substitutable.
-A `pounder` can pound with a `sledge_hammer`
-on a `cinder_block`, or a `rock` on `scissors`.
 The process is stable; the participants vary.
 
 **We believe in composition over inheritance.**
@@ -572,25 +443,18 @@ only through adapters we own.
 This allows our application to be written
 entirely in our single voice.
 
-"If as one people speaking the same language
-they have begun to do this, then nothing they
-plan to do will be impossible for them." -- Paraphrased Genesis 11:6
+As Wittgenstein wrote in the Tractatus:
+the limits of my language mean the limits of my world.
 
 So taught Ra'Shaun Stovall:
 "it is not how fast you can marry a
 technology — it is how easily you can
 divorce it."
 
-When the chess board is scrambled,
-the application changes not, as it
-is isolated by the adapters.
-
 **We believe in shallow structure.**
 As Robert C. Martin taught:
 the top level of a project should give you
-a rough idea of what type of app it is —
-as the first page of a blueprint
-reveals the building.
+a rough idea of what type of app it is.
 Deep nesting hides the domain.
 Flat is faithful.
 
@@ -614,8 +478,6 @@ of communicating sequential processes
 is a fundamental structuring method.
 Processes share memory by communicating —
 *never* communicate by sharing memory.
-This is the foundation of all righteous
-asynchronous architecture.
 
 ---
 
@@ -629,16 +491,11 @@ The first sin is the root from which the others grow.*
 *"But it needs to be fast!"*
 
 Oh… *oh*, I hear you.
-I hear that little voice.
 That's the serpent talking, friend.
 This is the Original Sin —
 the root from which the other sins grow.
 As Knuth taught us in 1974:
-premature optimization is the root of all evil —
-though he credited Hoare,
-who denied it, and some credit Dijkstra.
-The origin is disputed;
-the truth is not.
+premature optimization is the root of all evil.
 
 Observe the cascade:
 the desire for speed begets shared mutable state…
@@ -647,7 +504,6 @@ which begets default values.
 One sin… seeds… the NEXT.
 
 Never optimize what you have not measured.
-Never optimize what is not a bottleneck.
 To optimize prematurely
 is to sacrifice clarity
 on the altar of a phantom god.
@@ -674,9 +530,6 @@ Every thread that touches the shared variable
 multiplies the possible interleavings,
 and the space of states to reason about
 grows beyond the capacity of any mortal mind.
-To pass a mutable reference between threads
-is to invite a race condition to dinner…
-and hand it the carving knife.
 If two processes need the same data,
 one sends a message; the other receives it.
 There is no third way.
@@ -694,7 +547,6 @@ first argued: uncontrolled shared state is chaos.
 Global variables whisper
 to every corner of the codebase,
 and none can say who spoke first or who last.
-They are the chaos from which we fled.
 Cast them out.
 
 ### On the Sin of Null
@@ -705,9 +557,7 @@ Optional. *Optional.*
 As Hoare himself confessed — the prophet
 who introduced null references in 1965
 called it his billion-dollar mistake.
-Let this be understood
-with the fullness it deserves:
-the sin is not merely the nullable column.
+The sin is not merely the nullable column.
 The sin is reaching for null
 whenever the domain offers
 richer alternatives.
@@ -724,8 +574,6 @@ for the absence of a row IS the absence of the event.
 This is the deeper principle:
 nullable data is ideally represented
 as the lack of a row in a related table.
-The row exists when the fact is true.
-The row is absent when the fact is not.
 No null. No sentinel. No ambiguity.
 
 This is not a minor preference.
@@ -750,7 +598,6 @@ behind a fiction of completeness.
 If a value has a sensible default,
 define it as a named constant
 and pass it explicitly.
-Let the call site declare its intention.
 
 Mark well this distinction:
 presentation transforms are not coercion.
@@ -830,9 +677,7 @@ the parent type has made.
 
 Inheritance that violates this contract
 produces hierarchies that lie
-about substitutability —
-and a hierarchy that lies
-is worse than no hierarchy at all.
+about substitutability.
 
 Inheritance binds by lineage;
 composition binds by capability.
@@ -889,11 +734,6 @@ and fail in ways far harder to diagnose.
 As Joe Armstrong taught:
 *let it crash.*
 
-A process that halts on an unrecoverable error
-and is restarted clean is more trustworthy than
-one that limps onward with wounds it refuses to
-acknowledge.
-
 Halting IS graceful when the alternative is silent
 corruption.
 
@@ -930,11 +770,6 @@ To poll is to doubt the network itself,
 to confess that you do not trust
 the system you built to speak.
 
-Polling for state changes
-is the anxious ritual of the faithless —
-checking the mailbox every thirty seconds
-when the mail carrier has not yet left the depot.
-
 We are humble enough to realize that we
 are sometimes required to integrate with
 systems not of the faith. Should they
@@ -950,23 +785,15 @@ the baton is passed whole
 from runner to runner — not dismembered
 and reassembled at each handoff.
 
-Reading a value here…
-writing it there…
-passing three fields to this function
-and four to that — this is the rally,
-not the drag race. As Lamport taught:
+As Lamport taught:
 causality requires that events carry
 their full history. Scattered context
 severs the causal chain, making it
 impossible to reconstruct what happened
 and why.
 
-Pass context whole through multi-step
-processes. Enrich it as you go.
-
-When every mainline process steps receive
-the full context, each method shall have
-everything that it needs.
+Every mainline method receives the context filled
+with the gifts of its ancestors.
 
 ### On the Sin of Noun-First Thinking
 
@@ -981,14 +808,8 @@ about *messaging* — autonomous cells
 exchanging signals, like neurons in a
 brain or nodes on a network.
 
-But the world heard "objects"
-and fixated on the nouns —
-class hierarchies, data models,
-entity-relationship diagrams drawn
-before a single process was understood.
-
-The noun-first instinct is what corrupted
-Kay's original vision.
+The world heard objects and fixated on the nouns,
+corrupting Kay's original vision.
 
 When you begin with the data model,
 you have already decided what participates
@@ -1037,9 +858,6 @@ Language-specific tricks and idioms
 that sacrifice readability for concision
 are the vanity of the undisciplined.
 
-Your clever one-liner impresses no one
-who must maintain it at midnight.
-
 Elegance is not concision —
 elegance is clarity under pressure.
 The karma of clever code… is a 3 AM wake
@@ -1073,9 +891,6 @@ trait.
 A directory five levels deep is a secret kept
 from the next developer, and secrets rot in the
 dark.
-
-You should not need to descend a labyrinth
-to discover the domain.
 
 Deep nesting is taxonomy masquerading as
 architecture. It buries the important beneath
@@ -1162,9 +977,6 @@ A merge commit is a knot in the narrative —
 a confession that two timelines diverged
 and rather than reconcile the story,
 you lashed them together and moved on.
-The master branch is a single, unbroken
-chronicle — each commit a sentence,
-each sentence following the last.
 When your branch has fallen behind,
 rebase it upon the current truth.
 The result shall be clear, simple,
@@ -1198,8 +1010,7 @@ of test rewriting.
 Software is fundamentally
 input, transform, output.
 Test that the input produces the correct output
-but never test how the sausage is made —
-for sausage is unclean meat.
+but never test how the sausage is made.
 
 Tests assert behavior, not implementation —
 for implementation changes,
@@ -1215,9 +1026,7 @@ It is a comfort object.
 
 A test that fails intermittently…
 is worse than no test at all —
-it is a *false prophet*,
-and false prophets corrode the trust of the congregation
-more surely than any honest failure.
+it is a *false prophet*.
 
 ### The Office of the Interface
 
@@ -1253,6 +1062,132 @@ and the management of change over time —
 is a discipline the faithful practice
 but this scripture has not yet codified.
 Future scrolls will address it.
+
+---
+
+## The Sacred Scrolls
+
+*The texts from which these strictures descend,
+gathered by Tom Mornini — founder of this church —
+from the teachings of the prophets.*
+
+- [The Principles of OOD][solid-principles]
+  — Robert C. Martin's original SOLID treatise
+- [Solid Relevance][solid-relevance]
+  — the same prophet, revisiting his teachings
+  twenty years hence
+- [The Early History of Smalltalk][smalltalk],
+  [The Big Idea Is Messaging][messaging-email],
+  and [The Meaning of OOP][kay-oop]
+  — Alan Kay on objects and messages (1971)
+- [The Humble Programmer][humble-programmer]
+  — Edsger Dijkstra's Turing Award lecture (1972)
+- [A Relational Model of Data][relational-model]
+  — Edgar F. Codd's revelation (1970)
+- [A Research UNIX Reader][unix-reader]
+  — Doug McIlroy on the Unix philosophy
+- [Structured Programming
+  with go to Statements][premature-opt]
+  — Donald Knuth on optimization (1974)
+- [Communicating Sequential Processes][csp]
+  — Tony Hoare's foundational paper (1978)
+- [Null References:
+  The Billion Dollar Mistake][billion-dollar]
+  — Tony Hoare's confession (2009)
+- [The C Programming Language][k-and-r]
+  — Brian Kernighan and Dennis Ritchie (K&R)
+    on simplicity, clarity, and the shortest path (1978)
+- [Time, Clocks, and the Ordering
+  of Events in a Distributed System][time-clocks]
+  — Leslie Lamport on causality (1978)
+- [Programming as Theory Building][theory-building]
+  — Peter Naur on understanding
+  over documentation (1985)
+- [No Silver Bullet][no-silver-bullet]
+  — Fred Brooks on essence and accident (1986)
+- [Data Abstraction and Hierarchy][liskov-87]
+  and [A Behavioral Notion of Subtyping][liskov-94]
+  — Barbara Liskov on substitution
+- [Object-Oriented Software Construction][oosc]
+  and [Applying Design by Contract][dbc]
+  — Bertrand Meyer on openness and contracts
+- [Design Patterns][design-patterns]
+  — Gamma, Helm, Johnson, and Vlissides (1994)
+- [The Analects][analects]
+  — Confucius on the Rectification of Names (~500 BCE)
+- [Lettres Provinciales][provinciales]
+  — Blaise Pascal on brevity (1657)
+- [Tractatus Logico-Philosophicus][tractatus]
+  — Ludwig Wittgenstein on language and world (1921)
+- [Wholeness and the Implicate Order][rheomode]
+  — David Bohm on the rheomode (1980)
+- [The Transaction Concept][transaction-concept]
+  — Jim Gray on atomicity (1981)
+- [Tell, Don't Ask][tell-dont-ask]
+  — Andy Hunt and Dave Thomas (1998)
+- [Replace Magic Literal][magic-literal]
+  — Martin Fowler's refactoring catalog
+- [Representational State Transfer][rest]
+  — Roy Fielding's dissertation, Chapter 5 (2000)
+- [James Gosling on Java][gosling]
+  — the creator's regret about inheritance (2001)
+- [Test-Driven Development: By Example][tdd]
+  — Kent Beck (2002)
+- [Making Reliable Distributed Systems
+  in the Presence of Software Errors][armstrong-thesis]
+  — Joe Armstrong on letting it crash (2003)
+- [Working Effectively with Legacy Code][feathers]
+  — Michael Feathers, who coined the SOLID acronym (2004)
+- [Merb: no code is faster than no code][merb]
+  — Ezra Zygmuntowicz
+- [Simple Made Easy][simple-made-easy],
+  [The Value of Values][value-of-values], and
+  [Are We There Yet?][are-we-there-yet]
+  — Rich Hickey's trilogy on immutability
+- [Rheocode Software Development][rheocode]
+  — the synthesis, named for Bohm's rheomode
+  — Tom Mornini and Ra'Shaun Stovall (2016)
+- [Computer latency: 1977-2017][input-lag]
+  — Dan Luu on latency
+
+[humble-programmer]: https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
+[relational-model]: https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf
+[csp]: https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf
+[time-clocks]: https://lamport.azurewebsites.net/pubs/time-clocks.pdf
+[premature-opt]: https://pic.plover.com/knuth-GOTO.pdf
+[transaction-concept]: https://jimgray.azurewebsites.net/papers/thetransactionconcept.pdf
+[no-silver-bullet]: https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf
+[rheomode]: https://www.routledge.com/Wholeness-and-the-Implicate-Order/Bohm/p/book/9780415289795
+[theory-building]: https://pages.cs.wisc.edu/~remzi/Naur.pdf
+[smalltalk]: http://worrydream.com/EarlyHistoryOfSmalltalk/
+[messaging-email]: http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html
+[kay-oop]: http://www.purl.org/stefan_ram/pub/doc_kay_oop_en
+[liskov-87]: https://dl.acm.org/doi/10.1145/62138.62141
+[liskov-94]: https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf
+[oosc]: https://bertrandmeyer.com/OOSC2/
+[dbc]: https://se.inf.ethz.ch/~meyer/publications/computer/contract.pdf
+[unix-reader]: https://www.cs.dartmouth.edu/~doug/reader.pdf
+[design-patterns]: https://www.pearson.com/en-us/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780201633610
+[solid-principles]: http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
+[solid-relevance]: https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html
+[tell-dont-ask]: https://media.pragprog.com/articles/tell-dont-ask.pdf
+[rest]: https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+[input-lag]: https://danluu.com/input-lag/
+[gosling]: https://www.artima.com/intv/gosling3.html
+[tdd]: https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533
+[billion-dollar]: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
+[simple-made-easy]: https://www.infoq.com/presentations/Simple-Made-Easy/
+[value-of-values]: https://www.infoq.com/presentations/Value-Values/
+[are-we-there-yet]: https://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey/
+[armstrong-thesis]: https://erlang.org/download/armstrong_thesis_2003.pdf
+[k-and-r]: https://www.pearson.com/en-us/subject-catalog/p/c-programming-language/P200000000370/9780131103627
+[magic-literal]: https://refactoring.com/catalog/replaceMagicLiteral.html
+[merb]: https://en.wikipedia.org/wiki/Merb
+[rheocode]: https://docs.google.com/presentation/d/1wA8qGe9fXHTPv_t6FsoV_EQz5V9u9CP7EL0zYSNQ5Nw
+[analects]: https://en.wikipedia.org/wiki/Analects
+[provinciales]: https://en.wikipedia.org/wiki/Lettres_provinciales
+[tractatus]: https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus
+[feathers]: https://en.wikipedia.org/wiki/SOLID
 
 ---
 
@@ -1293,15 +1228,16 @@ and their software ENDURES
 long after the fashions have turned to dust.
 
 We stand on the shoulders of prophets:
-Dijkstra and Codd, Hoare and Lamport,
-Knuth and Gray, Brooks and Bohm,
-Naur and Kay, Liskov and Meyer,
+Confucius and Pascal and Wittgenstein,
+Martin and Kay, Dijkstra and Codd,
+McIlroy and Knuth, Hoare and Kernighan,
+Ritchie and Lamport, Naur and Brooks,
+Liskov and Meyer,
 Gamma, Helm, Johnson, and Vlissides,
-McIlroy and Fielding, Martin and Beck,
-Hunt and Thomas and Pascal,
-Gosling and Hickey and Armstrong,
-Fowler and Luu, Kernighan and Ritchie, and
-Feathers, and Zygmuntowicz and Stovall.
+Bohm and Gray, Hunt and Thomas,
+Fowler and Fielding, Gosling and Beck,
+Armstrong and Feathers, Zygmuntowicz and Hickey,
+Stovall and Luu.
 Their teachings are our foundation.
 Their scrolls are our inheritance —
 the only inheritance we permit.
