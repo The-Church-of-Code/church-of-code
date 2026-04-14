@@ -925,9 +925,8 @@ severs the causal chain, making it
 impossible to reconstruct what happened
 and why.
 
-When every mainline method receives
-the full context, each shall receive
-useful gifts passed down from its ancestors.
+Every mainline method receives
+a context built by the work of its ancestors.
 
 ### On the Sin of Noun-First Thinking
 
