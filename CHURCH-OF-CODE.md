@@ -584,6 +584,17 @@ is a fundamental structuring method.
 Processes share memory by communicating —
 *never* communicate by sharing memory.
 
+**We measure before we optimize.**
+As Knuth taught: premature optimization
+is the root of all evil.
+Observe the cascade:
+the desire for speed begets shared mutable state…
+which begets global variables…
+which begets default values.
+One sin seeds the next.
+Measure first. Prove the bottleneck exists.
+Then — and only then — optimize.
+
 ---
 
 ## The Book of Abominations
