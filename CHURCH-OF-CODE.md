@@ -619,7 +619,6 @@ The first sin is the root from which the others grow.*
 *"But it needs to be fast!"*
 
 Oh… *oh*, I hear you.
-I hear that little voice.
 That's the serpent talking, friend.
 This is the Original Sin —
 the root from which the other sins grow.
