@@ -173,7 +173,6 @@ of consideration and iteration.*
 You may achieve every other virtue in this scripture…
 and still have NOTHING
 if your code is not reliable.
-This is the foundation upon which the temple is built.
 There is no grace without it.
 Only sleep deprivation.
 
@@ -195,10 +194,6 @@ Software development is the discipline of readability
 through precise vocabulary.
 If code does not read correctly,
 the names are — by definition — wrong.
-When the congregation speaks with one tongue,
-understanding follows.
-When each soul invents its own name for the same truth…
-babel is the only harvest.
 
 Name processors with *-er*: a `painter` paints,
 a `validator` validates, a `pounder` pounds.
@@ -216,7 +211,6 @@ the nouns fall into place as participants.
 
 *Less wrong, never fallacious.*
 
-The path to enlightenment is paved with valid premises.
 A single fallacy — *a single one* —
 is a crack in the foundation
 that no amount of testing will reveal.
@@ -244,8 +238,6 @@ When state mutates silently… trust dies.
 As Rich Hickey taught:
 values are the true abstraction —
 immutable, comparable, and free of time.
-Let your data be as stone tablets —
-written once, read with confidence FOREVER.
 The mutable variable is a trickster spirit:
 it shows one face at dawn and another at dusk,
 and you will spend your days
@@ -262,8 +254,6 @@ The admonition is not SQL against NoSQL —
 it is verb semantics.
 PUT overwrites; INSERT appends.
 DELETE removes; UPDATE mutates.
-The distinction is not the datastore —
-it is how you speak to it.
 An operation that can be repeated without consequence
 is an operation that can be trusted.
 Let it be known:
@@ -289,8 +279,6 @@ Simplicity is not the absence of effort —
 it is the fruit of GREAT effort.
 As K&R demonstrated: C is not a big language,
 and it is not well served by a big book.
-The master's kata looks effortless
-because it has been practiced ten thousand times.
 
 ### IX. Generality
 
@@ -315,8 +303,6 @@ for his work on transaction processing —
 atomicity means all actions as one, or none at all.
 Yet idempotent operations
 obviate most transactional needs.
-Do not reach for the transaction
-like a pilgrim clutching an amulet against every shadow.
 But when the operation truly cannot be decomposed —
 when atomicity is genuinely required —
 embrace it. Without apology.
@@ -331,9 +317,7 @@ from clarity, from simplicity,
 from code that can be reasoned about.
 
 Efficiency is not a goal — it is a consequence.
-Honor the commandments that precede this one
-and efficiency will follow as surely
-as the harvest follows the planting.
+Honor the commandments that precede this one.
 
 ### XII. Performance
 
@@ -348,13 +332,8 @@ As Dan Luu documented: humans can perceive
 cause/effect latency down to low single-digit
 milliseconds.
 
-As Ezra Zygmuntowicz taught — and this may be
-the truest statement on performance ever uttered -
+As Ezra Zygmuntowicz taught:
 *no code is faster than no code.*
-Yet untold millions have spent large portions of
-their lives writing enormous amounts of code
-in nearly universally failed attempts to make
-their applications faster.
 
 ---
 
