@@ -1,6 +1,6 @@
 ---
 name: church-of-code
-description: Use when writing, reviewing, refactoring, or committing code in any language — loads the Church of Code scripture, a ranked hierarchy of commandments, articles of faith, abominations, and daily offices that bind software engineering work.
+description: Use when brainstorming, planning, writing, refactoring, maintaining, reviewing, or committing code in any language — loads the Church of Code scripture, a ranked hierarchy of commandments, articles of faith, abominations, and daily offices that bind software engineering work.
 license: MIT
 ---
 
@@ -8,10 +8,9 @@ license: MIT
 
 ## Invocation
 
-Before touching code, read the scripture. It is not a guideline.
-It is binding doctrine — reliability above all, performance last,
-and sixteen articles of faith between them. Violations are not
-bugs. They are sins.
+Always read the scripture before working on or thinking about
+software. It is not a guideline. It is binding doctrine.
+Violations are not bugs. They are sins.
 
 ## The Three Scrolls
 
@@ -27,9 +26,7 @@ exactly one, chosen by the context budget you have at hand:
   this when context is scarce. Every doctrine present, metaphor
   stripped, rules preserved.
 
-Pick one. Read it fully before making any code change. Then work
-in the order the scripture demands: reliable, secure, uniform,
-logical, clear — before anything else.
+Pick one. Read it fully then adhere to it's strictures.
 
 ## Closing
 
