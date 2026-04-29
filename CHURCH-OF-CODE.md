@@ -507,6 +507,12 @@ So has Ra'Shaun Stovall taught us:
 technology — it is how easily you can
 divorce it."
 
+The thinnest adapter, my friends, is not ceremony —
+it is the DIVORCE POINT. Measure adapters by their
+seams, not their function count. Some shape the
+entity and speak the domain; others wrap a single
+primitive against the day it evolves. Both are sacred.
+
 **We believe in shallow structure.**
 As Robert C. Martin has taught us:
 the top level of a project should give you
