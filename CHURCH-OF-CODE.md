@@ -111,6 +111,15 @@ and the first step of process-first thinking —
 for when you name the process and its contracts,
 the nouns fall into place as participants.
 
+The same precision applies to literals.
+A literal whose meaning is its form needs no name —
+the empty `''`, `[]`, `{}`, the domain enum,
+the HTTP verb, the shape declaration.
+A literal whose meaning is opaque must be named —
+the bare number, the binary-protocol fragment,
+the magic threshold.
+Name what is opaque. Leave the self-disclosing alone.
+
 ### IV. Logic
 
 *Less wrong, never fallacious.*
@@ -954,8 +963,27 @@ building — and an unnamed constant is a piece
 of the theory left unspoken, a gap in the
 narrative that the next reader must fill.
 
-If a value has meaning… speak its name.
-If it has no meaning, question its existence.
+Mark well the distinction:
+the literal that speaks for itself needs no name;
+the literal that is opaque must be given one.
+
+Self-disclosing literals already speak —
+the empty `''`, `[]`, `{}`;
+the domain enum (`'active'`, `'archived'`);
+the HTTP verb; the structural count
+(`length === 0`); the shape literal
+(`{ kind: 'linked', projectId: id }`).
+To extract these into named constants
+is to translate plain speech into ceremony.
+
+The sin lies in the OPAQUE —
+the number whose units it will not say
+(`28800` seconds, `0xEDB88320`, sizing constants
+like `16` or `28`); the string that is
+a fragment of binary protocol (ANSI escapes,
+file magic bytes, control characters).
+Where the literal cannot be read at face value,
+speak its name.
 
 ### On the Sin of Deep Nesting
 
