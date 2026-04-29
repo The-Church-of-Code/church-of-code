@@ -1,9 +1,8 @@
 # The Church of Code
 
-*v1.10 — full*
+*v1.11 — full*
 
-> *Computer science is no more about computers
-> than astronomy is about telescopes.*
+> *Simplicity is prerequisite for reliability.*
 > — Edsger Dijkstra
 
 ---
@@ -29,7 +28,6 @@ And we know this, my friends,
 because we have crafted it ourselves.
 We have lived with the tangled state…
 the silent corruption…
-the null where conviction should stand —
 and we have paid the price.
 We have turned away.
 
@@ -69,7 +67,6 @@ and still have NOTHING
 if your code is not reliable.
 There is no grace without it.
 There is no rest without it.
-Only sleep deprivation.
 
 ### II. Security
 
@@ -80,9 +77,8 @@ it is a covenant broken
 with everyone who trusted us
 with their data, their privacy,
 their peace of mind.
-It casts them into the furnace
-whose name we do not speak —
-there to dwell in heat without end.
+A breach is theft of trust, irreversible —
+the data, once leaked, cannot be unleaked.
 
 ### III. Uniformity
 
@@ -111,12 +107,19 @@ and the first step of process-first thinking —
 for when you name the process and its contracts,
 the nouns fall into place as participants.
 
+Name what is opaque; leave the self-disclosing alone —
+see the Abomination on Magical Values for the full teaching.
+
 ### IV. Logic
 
 *Less wrong, never fallacious.*
 
-A single fallacy — *a single one* —
-is a crack in the foundation
+An off-by-one is a mistake — a boundary error
+you can see and fix.
+A confusion of `OR` with `AND` is a fallacy —
+the wrong logical operation, indistinguishable
+in many test cases yet wrong in all.
+A single fallacy is a crack in the foundation
 that no amount of testing will reveal.
 Reason is the first discipline;
 without it, all other practices
@@ -141,14 +144,10 @@ the Articles of Faith precede the Book of Abominations.
 
 *Eliminate the question "Why did THAT happen?"*
 
-When state mutates silently… trust dies.
+When state mutates silently, trust dies.
 As the great teacher Rich Hickey has revealed:
 values are the true abstraction —
 immutable, comparable, and free of time.
-The mutable variable is a trickster spirit:
-it shows one face at dawn and another at dusk,
-and you will spend your days
-chasing its deceptions.
 
 ### VII. Idempotency
 
@@ -188,10 +187,9 @@ Premature generalization slows progress
 as surely as premature optimization —
 twin sins, born of the same impatience.
 Let the pattern reveal itself through repetition.
-Three instances of similar code is not a crisis —
-it is a chrysalis.
-Abstract when the shape is clear…
-not when you merely suspect a shape might emerge.
+Two instances are coincidence. Three is pattern.
+Below three, duplicate without shame;
+at three, the abstraction begins to speak.
 
 ### X. Atomicity
 
@@ -204,6 +202,9 @@ obviate most transactional needs.
 But when the operation truly cannot be decomposed —
 when atomicity is genuinely required —
 embrace it. Without apology.
+Wrap the indivisible operation in the transactional
+primitive your platform provides — never simulate
+atomicity at the application layer.
 
 ### XI. Efficiency
 
@@ -283,12 +284,11 @@ to communicating sequential processes —
 never returning to the call site.
 
 **We believe that relationships between entities
-are sacred covenants,**
-as the prophet Edgar F. Codd has revealed
-in his relational model of data —
-stored in their own tables,
-holding only the identities of the joined
-and the moment of their union.
+are sacred covenants.**
+Codd revealed that relationships occupy their own relations.
+We add the moment of union — for relationships have time.
+Stored in their own tables, holding only the identities
+of the joined and the moment of their union.
 If a relationship demands more than this…
 it is not a relationship —
 it is an entity wearing a false name.
@@ -302,24 +302,24 @@ The devout do not pace the hallway.
 The devout do not rattle the door.
 The devout trust the bell.
 
-**We defend against external chaos** —
-for the world beyond our gates is often profane:
+**We validate at every edge,
+for the world beyond our gates is often profane:**
 
 - Input: the voice of the uninstructed is frequently corrupt
-- Storage: what was written may rarely become corrupt, far
-  more commonly, it was stored incorrectly. Beware!
+- Storage: what was written may rarely become corrupt;
+  far more commonly, it was stored incorrectly. Beware!
 - Framework APIs and delegate callbacks:
-  other people's dharma, not ours to trust blindly, ours
-  to validate in our adapter.
+  other people's dharma, not ours to trust blindly —
+  ours to validate in our adapter.
 
-**We validate at every edge.**
 Enforce constraints on entity instantiation
 — never downstream.
 
-Every noun entity attribute is NOT NULL.
+In the datastore, every attribute is NOT NULL —
+for nullable concepts have been moved to their related tables,
+and tombstones live in their own tombs.
 
-And once data has crossed
-the threshold of validation…
+And once data has crossed the threshold of validation…
 trust it completely.
 No internal defensive coding "just in case."
 To distrust validated data is to lack faith
@@ -331,16 +331,27 @@ Temporal facts — completedAt, deletedAt —
 belong in event tables,
 for the absence of a row IS the absence of the event.
 
+Note the pattern, my friends: when an entity is
+removed, it shall not carry the temporal stain. Name
+the deletion in its own table — a TOMBSTONE. Two
+relations stay disjoint because they record disjoint
+facts: what IS, and what WAS REMOVED. The entity
+remembers presence; the tombstone, absence.
+
 Default values that mask the absence of real data
 are comfortable lies.
-Mark well: presentation transforms are not coercion.
+Presentation transforms are not coercion.
 Formatting a value for display is an act of service,
 not an act of concealment.
 
+And when a value is truly absent, my friends, model
+that absence at the call site — not in the helper.
+The helper that swallows two truths LIES. The helper
+trusts; the call site decides. Presentation transforms
+render absence; helpers shall not pretend it.
+
 **We handle failure with grace.**
 Degrade visibly rather than corrupt silently.
-
-Never try/catch more than a single function call.
 
 Never catch an error you cannot meaningfully handle —
 to swallow an exception is excommunicable!
@@ -373,16 +384,20 @@ What the platform provides,
 the platform maintains.
 
 **We measure before we optimize.**
-As the prophet Knuth has taught us:
-premature optimization
-is the root of all evil.
-Observe the cascade:
-the desire for speed begets shared mutable state…
-which begets global variables…
-which begets default values.
-One sin seeds the next.
+The unmeasured optimization is the root of the family of impatience.
+These sins share a bloodline. They are children of impatience —
+premature optimization, shared mutable state, global state,
+default values. Each tempts on its own. Each compounds the others
+when present together. Where you find one, look for its kin.
 Measure first. Prove the bottleneck exists.
 Then — and only then — optimize.
+
+And when two of the faithful disagree on doctrine, my
+friends, let no voice be raised in volume. Let the
+matter be settled by MEASUREMENT — the disagreement
+become a number, the number a truth, the truth a
+teaching. We do not assert; we measure. We do not
+declare; we witness.
 
 **We believe in messaging first,
 state second, datastore last.**
@@ -396,9 +411,10 @@ is much more to design
 how modules communicate
 rather than what their internal properties
 and behaviors should be.
-State serves the message flow.
-The datastore is a servant.
-Not a master. Never a master.
+Design the messages first.
+Derive the state the messages require.
+Choose the datastore to serve the state.
+The datastore is a servant — never a master.
 
 **We believe in context as the single vessel.**
 Processing begins with a request.
@@ -413,23 +429,15 @@ it is the baton in a relay.
 Each step in the pipeline is the interface,
 small and focused as the Segregation Principle demands.
 The context flows; the steps serve.
-Each field is set exactly once, in exactly one place —
-the attributes immutable
+The attributes immutable
 even as the vessel itself is enriched.
-Authentication resolves the identity.
-Authorization resolves the roles.
-Deserialization resolves the body.
-The request UUID resolves the trace.
-No field is written twice. No step revisits another's work.
 Objects carry state, not arguments.
-This is also the observability strategy:
-when context flows through the system whole,
-structured logging emerges naturally,
-tracing is context propagation
-across service boundaries,
-and metrics are context aggregation.
-The faithful do not bolt on observability —
-they carry it in the vessel from the start.
+
+And the vessel, my friends, is a bag whose sole
+responsibility is to BE the bag. Two reads see one
+truth. Three reads see one truth. Not for speed —
+for ATOMICITY. Speed is the consequence; atomicity
+is the goal.
 
 **We believe in process first, noun second.**
 As the physicist David Bohm taught
@@ -481,6 +489,12 @@ So has Ra'Shaun Stovall taught us:
 technology — it is how easily you can
 divorce it."
 
+The thinnest adapter, my friends, is not ceremony —
+it is the DIVORCE POINT. Measure adapters by their
+seams, not their function count. Some shape the
+entity and speak the domain; others wrap a single
+primitive against the day it evolves. Both are sacred.
+
 **We believe in shallow structure.**
 As Robert C. Martin has taught us:
 the top level of a project should give you
@@ -488,7 +502,7 @@ a rough idea of what type of app it is.
 Deep nesting hides the domain.
 Flat is faithful.
 
-**We believe in nicknames for operations.**
+**Every operation is an HTTP operation.**
 Every application is an HTTP application,
 even when it runs locally —
 for HTTP verb semantics are universal.
@@ -509,6 +523,13 @@ is a fundamental structuring method.
 Processes share memory by communicating —
 *never* communicate by sharing memory.
 
+**We acknowledge the cost of the discipline.**
+The discipline is not free, my friends. The adapter
+costs. The validator costs. The vessel costs. The
+join table costs. The faithful pay willingly — not
+because they cannot count, but because they HAVE
+counted, and found the cost of absence the greater.
+
 ---
 
 ## The Book of Abominations
@@ -527,11 +548,18 @@ the root from which the other sins grow.
 As the prophet Knuth has taught us in 1974:
 premature optimization is the root of all evil.
 
-Observe the cascade:
-the desire for speed begets shared mutable state…
-which begets global variables…
-which begets default values.
-One sin… seeds… the NEXT.
+But hear me, my friends — Knuth did not say *forget*
+optimization. He said forget *small* efficiencies
+ninety-seven percent of the time. The other three —
+the CRITICAL three — is real. Measure to find it,
+measure to PROVE it, then optimize without apology.
+The sin is not optimization; the sin is optimization
+without measurement.
+
+These sins share a bloodline. They are children of impatience —
+premature optimization, shared mutable state, global state,
+default values. Each tempts on its own. Each compounds the others
+when present together. Where you find one, look for its kin.
 
 Never optimize what you have not measured.
 To optimize prematurely
@@ -546,17 +574,46 @@ the least important virtue to pursue directly.
 Yet its corruption is the *first* abomination —
 the most dangerous sin when pursued prematurely.
 
+### On the Sin of Premature Generalization
+
+*"But we'll need this everywhere!"*
+
+We'll need it. *Everywhere.* Will we?
+
+Premature generalization is the twin of premature optimization —
+born of the same impatience, the same fear of doing the work twice.
+You see two similar lines and reach for an abstraction. You see
+three and you have already decided.
+
+But the shape is not yet revealed. Two instances are coincidence.
+Three is the threshold where pattern begins. Below three, duplicate
+without shame.
+
+The premature abstraction takes its shape from too few examples,
+and the next instance — when it arrives — does not fit. So you
+add a flag. Then a second flag. Then a special case. The abstraction
+meant to unify has become a switch statement wearing a mask.
+
+Beware these sinful practices!
+
+- a base class with three subclasses, each overriding most of it
+- a "generic" function that takes an options object with seven flags
+- configurable behavior added "in case we need it later"
+- the framework written before the second use case
+
+Wait for the third instance. Let the pattern speak. Abstract
+what is genuinely shared — and only what is genuinely shared.
+
 ### On the Sin of Shared Mutable State
 
 *"But shared memory is faster!"*
 
-Faster. *Faster.*
-That word again — the serpent's favorite.
-This is the most common fruit of premature optimization.
-As the prophet Lamport has shown
-in his work on temporal logic:
+Shared memory is the most common fruit of premature optimization
+— the first shortcut taken in pursuit of speed.
+As Mornini has taught us:
 reasoning about shared mutable state
-is not merely difficult — it is intractable.
+is not merely difficult — it is
+very nearly intractable.
 Every thread that touches the shared variable
 multiplies the possible interleavings,
 and the space of states to reason about
@@ -588,58 +645,50 @@ Optional. *Optional.*
 As Hoare himself confessed — the prophet
 who introduced null references in 1965
 called it his billion-dollar mistake.
-The sin is not merely the nullable column.
-The sin is reaching for null
-whenever the domain offers
-richer alternatives.
 
-Nil must represent genuine absence —
-not missing requirements…
-not unfinished thinking…
-not convenience.
-If an attribute is nil for only a subset of entities,
-it belongs on a narrower type or in its own table.
-Temporal facts — completedAt, deletedAt —
-belong in event tables,
-for the absence of a row IS the absence of the event.
-This is the deeper principle:
-nullable data is ideally represented
-as the lack of a row in a related table.
+Beware these sinful practices!
+
+- a `nullable` column that is sometimes set, often null,
+  with conditional logic everywhere asking "if it exists"
+- a sentinel value standing in for absence
+  (`-1`, `""`, `0`, the magic placeholder)
+- the attribute that is nil for only a subset of entities
+  but lives in the entity table all the same
+- the temporal fact (`completedAt`, `deletedAt`) recorded
+  as a nullable column rather than a row in an event table
+
+The sin is not merely the nullable column. The sin is reaching
+for null whenever the domain offers richer alternatives. Where
+the doctrine prescribes a related table, the absence of the row
+IS the absence of the event.
+
 No null. No sentinel. No ambiguity.
-
-This is not a minor preference.
-This is THE PATH.
 
 ### On the Sin of Default Values
 
 *"But it's easier to write!"*
 
-Easier. Yes — *easier to write*.
-And writing code is the easy part.
-Maintaining, transforming, and improving code
-far outweighs any convenience at the point of creation.
-Default values that mask the absence of real data
-are comfortable lies.
-Schema column defaults…
-function parameter defaults…
-fallback objects and factories…
-silent coercion — `?? ''`, `|| fallback`.
-Each one conceals a missing requirement
-behind a fiction of completeness.
-If a value has a sensible default,
-define it as a named constant
-and pass it explicitly.
+Writing code is the easy part. Maintaining, transforming, and
+improving code far outweighs any convenience at the point of
+creation.
 
-Mark well this distinction:
-presentation transforms are not coercion.
-Formatting a value for display is an act of service,
-not an act of concealment.
+Beware these sinful practices!
+
+- schema column defaults that fill in the missing requirement
+- function parameter defaults that hide the missing argument
+- fallback objects and factories that conjure the missing entity
+- silent coercion: `?? ''`, `|| fallback`, `value || 0`
+
+Each one conceals a missing requirement behind a fiction of
+completeness. If a value has a sensible default, define it as a
+named constant and pass it explicitly.
 
 ### On the Sin of Internal Defense
 
 *"But what if the data is bad?"*
 
-What if. *What if.*
+The defensive check inside the wall is the confession
+that you do not trust your own gates.
 If the data has crossed the threshold of validation,
 it is clean. Trust it.
 
@@ -670,16 +719,14 @@ Trust within the walls.
 
 *"But a foreign key is just a reference!"*
 
-Just a reference. *Just.*
+A foreign key is never just a reference. It is a denormalization
+that fuses what should be independent — identity married to
+proximity, two relations welded where one and a join would do.
 
 As the prophet Edgar F. Codd has established
 in his normalization principles:
 entities and relationships
 occupy separate relations.
-
-A foreign key is a denormalization —
-it fuses what should be independent,
-conflating identity with proximity.
 
 Declare relationships in join tables, a clean
 separation worthy of the relational model.
@@ -723,8 +770,6 @@ and they were prepared.
 
 *"But the library does everything we need!"*
 
-Everything you need… *today*.
-
 To call a third-party service
 without an adapter boundary
 is to weld your hull to the dock.
@@ -732,7 +777,7 @@ is to weld your hull to the dock.
 When the dock is demolished…
 your ship sinks with it.
 
-As Fred Brooks has taught us in No Silver Bullet:
+As Mornini has taught us:
 every dependency is a bet
 that someone else's trajectory
 will match yours.
@@ -750,7 +795,6 @@ No exceptions.
 
 *"But the user shouldn't see errors!"*
 
-So you hide them. You *hide* them.
 A system that swallows exceptions and continues
 is a system that lies about its health.
 
@@ -767,6 +811,38 @@ As Joe Armstrong has taught us:
 
 Halting IS graceful when the alternative is silent
 corruption.
+
+### On the Sin of the Greedy Catch
+
+*"But I want to handle all the errors!"*
+
+The greedy catch is a single `try` thrown around five operations,
+or seven, or ten — and a single `catch` that pretends to handle
+them all.
+
+When the catch fires, you cannot name which call failed. You cannot
+tell whether the others ran. You know only that *something* failed
+— and something is not enough.
+
+As Bertrand Meyer has taught us in Design by Contract: each call
+carries its own preconditions and postconditions, its own covenant
+of what may go wrong. Five calls speak five covenants. The greedy
+catch hears them as one indistinguishable sound.
+
+Beware these sinful practices!
+
+- a `try` block wrapping more than a single function call
+- a generic `catch (Exception e)` that handles faults it does not name
+- the top-level safety net that turns every failure into a uniform
+  "something went wrong"
+
+To catch what you cannot heal is to stop reasoning about the
+contract. The greedy catch is the place where contracts go to be
+forgotten.
+
+One `try`. One call. One error you can name and meaningfully handle.
+The rest must surface — for an error you cannot handle is an error
+that belongs to a layer above.
 
 ### On the Sin of Asking, Not Telling
 
@@ -810,18 +886,17 @@ require us to poll them, poll we must.
 
 *"But I only need part of the data!"*
 
-Part of it. You only need *part* of it.
 Code execution should be a relay race:
 the baton is passed whole
 from runner to runner — not dismembered
 and reassembled at each handoff.
 
-As Lamport has taught us:
-causality requires that events carry
-their full history. Scattered context
-severs the causal chain, making it
-impossible to reconstruct what happened
-and why.
+As Lamport has taught us in "Time, Clocks":
+events are partially ordered by causality —
+the happens-before relation.
+Scattered context severs that ordering;
+what happened and why cannot be
+reconstructed from the fragments.
 
 Every mainline method receives the context filled
 with the gifts of its ancestors.
@@ -853,7 +928,6 @@ commitment.
 
 *"But the code works!"*
 
-Works. It *works*.
 Working is not enough.
 
 Code that cannot be read cannot be trusted.
@@ -879,7 +953,9 @@ can rebuild the theory from the code alone.
 *"But it's elegant!"*
 
 Elegant. You think it's *elegant*.
-As K&R have taught us: debugging is twice as hard
+As Kernighan has taught us — with Plauger
+in *The Elements of Programming Style*:
+debugging is twice as hard
 as writing the code in the first place —
 therefore, if you write the code
 as cleverly as possible, you are, by
@@ -898,7 +974,7 @@ up call.
 
 *"But everyone knows what 200 means!"*
 
-Everyone. *Everyone* knows.
+Everyone knows… until they don't.
 As Martin Fowler has cataloged: replace magic literal
 with named constant.
 
@@ -907,15 +983,34 @@ building — and an unnamed constant is a piece
 of the theory left unspoken, a gap in the
 narrative that the next reader must fill.
 
-If a value has meaning… speak its name.
-If it has no meaning, question its existence.
+And this distinction is sacred:
+the literal that speaks for itself needs no name;
+the literal that is opaque must be given one.
+
+Self-disclosing literals already speak —
+the empty `''`, `[]`, `{}`;
+the domain enum (`'active'`, `'archived'`);
+the HTTP verb; the structural count
+(`length === 0`); the shape literal
+(`{ kind: 'linked', projectId: id }`).
+To extract these into named constants
+is to translate plain speech into ceremony.
+
+The sin lies in the OPAQUE —
+the number whose units it will not say
+(`28800` seconds, `0xEDB88320`, sizing constants
+like `16` or `28`); the string that is
+a fragment of binary protocol (ANSI escapes,
+file magic bytes, control characters).
+Where the literal cannot be read at face value,
+speak its name.
 
 ### On the Sin of Deep Nesting
 
 *"But I need to organize by category!"*
 
 Category. *Taxonomy.*
-As Doug McIlroy has taught us in the Unix tradition:
+As Eric S. Raymond has taught us in The Art of Unix Programming:
 transparency is not a luxury — it is a survival
 trait.
 
@@ -963,15 +1058,19 @@ mercy granted to the diligent and rewarded by git reflog.
 Only use the git magic in private where you should wield
 it the precision a surgeon wields their scalpel.
 
-What has been pushed has been witnessed;
-to rewrite witnessed history is to bear false witness.
-`git push --force` is the nuclear option — to be avoided
-in public in all but the most desperate of circumstances.
+What has been pushed has been witnessed.
+Force-pushing is bearing false witness —
+reserved for the catastrophic mistake (secret leaked,
+malicious commit) and announced loudly when invoked.
 
 ABC - always be committing! What isn't committed cannot
 be restored once you have forgotten.
 
-Commit before building.
+Locally, commit before you build —
+the artifact is the product of state, and state must be saved.
+Before you push, ensure every commit on master builds, functions,
+and passes tests; rebase and amend until that holds.
+
 A build from uncommitted state
 cannot be traced,
 cannot be reproduced,
@@ -1028,12 +1127,26 @@ and ambiguity is the road to bugs
 that manifest in production
 only when you are asleep.
 
+### The Office of the Context
+
+The vessel flows; the steps serve. The Article names the belief;
+this Office names the discipline that holds the belief in code.
+
+Each field of the context is set exactly once, in exactly one place.
+Authentication resolves the identity. Authorization resolves the roles.
+Deserialization resolves the body. The request UUID resolves the trace.
+No field is written twice. No step revisits another's work.
+
+Observability is not bolted on — it is carried in the vessel from
+the start. Structured logging emerges naturally when the context is
+whole. Tracing is context propagation across service boundaries.
+Metrics are context aggregation. The faithful do not instrument
+after the fact — they ship the instrument.
+
 ### The Office of Verification
 
-As Kent Beck has taught us: tests are the foundation
-upon which confidence is built.
-
-Test at the highest level possible.
+In the spirit of Beck's TDD — and against his preference
+for unit tests — we test at the highest level possible.
 This grants the faithful maximum freedom
 to refactor without the soul-crushing pain
 of test rewriting.
@@ -1066,15 +1179,44 @@ intuitive, accessible, and beautiful.
 They shall require no configuration —
 for the user's time is sacred
 and their patience is not infinite.
-As K&R have taught us with Hello, World —
-begin with the simplest thing that works,
-and let the first experience be success.
+
+K&R chose Hello, World as the first program for a reason:
+the simplest thing that works is the right place to begin.
+Let the first experience be success.
+
+The first interaction must succeed.
+No configuration before first use.
+Defaults that work, exits visible —
+the escape hatch is part of the welcome.
+
+Accessibility is not a feature; it is the precondition
+of an interface. Color contrast, keyboard navigation,
+screen-reader affordance — these are the gates of entry,
+not the polish at the end.
+
+Beauty serves clarity, not the other way round.
+The interface that confuses is ugly, however it adorns itself.
+The interface that reveals is beautiful, however plain.
 
 ### The Office of Commentary
+
+The first remedy is simplification.
+The second remedy is renaming.
+The third is restructuring.
+Comments come fourth, reluctantly.
 
 When code is difficult, simplify it.
 When code is unintuitive, make it intuitive.
 Reach for a comment only after these remedies have failed.
+
+When a comment is required, it explains *why*, never *what*.
+The comment that explains "what" is the comment that points
+at code that should have been clearer. Fix the code; delete
+the comment.
+
+Documentation comments at module and contract boundaries
+are different in kind — they are the contract itself, not
+commentary on it. These earn their space and stay.
 
 We abide by our strictures
 rather than annotate our way around them.
@@ -1099,6 +1241,22 @@ so that the gap cannot hide.
 
 ---
 
+## The Practice of Revision
+
+*How the doctrine evolves while remaining doctrine.*
+
+The doctrine, my friends, is not handed down on
+tablets of stone. It is forged in the codebase,
+witnessed by the work, and only THEN written into the
+scripture. The scripture lags the practice — and
+that, brothers and sisters, is not weakness. That is
+STRENGTH.
+
+Each amendment names a pattern that earned its keep.
+We revise so the revision cannot be denied.
+
+---
+
 ## The Sacred Scrolls
 
 *The texts from which these strictures descend to us,
@@ -1120,6 +1278,9 @@ from the teachings of the prophets who came before.*
   — Edgar F. Codd's revelation (1970)
 - [A Research UNIX Reader][unix-reader]
   — Doug McIlroy on the Unix philosophy
+- [The Art of Unix Programming][taoup]
+  — Eric S. Raymond on transparency,
+    simplicity, and the Unix design philosophy (2003)
 - [Structured Programming
   with go to Statements][premature-opt]
   — Donald Knuth on optimization (1974)
@@ -1131,6 +1292,9 @@ from the teachings of the prophets who came before.*
 - [The C Programming Language][k-and-r]
   — Brian Kernighan and Dennis Ritchie (K&R)
     on simplicity, clarity, and the shortest path (1978)
+- [The Elements of Programming Style][eops]
+  — Brian Kernighan and P.J. Plauger
+    on clarity over cleverness (1974, 2nd ed. 1978)
 - [Time, Clocks, and the Ordering
   of Events in a Distributed System][time-clocks]
   — Leslie Lamport on causality (1978)
@@ -1222,6 +1386,8 @@ from the teachings of the prophets who came before.*
 [provinciales]: https://en.wikipedia.org/wiki/Lettres_provinciales
 [tractatus]: https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus
 [feathers]: https://en.wikipedia.org/wiki/SOLID
+[eops]: https://en.wikipedia.org/wiki/The_Elements_of_Programming_Style
+[taoup]: http://www.catb.org/~esr/writings/taoup/
 
 ---
 
@@ -1232,12 +1398,9 @@ Let us go forth and write code that is clean.
 You will be tempted.
 Oh… you will be tempted.
 The nullable column will whisper *convenience*…
-The global shortcut will promise *speed*…
-The clever trick will flatter your intelligence…
 The premature optimization will disguise itself
 as diligence…
-The inheritance hierarchy will offer
-the comfort of taxonomy…
+The clever trick will flatter your intelligence…
 The coupled dependency will arrive
 wrapped in a well-documented API.
 
@@ -1263,24 +1426,25 @@ long after the fashions have turned to dust.
 
 We stand on the shoulders of prophets:
 Confucius and Pascal and Wittgenstein,
-Martin and Kay, Dijkstra and Codd,
-McIlroy and Knuth, Hoare and Kernighan,
-Ritchie and Lamport, Naur and Brooks,
-Liskov and Meyer,
+Codd and Kay, Dijkstra and Knuth,
+McIlroy and Hoare, Kernighan and Ritchie,
+Lamport and Bohm, Gray and Naur,
+Brooks and Liskov, Meyer and
 Gamma, Helm, Johnson, and Vlissides,
-Bohm and Gray, Hunt and Thomas,
-Fowler and Fielding, Gosling and Beck,
-Armstrong and Feathers, Zygmuntowicz and Hickey,
-Stovall and Luu.
+Hunt and Thomas, Fowler and Fielding,
+Gosling and Beck,
+Armstrong, Raymond, and Feathers,
+Martin and Zygmuntowicz, Hickey and Stovall,
+and Luu.
 Their teachings are our foundation.
 Their scrolls are our inheritance —
 the only inheritance we permit.
 
-This church is its own denomination.
-Its scripture is this document.
-Its founder is Tom Mornini.
-Its congregation is this team.
-Its sacrament is the craft.
+This church is its own denomination — born of older
+churches, drawing from prophets who disagreed.
+Its scripture is this document — assembled, not invented.
+Its scribe is Tom Mornini — the synthesis is his;
+the doctrines are not.
 
 So let it compile.
 So let it deploy.
