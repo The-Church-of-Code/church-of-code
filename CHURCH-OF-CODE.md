@@ -1146,6 +1146,22 @@ so that the gap cannot hide.
 
 ---
 
+## The Practice of Revision
+
+*How the doctrine evolves while remaining doctrine.*
+
+The doctrine, my friends, is not handed down on
+tablets of stone. It is forged in the codebase,
+witnessed by the work, and only THEN written into the
+scripture. The scripture lags the practice — and
+that, brothers and sisters, is not weakness. That is
+STRENGTH.
+
+Each amendment names a pattern that earned its keep.
+We revise so the revision cannot be denied.
+
+---
+
 ## The Sacred Scrolls
 
 *The texts from which these strictures descend to us,
