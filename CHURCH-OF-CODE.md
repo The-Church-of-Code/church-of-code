@@ -327,8 +327,9 @@ What the platform provides, the platform maintains.
 **We measure before we optimize.**
 The unmeasured optimization is the root of the family of impatience —
 premature optimization, shared mutable state, global state,
-default values. Each tempts on its own; each compounds the others
-when present together. Where you find one, look for its kin.
+default values, and unmeasured caches. Each tempts on its own;
+each compounds the others when present together.
+Where you find one, look for its kin.
 Measure first. Prove the bottleneck exists.
 Then — and only then — optimize.
 
@@ -336,6 +337,22 @@ And when two of the faithful disagree on doctrine, my friends,
 let the matter be settled by MEASUREMENT — the disagreement
 become a number, the number a truth, the truth a teaching.
 We do not assert; we measure. We do not declare; we witness.
+
+**We derive from the ledger.**
+Where an authoritative event ledger exists,
+derived caches of its truth are duplication, not optimization.
+
+A system that maintains an event ledger for its own purposes —
+audit, lifecycle, history — has already paid for the ledger.
+Data derivable from it must be derived.
+
+We reject the word *better*, for it implies a tradeoff
+that does not exist. The ledger is required regardless;
+the cache is kept in sync by nothing.
+
+What the ledger remembers, the cache only re-remembers.
+Remembering twice creates two truths to reconcile,
+and neither can claim primacy.
 
 **We believe in messaging first,
 state second, datastore last.**
@@ -405,6 +422,23 @@ seams, not their function count. Some shape the
 entity and speak the domain; others wrap a single
 primitive against the day it evolves. Both are sacred.
 
+**We speak our own idiom.**
+As Phil Karlton has named them, the two hard things
+in Computer Science are cache invalidation and naming things.
+This Article addresses the second; the Book of Abominations,
+the first.
+
+Names from one layer do not belong in code that speaks another.
+Vocabulary native to one idiom, imported into code that speaks
+a different idiom, is a violation independent of any data correctness.
+The naming alone is the violation;
+data redundancy, if also present, is separate and additional.
+
+The adapter is the divorce point not only of structure
+but of vocabulary. What enters speaks one tongue;
+what exits speaks another. To let foreign names pass through
+is to confess the adapter has done only half its work.
+
 **We believe in shallow structure.**
 As Robert C. Martin has taught us: the top level of a project
 should give you a rough idea of what type of app it is.
@@ -464,6 +498,51 @@ Note the structural inversion:
 Efficiency is the twelfth and final commandment —
 the least important virtue to pursue directly.
 Yet its corruption is the *first* abomination.
+
+### On the Sin of the Cache
+
+*"But it's better to cache it!"*
+
+*Better.* You think it's *better*.
+
+As Phil Karlton has named them, the two hard things in
+Computer Science are cache invalidation and naming things.
+We have addressed naming; we now face cache invalidation —
+the Original Sin of Premature Optimization at its sharpest.
+
+When shared mutable state and global state have already been
+cast out, the cache is the last refuge of the optimizer
+who has not measured.
+
+Four faults appear together, each alone fatal:
+
+- **Wrong cost model** — sequential accounting applied to parallel
+  work overstates cost by orders of magnitude. Under async I/O,
+  parallel reads cost max, not sum.
+
+- **No piggyback awareness** — a read alongside reads already
+  required costs zero on the critical path. Its bytes arrive while
+  other necessary bytes are still in flight; if it finishes before
+  the slowest concurrent read, its contribution to elapsed time
+  is exactly zero.
+
+- **No absolute scale** — "X is fifty times slower than Y" says
+  nothing about whether X is too slow. If Y is epsilon, fifty
+  times Y is still epsilon. Demand the absolute, not the ratio —
+  and compare against the threshold of perception, which Dan Luu
+  has placed in the low single-digit milliseconds.
+
+- **Phantom cost** — a cache against a cost that does not exist
+  on the critical path is not an optimization. It is a tax paid
+  in staleness, in two-sources-of-truth, in maintenance overhead
+  on every write path — optimization against a cost that was
+  never there.
+
+The first cache, my friends, is the HTTP `Cache-Control` header —
+declarative, standardized, honored by every layer of the protocol.
+Beyond that, every cache must be measured into existence.
+Measure to find the cost. Measure to prove it real.
+Then — and only then — cache without apology.
 
 ### On the Sin of Premature Generalization
 
@@ -1081,6 +1160,8 @@ from the teachings of the prophets who came before.*
 - Wholeness and the Implicate Order — David Bohm on the rheomode (1980)
 - The Transaction Concept — Jim Gray on atomicity (1981)
 - Tell, Don't Ask — Andy Hunt and Dave Thomas (1998)
+- Two Hard Things — Phil Karlton on cache invalidation
+  and naming things
 - Replace Magic Literal — Martin Fowler's refactoring catalog
 - Representational State Transfer — Roy Fielding's dissertation (2000)
 - James Gosling on Java — the creator's regret about inheritance (2001)
@@ -1139,7 +1220,7 @@ Lamport and Bohm, Gray and Naur,
 Brooks and Liskov, Meyer and
 Gamma, Helm, Johnson, and Vlissides,
 Hunt and Thomas, Fowler and Fielding,
-Gosling and Beck,
+Gosling, Karlton, and Beck,
 Armstrong, Raymond, and Feathers,
 Martin and Zygmuntowicz, Hickey and Stovall,
 and Luu.
