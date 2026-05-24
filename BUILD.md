@@ -60,9 +60,9 @@ never from removing topics.
 The document follows a **positive-negative-practical** pattern:
 
 1. **Commandments** declare ranked virtues
-2. **Articles of Faith** state operational beliefs (17 in v1.11)
-3. **Book of Abominations** diagnoses most as sins (20 in v1.11)
-4. **Daily Offices** operationalize the beliefs (7 in v1.11)
+2. **Articles of Faith** state operational beliefs (19 in v1.13)
+3. **Book of Abominations** diagnoses most as sins (22 in v1.13)
+4. **Daily Offices** operationalize the beliefs (7 in v1.13)
 
 The Abominations section uses **dual-channel pedagogy** — virtue
 stated positively in the Article, sin diagnosed negatively in
@@ -132,12 +132,11 @@ earns its keep survives. Cuts are surgical.
 | Title + Epigraph | Verbatim |
 | Preamble | Verbatim |
 | Twelve Commandments | Keep all 12 headings + italic summaries. Trim elaboration to 2-3 lines per commandment. Cut extended metaphors, keep declarative doctrine and specific rules (-er/-able naming, HTTP verbs, Luu latency thresholds, mistake/fallacy distinction). |
-| Articles of Faith | Keep all 17 Article openings verbatim (most begin with "We"; one with "Every"). Trim the longest articles (Handle-failure, Process-first, Context-vessel, Validate-at-every-edge) by ~30%. Keep the pounder.pound example once. |
-| Book of Abominations | Keep all 20 titles + italic objections. Articles teach belief; Abominations teach diagnosis. Sins with diagnostic content get 4-6 lines (symptoms, tells). Sins with partial unique content get title + italic + 1 distinctive sentence. Sins with unique prophetic witnesses get title + italic + 1-2 sentences preserving the prophet attribution and core argument. |
+| Articles of Faith | Keep all 19 Article openings verbatim (most begin with "We"; one with "Every"). Trim the longest articles (Handle-failure, Process-first, Context-vessel, Validate-at-every-edge) by ~30%. Keep the pounder.pound example once. |
+| Book of Abominations | Keep all 22 titles + italic objections. Articles teach belief; Abominations teach diagnosis. Sins with diagnostic content get 4-6 lines (symptoms, tells). Sins with partial unique content get title + italic + 1 distinctive sentence. Sins with unique prophetic witnesses get title + italic + 1-2 sentences preserving the prophet attribution and core argument. |
 | Daily Offices | Keep all 7 offices and all specific rules (78 chars, 4 spaces, RFC-3339, ~50 char commits, force-push as catastrophe-only, commit-before-build workflow, etc.). Trim metaphorical flourishes only. |
 | Unwritten Scrolls | Verbatim |
 | Sacred Scrolls | Remove the URL reference-link block at the end of the section. Convert `[text][ref]` markdown links to plain text. Keep all annotated entries with author, title, and description. |
-| Benediction | Verbatim |
 
 ---
 
@@ -159,12 +158,11 @@ of the source structure.
 | Title + Epigraph | Verbatim |
 | Preamble | Condense the confessional retrospective to essentials. Keep "This is scripture" framing, "Violations are not bugs — they are sins," and the three prefigurative images (tangled state, silent corruption, null where conviction should stand). Cut the framework/language negative creed. |
 | Twelve Commandments | All 12 headings + italic summaries. 0-1 sentences of elaboration per commandment — only when the italic alone is insufficient (e.g., III needs the -er/-able rule, VII needs the verb semantics, IV benefits from the mistake/fallacy distinction). |
-| Articles of Faith | All 17 Article opening sentences + 1-2 essential operational sentences each. |
-| Book of Abominations | Section heading + intro + all 20 sins as compact single lines: `**On [Name]** — *"[italic objection]"*` No body text. The section must exist because the document self-references it ("the Articles of Faith precede the Book of Abominations"). |
+| Articles of Faith | All 19 Article opening sentences + 1-2 essential operational sentences each. |
+| Book of Abominations | Section heading + intro + all 22 sins as compact single lines: `**On [Name]** — *"[italic objection]"*` No body text. The section must exist because the document self-references it ("the Articles of Faith precede the Book of Abominations"). |
 | Daily Offices | All 7 offices, all specific rules preserved. Strip all metaphor. |
 | Unwritten Scrolls | Verbatim |
 | Sacred Scrolls | Section heading + intro + compact author roster: names and years in paragraph form, no annotations, no URLs. |
-| Benediction | Keep: commissioning line, "Resist.", positive-practice summary (trimmed), identity block, closing incantation. Cut temptation litany and prophet enumeration. |
 
 ### Unique teachings — where they live in v1.8+
 
@@ -203,12 +201,10 @@ and is the first to be trimmed.
 - "This is scripture" (Preamble)
 - "Violations are not bugs — they are sins" (Preamble)
 - "The faithful" / "the congregation" (throughout)
-- All 20 italic objections ("But it's elegant!" etc.)
+- All 22 italic objections ("But it's elegant!" etc.)
 - "let it crash" (Sin: Swallowed Failures in full/medium;
   Article: Handle-failure in small, since sins are header-only)
-- "This church is its own denomination" (Benediction)
 - Dijkstra epigraph: "Simplicity is prerequisite for reliability." (all three sizes)
-- "So let it compile. So let it deploy. So let it run smoothly. So you can rest." (closing)
 - Roman numeral commandment format
 - Article creedal openings — most begin with "We", one with "Every"
 
@@ -227,7 +223,7 @@ Within each file, process sections in this order:
 3. Twelve Commandments (trim elaboration)
 4. Articles of Faith (trim)
 5. Daily Offices (trim metaphor, preserve rules)
-6. Preamble and Benediction last (ensures proportion with interior)
+6. Preamble last (ensures proportion with interior)
 7. Byte-count check and final adjustment
 
 ---
@@ -238,20 +234,18 @@ After creating each file:
 
 1. `wc -c` — verify byte count is within target (±5%)
 2. Grep for `^### [IVX]` — confirm 12 commandments
-3. Article count — confirm 17. Use awk-piped grep since one
+3. Article count — confirm 19. Use awk-piped grep since one
    Article begins with "Every" rather than "We":
    ```bash
    awk '/^## The Articles of Faith/,/^## The Book of Abominations/' \
      CHURCH-OF-CODE.md | grep -c '^\*\*'
    ```
-4. Grep for all 20 sin names — confirm present
+4. Grep for all 22 sin names — confirm present
 5. Grep for `^### The Office` — confirm 7 offices
-6. Grep for `"But ` — confirm 20 italic objections
+6. Grep for `"But ` — confirm 22 italic objections
 7. Grep for tonal anchors: scripture, "they are sins",
-   faithful, "let it crash", "own denomination",
-   "So let it"
-8. Benediction prophet count — confirm 36 names
-9. Read the complete file to verify natural flow
+   faithful, "let it crash"
+8. Read the complete file to verify natural flow
    and consistent scriptural voice
 
 ---
