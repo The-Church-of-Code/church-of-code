@@ -210,14 +210,14 @@ the five pillars upon which righteous architecture is raised,
 named by Michael Feathers from the teachings of the prophets:
 
 - **S** — Single Responsibility (Martin): one reason to change
-- **O** — Open/Closed (Meyer): open for extension, closed for modification —
-  stability via encapsulation and delegation
+- **O** — Open/Closed (Meyer): open for extension,
+  closed for modification — stability via encapsulation and delegation
 - **L** — Liskov Substitution (Liskov): subtypes substitute cleanly,
   readable where readable, writable where writable
 - **I** — Interface Segregation (Martin):
   many small interfaces over one bloated contract
-- **D** — Dependency Inversion (Martin): depend on abstractions, not concretions —
-  configure during initialization
+- **D** — Dependency Inversion (Martin):
+  depend on abstractions, not concretions — configure during initialization
 
 **We believe in telling, not asking,**
 as Andy Hunt and Dave Thomas named the principle.
@@ -342,7 +342,8 @@ Choose the datastore to serve the state.
 The datastore is a servant — never a master.
 
 **We believe in context as the single vessel.**
-Processing begins with a request; each step uses and perhaps enriches the context.
+Processing begins with a request; each step uses
+and perhaps enriches the context.
 Context is the only argument passed to methods —
 serializable, loggable, complete by covenant.
 Context is not a god-object — it is the baton in a relay.
@@ -1076,11 +1077,14 @@ from the teachings of the prophets who came before.*
 - The Humble Programmer — Edsger Dijkstra's Turing Award lecture (1972)
 - A Relational Model of Data — Edgar F. Codd's revelation (1970)
 - A Research UNIX Reader — Doug McIlroy on the Unix philosophy
-- The Art of Unix Programming — Eric S. Raymond on Unix design philosophy (2003)
+- The Art of Unix Programming
+  — Eric S. Raymond on Unix design philosophy (2003)
 - Structured Programming with go to Statements
   — Donald Knuth on optimization (1974)
-- Communicating Sequential Processes — Tony Hoare's foundational paper (1978)
-- Null References: The Billion Dollar Mistake — Tony Hoare's confession (2009)
+- Communicating Sequential Processes
+  — Tony Hoare's foundational paper (1978)
+- Null References: The Billion Dollar Mistake
+  — Tony Hoare's confession (2009)
 - The C Programming Language
   — Kernighan and Ritchie (K&R) on simplicity and clarity (1978)
 - The Elements of Programming Style
