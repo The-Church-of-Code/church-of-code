@@ -42,7 +42,7 @@ When the full scripture changes, both variants must be regenerated. Read BUILD.m
 
 **Editorial rules**: For the complete set of rules applied to amendments of the canonical scripture (Sacred Scrolls ordering, prophet citation density, metaphor density, serpent voice, preamble register), see [README.md](README.md#editorial-rules).
 
-**Small variant structural transformation**: In v1.8+, unique-doctrine teachings (Premature Optimization family framing, Null row-absence, Default Values coercion distinction) are hoisted into the Articles of Faith in the canonical source, so the small variant inherits them naturally. The small variant's only structural transformation is collapsing Abominations to header-only form (`**On [Name]** — *"[italic objection]"*`), relying on the Articles to carry the doctrine.
+**Small variant structural transformation**: In v1.8+ (extended in v1.13), unique-doctrine teachings (Premature Optimization family framing, Null row-absence, Default Values coercion distinction, ledger-vs-cache, cross-layer naming) are hoisted into the Articles of Faith in the canonical source, so the small variant inherits them naturally. The small variant's only structural transformation is collapsing Abominations to header-only form (`**On [Name]** — *"[italic objection]"*`), relying on the Articles to carry the doctrine.
 
 **Verification** (after each variant):
 - `wc -c` — byte count within ±5% of target
