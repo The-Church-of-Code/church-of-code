@@ -106,11 +106,13 @@ Dijkstra, Codd, Hoare, Lamport,
 Knuth, Gray, Brooks, Bohm,
 Naur, Kay, Liskov, Meyer,
 Gamma, Helm, Johnson, Vlissides,
-McIlroy, Fielding, Martin, Beck,
-Hunt, Thomas, Pascal, Gosling,
-Hickey, Armstrong, Fowler, Luu,
-Kernighan, Ritchie, Feathers,
-Zygmuntowicz, and Stovall.
+McIlroy, Raymond, Fielding, Martin,
+Beck, Hunt, Thomas, Pascal,
+Gosling, Hickey, Armstrong, Fowler,
+Luu, Kernighan, Ritchie, Plauger,
+Feathers, Zygmuntowicz, Karlton,
+Confucius, Wittgenstein, Mornini,
+and Stovall.
 
 Each teaching is cited with its source
 in the Sacred Scrolls.
