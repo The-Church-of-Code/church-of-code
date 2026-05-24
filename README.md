@@ -202,11 +202,8 @@ that point at a specific contributor
 The counting is strict:
 one reference per mention, not one per section.
 
-The benediction roll call mirrors this order,
-with a leading wisdom-prophets line
-(Confucius, Pascal, Wittgenstein)
-that acknowledges philosophical foundations
-before the software prophets.
+The ordering is preserved across the three context variants;
+no separate roll call is maintained.
 
 ### Prophet citation density
 
