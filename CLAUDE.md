@@ -77,7 +77,7 @@ Commits in this repo follow the **Office of the Commit** from the scripture — 
 
 - Single subject line, ~50 characters
 - Imperative mood: "When applied, this commit will ___"
-- **No body.** If a commit needs a body, it is too large — split it with `git commit -p` instead
+- If a commit needs a subject and body, it is too large — split it with `git commit -p` instead. Trailers (`Co-Authored-By:`, etc.) are not bodies.
 
 A repository publishing commit discipline must obey it first.
 
