@@ -1100,6 +1100,10 @@ from the teachings of the prophets who came before.*
 - Solid Relevance — the same prophet, twenty years hence
 - The Early History of Smalltalk, The Big Idea Is Messaging,
   and The Meaning of OOP — Alan Kay on objects and messages (1971)
+- Data Abstraction and Hierarchy and A Behavioral Notion of Subtyping
+  — Barbara Liskov on substitution
+- Object-Oriented Software Construction and Applying Design by Contract
+  — Bertrand Meyer on openness and contracts
 - The Humble Programmer — Edsger Dijkstra's Turing Award lecture (1972)
 - A Relational Model of Data — Edgar F. Codd's revelation (1970)
 - A Research UNIX Reader — Doug McIlroy on the Unix philosophy
@@ -1120,10 +1124,6 @@ from the teachings of the prophets who came before.*
 - Programming as Theory Building
   — Peter Naur on understanding over documentation (1985)
 - No Silver Bullet — Fred Brooks on essence and accident (1986)
-- Data Abstraction and Hierarchy and A Behavioral Notion of Subtyping
-  — Barbara Liskov on substitution
-- Object-Oriented Software Construction and Applying Design by Contract
-  — Bertrand Meyer on openness and contracts
 - Design Patterns — Gamma, Helm, Johnson, and Vlissides (1994)
 - The Analects — Confucius on the Rectification of Names (~500 BCE)
 - Lettres Provinciales — Blaise Pascal on brevity (1657)
