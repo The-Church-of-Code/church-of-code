@@ -35,7 +35,7 @@ When the full scripture changes, both variants must be regenerated. Read BUILD.m
 3. Twelve Commandments
 4. Articles of Faith
 5. Daily Offices
-6. Preamble and Benediction (last — ensures proportion)
+6. Preamble (last — ensures proportion)
 7. Byte-count check
 
 **Reduction principle**: Cut metaphorical elaboration, keep declarative doctrinal statements. Reductions trim elaboration — never remove topics. Every commandment, article, sin, and office must be present in all three files.
@@ -47,16 +47,15 @@ When the full scripture changes, both variants must be regenerated. Read BUILD.m
 **Verification** (after each variant):
 - `wc -c` — byte count within ±5% of target
 - `grep -c '^### [IVX]'` — exactly 12 commandments
-- Article count: exactly 17 — use awk-piped grep since one Article begins with "Every":
+- Article count: exactly 19 — use awk-piped grep since one Article begins with "Every":
   ```bash
   awk '/^## The Articles of Faith/,/^## The Book of Abominations/' \
     CHURCH-OF-CODE.md | grep -c '^\*\*'
   ```
-- All 20 sin names present
+- All 22 sin names present
 - `grep -c '^### The Office'` — exactly 7 offices
-- `grep -c '"But '` — exactly 20 italic objections
-- Tonal anchors preserved: "scripture", "they are sins", "faithful", "let it crash", "own denomination", "So let it"
-- Benediction prophet count: 36 names
+- `grep -c '"But '` — exactly 22 italic objections
+- Tonal anchors preserved: "scripture", "they are sins", "faithful", "let it crash"
 
 ## Version and Release
 
