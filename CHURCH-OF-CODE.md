@@ -882,6 +882,32 @@ It buries the important beneath layers of the incidental.
 The Unix way is to make structure visible —
 not to bury it beneath ceremony.
 
+### On the Sin of Foreign Tongues
+
+*"But that's what the library calls it!"*
+
+That, my friends, is what the LIBRARY calls it.
+The library was written for a different domain,
+in a different tongue, by people solving a different problem.
+To let its vocabulary leak across the adapter boundary
+is to confess that the adapter has done only half its work.
+
+Beware these sinful practices!
+
+- a domain entity named `UserDto` or `OrderEntity` —
+  framework taxonomy leaking through the wall
+- a service method named `upsertAccount` —
+  database verbs colonizing the business layer
+- a controller named `userController.getUserList` —
+  HTTP plumbing standing in for domain language
+- a variable named `redisClient` deep in business logic —
+  the storage primitive named where the role belongs
+
+Names from one layer do not belong in another.
+The thinnest adapter is the divorce point of vocabulary
+as well as of structure. What enters speaks one tongue;
+what exits speaks another.
+
 ---
 
 ## The Daily Offices
