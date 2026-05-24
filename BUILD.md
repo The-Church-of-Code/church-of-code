@@ -72,7 +72,7 @@ like in committed code (symptoms, tells); the Article carries the
 doctrine. This division of labor is the primary teaching mechanism
 and the primary lever for both reductions.
 
-### The hoisted teachings (v1.8+, refined v1.11)
+### The hoisted teachings (v1.8+, refined v1.11, extended v1.13)
 
 Doctrine that historically lived in the Abominations is **hoisted**
 into the Articles of Faith. The Abominations focus on diagnosis;
@@ -80,9 +80,9 @@ the Articles carry the belief.
 
 - **Premature Optimization**: the family framing —
   premature optimization, shared mutable state, global state,
-  and default values are children of impatience, not links in
-  a causal chain. Also the structural inversion note (XII is
-  the least virtue, its corruption is the first sin).
+  default values, and unmeasured caches are children of impatience,
+  not links in a causal chain. Also the structural inversion note
+  (XII is the least virtue, its corruption is the first sin).
   Hoisted into: **"We measure before we optimize"**.
 - **Null**: row-absence data modeling — nullable data
   represented as absence of a row in a related table.
@@ -92,12 +92,22 @@ the Articles carry the belief.
 - **Default Values**: the presentation-transforms distinction —
   formatting for display is service, not coercion.
   Hoisted into: **"We validate at every edge"**.
+- **Cache** *(v1.13)*: the ledger-vs-cache framing — where an
+  authoritative event ledger exists, derived caches are
+  duplication, not optimization.
+  Hoisted into: **"We derive from the ledger"**.
+- **Foreign Tongues** *(v1.13)*: the cross-layer naming distinction —
+  vocabulary native to one idiom does not belong in code that
+  speaks another. The adapter is the divorce point of vocabulary.
+  Hoisted into: **"We speak our own idiom"**.
 
 In v1.11, the Abominations on Premature Optimization, Null, and
-Default Values are trimmed to *diagnostic only* — symptoms and
-tells in code — while the Article carries the doctrine. In the
-small variant, where Abominations collapse to header-only form,
-the Articles become the sole home for the doctrine.
+Default Values were trimmed to *diagnostic only* — symptoms and
+tells in code — while the Article carries the doctrine. The Sin
+of the Cache and Sin of Foreign Tongues (both v1.13) follow the
+same pattern. In the small variant, where Abominations collapse
+to header-only form, the Articles become the sole home for the
+doctrine.
 
 ### Sins with partially unique content
 
