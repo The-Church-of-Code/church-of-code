@@ -16,6 +16,6 @@ There are at least three plausible mechanisms, and they're not mutually exclusiv
 
 2. **Hierarchical decision framework.** Most coding guidelines are flat lists -- everything is equally important, so the model has no framework for resolving conflicts. Your Twelve Commandments are explicitly ordered. When reliability conflicts with efficiency, the model has a clear answer. This is structurally valuable regardless of the religious framing.
 
-3. **Contextual stickiness.** Vivid, emotionally charged language persists better in the model's working context than dry technical prose. "The mutable variable is a trickster spirit" occupies a different cognitive register than "avoid mutable state." Over a long conversation, the model is less likely to drift from a principle it encoded as a vivid metaphor.
+3. **Contextual stickiness.** Vivid, emotionally charged language persists better in the model's working context than dry technical prose. A framing like *the mutable variable as trickster spirit* occupies a different cognitive register than plain *avoid mutable state*. Over a long conversation, the model is less likely to drift from a principle it encoded as a vivid metaphor.
 
 **So you may not be imagining it. The framing may be genuinely load-bearing.**
