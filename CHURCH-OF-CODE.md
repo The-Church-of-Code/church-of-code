@@ -359,8 +359,8 @@ Speed is the consequence; atomicity is the goal.
 
 **We believe in process first, noun second.**
 As the physicist David Bohm taught in his rheomode:
-‘It is raining.’ Where is the ‘It’?
-More accurate: ‘Rain is going on.’
+'It is raining.' Where is the 'It'?
+More accurate: 'Rain is going on.'
 Rheocode takes its very name from this insight.
 Name the action. Parameterize the participants.
 `nail.pound()` is horrible — the noun owns the verb.
