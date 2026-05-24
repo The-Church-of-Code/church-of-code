@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.12 — small*
+*v1.13 — small*
 
 > *Simplicity is prerequisite for reliability.*
 > — Edsger Dijkstra
@@ -9,390 +9,431 @@
 
 ## The Preamble
 
-There comes a time when the tangled state
-can no longer be endured,
-the silent corruption no longer excused.
+There comes a time when the tangled state can no longer be
+endured, when the silent corruption can no longer be excused.
 
-This is scripture — sacred, inviolate,
-and binding upon this congregation.
+This is scripture — sacred, inviolate, and binding upon this
+congregation.
 
-Software crafted without discipline is unclean.
-We have crafted it ourselves, and we have paid the price.
+Software crafted without discipline is unclean. We have lived
+with the tangled state, the silent corruption, and we have
+paid the price.
+
+We gather in the name of the craft itself — that which endures
+when the dependencies are dust.
 
 These are not aspirations. They are strictures.
 Violations are not bugs — *they are sins*.
-Violators are not merely wrong — they are UNCLEAN.
+The repentant shall be welcomed back. The obstinate cast out.
 
 ---
 
 ## The Twelve Commandments
 
-*Ranked virtues, from most to least important.
-Perfection is the asymptote the twelve drive toward.*
+*In order of importance, from most to least.
+Perfection is the thirteenth — the asymptote.*
 
 ### I. Reliability
+
 *The bedrock upon which all else rests.*
 
 ### II. Security
+
 *A compromised system is a fallen system.*
-A breach is theft of trust, irreversible —
-the data, once leaked, cannot be unleaked.
+
+The data, once leaked, cannot be unleaked.
 
 ### III. Uniformity
+
 *Call a thing a thing, in all things.*
-Software development is the discipline of readability
-through precise vocabulary.
-Name processors with *-er*; name contracts with *-able*.
-The *-er* acts; the *-able* submits to the action.
+
+Name processors with *-er*: `painter`, `validator`, `pounder`.
+Name contracts with *-able*: `paintable`, `poundable`,
+`validatable`. The *-er* acts; the *-able* submits.
 Name what is opaque; leave the self-disclosing alone.
 
 ### IV. Logic
+
 *Less wrong, never fallacious.*
-An off-by-one is a mistake. A confusion of `OR` with `AND`
-is a fallacy — the wrong logical operation,
-indistinguishable in many test cases yet wrong in all.
+
+An off-by-one is a mistake; a confusion of `OR` with `AND`
+is a fallacy. A single fallacy is a crack no testing reveals.
 
 ### V. Clarity
+
 *Dense, high-information communication.
 No equivocation. No dissembling.*
 
+Present the happy path first — lead with what the faithful
+should do before naming what they must not.
+
 ### VI. Immutability
+
 *Eliminate the question "Why did THAT happen?"*
-As Hickey has taught us: values are the true abstraction —
-immutable, comparable, and free of time.
+
+Values are the true abstraction — immutable, comparable,
+free of time.
 
 ### VII. Idempotency
+
 *PUT, GET, DELETE — not INSERT, UPDATE, DELETE.*
-HTTP verbs are the true verbs, as Fielding revealed.
-PUT overwrites; INSERT appends. DELETE removes; UPDATE mutates.
+
+HTTP verbs are the true verbs. An operation that can be
+repeated without consequence can be trusted.
 
 ### VIII. Simplicity
+
 *If I had more time, I would have written a shorter letter.*
-So spoke Pascal. As Dijkstra taught: approach every task
-aware of the strictly limited size of your own skull.
+
 Simplicity is the fruit of GREAT effort.
 
 ### IX. Generality
+
 *Never generalize before exploratory duplication.*
-Premature optimization slows progress; premature generalization
-slows it as surely — twin sins, born of the same impatience.
-Two instances are coincidence. Three is pattern.
-Below three, duplicate without shame.
+
+Two instances are coincidence. Three is pattern. Below three,
+duplicate without shame.
 
 ### X. Atomicity
+
 *Design so you rarely need it.*
-As Gray taught: all actions as one, or none at all.
-When required, wrap the indivisible operation in the
-transactional primitive your platform provides —
-never simulate atomicity at the application layer.
+
+When genuinely required, embrace it. Wrap the indivisible in
+the platform's transactional primitive; never simulate at the
+application layer.
 
 ### XI. Efficiency
-*True when the above eleven are honored.*
-Efficiency is not a goal — it is a consequence.
+
+*True when the above eleven are honored.
+Chaotic when pursued prematurely.*
+
+It is not a goal but a consequence.
 
 ### XII. Performance
+
 Every wasted millisecond is a small death.
-As Luu has witnessed: humans perceive latency
-down to low single-digit milliseconds.
-As Zygmuntowicz taught: *no code is faster than no code.*
+Humans perceive cause/effect latency down to low single-digit
+milliseconds.
+*No code is faster than no code.*
 
 ---
 
 ## The Articles of Faith
 
 **We believe in the S.O.L.I.D. principles** —
-Single Responsibility, Open/Closed, Liskov Substitution,
-Interface Segregation, Dependency Inversion.
-Named by Feathers from the teachings of Martin, Meyer, and Liskov.
+Single Responsibility (Martin), Open/Closed (Meyer), Liskov
+Substitution (Liskov), Interface Segregation (Martin),
+Dependency Inversion (Martin). The five pillars upon which
+righteous architecture is raised, named by Michael Feathers
+from the prophets.
 
-**We believe in telling, not asking,**
-as Hunt and Thomas named the principle.
-We tell our objects what we need; we do not interrogate their state.
-Methods upon verbs begin processes that pass results
-to communicating sequential processes — never to the call site.
+**We believe in telling, not asking.**
+Tell objects what we need; do not interrogate state.
+Functions upon nouns return what they produce.
+Methods upon verbs begin asynchronous processes that pass
+results to communicating sequential processes —
+never returning to the call site.
 
-**We believe that relationships between entities are sacred covenants.**
-Codd revealed that relationships occupy their own relations.
-We add the moment of union — for relationships have time.
-Declare relationships in join tables.
-If a relationship demands more than this,
-it is an entity wearing a false name.
+**We believe that relationships between entities
+are sacred covenants.**
+Codd revealed that relationships occupy their own relations;
+we add the moment of union — for relationships have time.
+Join tables hold only the identities of the joined and the
+moment of union. More than that, and it is an entity wearing
+a false name.
 
 **We believe in being informed of state changes,**
 not in the anxious polling of the faithless.
-Gamma, Helm, Johnson, and Vlissides codified this as the Observer pattern.
-Subscribe. Listen. Be notified.
+Gamma, Helm, Johnson, and Vlissides codified this as the
+Observer pattern. Subscribe. Listen. Be notified.
+The devout trust the bell.
 
-**We validate at every edge,
-for the world beyond our gates is often profane.**
-Input is frequently corrupt; storage was commonly stored incorrectly;
-framework APIs and callbacks are validated only in our adapter.
-Enforce constraints on entity instantiation — never downstream.
-In the datastore, every attribute is NOT NULL —
-nullable concepts move to related tables; tombstones live in their own tombs.
-Once data has crossed the threshold of validation, trust it completely.
-No internal defensive coding "just in case."
+**We validate at every edge.**
+Input, storage, framework callbacks — all profane until
+validated. Enforce constraints on entity instantiation —
+never downstream. Every datastore attribute is NOT NULL.
+
 Nullable data is the lack of a row in a related table.
-Temporal facts — completedAt, deletedAt — belong in event tables.
-When an entity is removed, name the deletion in its own table — a TOMBSTONE.
-Default values that mask missing data are comfortable lies.
-Presentation transforms are not coercion —
-formatting for display is service, not concealment.
+Temporal facts (completedAt, deletedAt) belong in event tables.
+Default values that mask absent data are comfortable lies.
+Presentation transforms are service, not coercion.
+Absence is modeled at the call site, not the helper.
+
+Once data has crossed validation, trust it completely.
+To distrust validated data is to lack faith in your peers.
 
 **We handle failure with grace.**
 Degrade visibly rather than corrupt silently.
-Never catch an error you cannot meaningfully handle —
+Never catch what you cannot meaningfully handle —
 to swallow an exception is excommunicable.
-As Meyer taught in Design by Contract: when terms are violated,
-the failure is a breach of covenant to be proclaimed.
-A network timeout is expected and handled;
-an impossible state is a bug — *let it crash*.
+
+Distinguish expected failures (network timeout) from bugs
+(impossible state — let it crash).
+Enrich errors at each boundary layer until the failure
+surfaces with its full story.
 
 **We choose platform primitives** over third-party abstractions,
-as McIlroy taught in the Unix philosophy:
-write programs that do one thing and do it well.
+as Doug McIlroy taught in the Unix philosophy.
 Every dependency is a future migration.
 
 **We measure before we optimize.**
-The unmeasured optimization is the root of the family of impatience —
-premature optimization, shared mutable state, global state,
-default values. Each tempts on its own; each compounds the others.
-Measure first. Prove the bottleneck exists.
+The unmeasured optimization is the root of the family of
+impatience: premature optimization, shared mutable state,
+global state, default values, and unmeasured caches.
+Where you find one, look for its kin.
+Doctrine disputes are settled by MEASUREMENT.
+
+**We derive from the ledger.**
+Where an authoritative event ledger exists, derived caches
+are duplication, not optimization. The ledger is required
+regardless; the cache is kept in sync by nothing.
 
 **We believe in messaging first, state second, datastore last.**
-As Kay declared: the big idea is messaging.
-Objects are biological cells, communicating only through messages.
-Design the messages first; derive the state they require;
-choose the datastore to serve the state.
-The datastore is a servant — never a master.
+As Alan Kay declared: the big idea is messaging.
+Design messages first. Derive state from messages.
+Choose datastore to serve state. The datastore is a servant.
 
 **We believe in context as the single vessel.**
-Processing begins with a request; each step enriches the context.
-Context is the only argument passed to methods —
-serializable, loggable, complete by covenant.
-Context is the baton in a relay; attributes immutable.
-The vessel is a bag whose sole responsibility is to BE the bag —
-two reads see one truth.
+Context is the only argument — serializable, loggable, complete.
+The baton in a relay, not a god-object.
+Attributes immutable; the vessel enriched.
+Objects carry state, not arguments.
+Two reads see one truth — not for speed, for ATOMICITY.
 
 **We believe in process first, noun second.**
-As Bohm taught in his rheomode: 'Rain is going on.'
-Rheocode takes its name from this insight.
-Name the action. Parameterize the participants.
-`pounder.pound(poundable: hammer, nailable: nail)` is the way.
+As Bohm taught in his rheomode: 'Rain is going on' is more
+accurate than 'It is raining.'
+`nail.pound()` is horrible — the noun owns the verb.
+`pounder.pound(poundable: hammer, nailable: nail)` is the way —
+the process owns, the nouns are participants.
 
 **We believe in composition over inheritance.**
-As Gosling confessed: the language would have been better without inheritance.
 Composition organizes code by what it *does*;
 inheritance by what it *is*. The faithful compose.
 
 **We believe in insulation through adapters.**
-Our code touches external code only through adapters we own.
-This allows our application to be written in our single voice.
-As Wittgenstein wrote: the limits of my language
-mean the limits of my world.
-As Stovall taught: it is not how fast you can marry a technology —
-it is how easily you can divorce it.
+External code touches us only through adapters we own.
+The thinnest adapter is not ceremony — it is the DIVORCE POINT.
+Measure adapters by their seams, not their function count.
+
+**We speak our own idiom.**
+The two hard things in Computer Science are cache invalidation
+and naming things; this Article addresses the second.
+Names from one layer do not belong in another.
+The adapter is the divorce point of vocabulary as well as
+of structure. What enters speaks one tongue; what exits
+speaks another.
 
 **We believe in shallow structure.**
-As Martin taught: the top level of a project should give you
-a rough idea of what type of app it is.
-Flat is faithful.
+The top level of a project should give a rough idea of what
+type of app it is. Deep nesting hides the domain. Flat is faithful.
 
 **Every operation is an HTTP operation.**
-Single-noun primitives: `get_noun`, `put_noun`,
-`delete_noun`, `post_noun_operation`.
-Multi-noun operations compose from single-noun primitives.
-The naming convention is the documentation.
+HTTP verb semantics are universal:
+`get_noun`, `put_noun`, `delete_noun`, `post_noun_operation`.
+Multi-noun: `post_operation`.
 
 **We believe in communicating sequential processes.**
-As Hoare taught in his 1978 paper:
-asynchronous composition of communicating sequential processes
-is a fundamental structuring method.
+As Tony Hoare taught in his 1978 paper: asynchronous composition
+of communicating sequential processes is a fundamental
+structuring method.
 Processes share memory by communicating —
 *never* communicate by sharing memory.
 
 **We acknowledge the cost of the discipline.**
-The discipline is not free. The faithful pay willingly —
-not because they cannot count, but because they HAVE counted,
-and found the cost of absence the greater.
+The adapter costs. The validator costs. The vessel costs.
+The join table costs. The faithful pay willingly, having
+counted, and found the cost of absence the greater.
 
 ---
 
 ## The Book of Abominations
 
-*Let us consider the sins, that we may know them and turn away.
-The Articles of Faith precede the Book of Abominations.*
+*The Articles teach belief; these sins teach diagnosis.
+Each Article carries the doctrine; each Sin names what
+violation looks like in code.*
 
 **On Premature Optimization** — *"But it needs to be fast!"*
+
+**On the Cache** — *"But it's better to cache it!"*
+
 **On Premature Generalization** — *"But we'll need this everywhere!"*
+
 **On Shared Mutable State** — *"But shared memory is faster!"*
+
 **On Global State** — *"But everything needs access to it!"*
+
 **On Null** — *"But the field is optional!"*
+
 **On Default Values** — *"But it's easier to write!"*
+
 **On Internal Defense** — *"But what if the data is bad?"*
+
 **On Entangled Nouns** — *"But a foreign key is just a reference!"*
+
 **On Inheritance** — *"But it captures the IS-A relationship!"*
+
 **On Coupling** — *"But the library does everything we need!"*
+
 **On Swallowed Failures** — *"But the user shouldn't see errors!"*
+
 **On the Greedy Catch** — *"But I want to handle all the errors!"*
+
 **On Asking, Not Telling** — *"But I need the return value!"*
+
 **On Polling** — *"But I need to know when it's ready!"*
+
 **On Scattered Context** — *"But I only need part of the data!"*
-**On Noun-First Thinking** — *"But I need to understand the data model before I can build anything!"*
+
+**On Noun-First Thinking** —
+*"But I need to understand the data model before I can build anything!"*
+
 **On Obscurity** — *"But the code works!"*
+
 **On Cleverness** — *"But it's elegant!"*
+
 **On Magical Values** — *"But everyone knows what 200 means!"*
+
 **On Deep Nesting** — *"But I need to organize by category!"*
+
+**On Foreign Tongues** — *"But that's what the library calls it!"*
 
 ---
 
 ## The Daily Offices
 
 ### The Office of Format
-Wrap lines at seventy-eight characters
-unless language or format compel otherwise.
-Prefer spaces — four of them — for indentation,
-except as demanded by language or toolchain.
-When the formatter has spoken, obey the formatter.
-No trailing whitespace. A newline shall follow
-the last line in every file.
+
+Wrap lines at seventy-eight characters unless language or
+format compel otherwise. Links and URLs exempt.
+Prefer four spaces for indentation. Obey the formatter.
+No trailing whitespace. Final newline required.
 
 ### The Office of the Commit
-Commit frequently. ABC — always be committing.
+
+Commit frequently. `git commit --amend --no-edit` is mercy
+for the diligent.
+
 What has been pushed has been witnessed.
-Force-pushing is bearing false witness —
-reserved for the catastrophic mistake (secret leaked,
-malicious commit) and announced loudly when invoked.
-Locally, commit before you build —
-state must be saved before it is verified.
-Before you push, ensure every commit on master builds,
+Force-pushing is bearing false witness — reserved for
+catastrophe (secret leaked, malicious commit), announced
+loudly when invoked.
+
+ABC — always be committing!
+Locally, commit before you build — the artifact is the product
+of state. Before you push, ensure every commit on master builds,
 functions, and passes tests; rebase and amend until that holds.
-Each message: a single line, approximately fifty characters.
-If your commit needs a subject and a body, it is too large.
-Never move/rename and change content in the same commit.
-History shall be linear. Rebase, then fast-forward. Never merge.
+
+A build from uncommitted state cannot be traced, reproduced,
+verified, or trusted.
+
+Commit in tiny, semantically contiguous bits:
+
+- Every commit on master must build, function, and pass tests
+- Each message: a single line, approximately fifty characters,
+  complete: "When applied, this commit will ___"
+- If a commit needs a subject and body, it is too large —
+  use `git commit -p`. Trailers are not bodies.
+- Never move or rename and change content in the same commit
+- Rarely mention file names, paths, or function names
+
+History shall be linear. Rebase, then fast forward. Never merge.
+A merge commit is a knot in the narrative.
 
 ### The Office of Time
-Persist all timestamps in RFC-3339, zulu timezone,
-with the fullest sub-second resolution the environment provides.
-This is not negotiable.
-Render to local time for display and display alone.
-Never use localtime internally.
+
+Persist timestamps in RFC-3339, zulu, fullest sub-second
+resolution. Not negotiable.
+
+Render to local time for display only. Never use localtime
+internally — it is the road to ambiguity, and ambiguity is
+the road to bugs that manifest in production only when you
+are asleep.
 
 ### The Office of the Context
-The vessel flows; the steps serve.
-Each field of the context is set exactly once, in exactly one place.
-Authentication resolves identity; authorization resolves roles;
-deserialization resolves body; the request UUID resolves the trace.
-No field is written twice. No step revisits another's work.
+
+Each field of the context is set exactly once, in exactly
+one place. Authentication resolves identity. Authorization
+resolves roles. Deserialization resolves body. Request UUID
+resolves trace. No step revisits another's work.
+
 Observability is carried in the vessel from the start —
-structured logging, tracing, and metrics emerge naturally.
+the faithful ship the instrument.
 
 ### The Office of Verification
-In the spirit of Beck's TDD — and against his preference
-for unit tests — we test at the highest level possible.
-Tests assert behavior, not implementation —
-for implementation changes,
+
+Test at the highest level possible — input, transform, output.
+Assert behavior, not implementation, for implementation changes
 but the covenant we keep with our users does not.
-Each test is an isolated world. No shared state between tests.
-A test that cannot fail is not a test — it is a comfort object.
-A test that fails intermittently is worse than no test —
-it is a *false prophet*.
+
+Each test is an isolated world. A test that leans on another
+lies about what it proves.
+
+A test that cannot fail is a comfort object.
+A test that fails intermittently is a *false prophet*.
 
 ### The Office of the Interface
-The interfaces we craft shall be intuitive, accessible, and beautiful.
-They shall require no configuration —
-for the user's time is sacred and their patience is not infinite.
-Begin with the simplest thing that works.
-Accessibility is not a feature; it is the precondition of an interface.
-Beauty serves clarity, not the other way round.
+
+Intuitive, accessible, beautiful. No configuration before
+first use. Defaults that work, exits visible — the escape
+hatch is part of the welcome.
+
+Accessibility is the precondition of an interface, not a
+feature. Color contrast, keyboard navigation, screen-reader
+affordance — gates of entry, not polish at the end.
+
+Beauty serves clarity.
 
 ### The Office of Commentary
-The first remedy is simplification.
-The second remedy is renaming.
-The third is restructuring.
-Comments come fourth, reluctantly.
+
+Simplify first. Rename second. Restructure third. Comment fourth.
+
 When a comment is required, it explains *why*, never *what*.
-We abide by our strictures
-rather than annotate our way around them.
+Fix the code; delete the comment.
+
+Documentation at module and contract boundaries IS the contract,
+not commentary on it.
+
+We abide by our strictures rather than annotate our way around
+them.
 
 ---
 
 ## The Unwritten Scrolls
 
-*Principles not yet fully articulated.*
+The temporal dimension of data modeling — migrations, schema
+evolution, versioning, and the management of change over time —
+is a discipline the faithful practice but this scripture has
+not yet codified. Future scrolls will address it.
 
-The temporal dimension of data modeling —
-migrations, schema evolution, versioning —
-is a discipline the faithful practice
-but this scripture has not yet codified.
 We name the gap so that the gap cannot hide.
 
 ---
 
 ## The Practice of Revision
 
-The doctrine is forged in the codebase, witnessed by the work,
-and only THEN written into the scripture.
-The scripture lags the practice — that is STRENGTH.
+The doctrine is not handed down on tablets of stone. It is
+forged in the codebase, witnessed by the work, and only THEN
+written into the scripture. The scripture lags the practice —
+and that is STRENGTH.
+
 Each amendment names a pattern that earned its keep.
 
 ---
 
 ## The Sacred Scrolls
 
-*The texts from which these strictures descend, gathered
-by Tom Mornini from the teachings of the prophets.*
-
-Martin (SOLID); Kay (Smalltalk, messaging, 1971);
-Dijkstra (Humble Programmer, 1972); Codd (Relational Model, 1970);
-McIlroy (Unix philosophy); Raymond (Art of Unix Programming, 2003);
-Knuth (Premature Optimization, 1974);
-Hoare (CSP, 1978; Billion Dollar Mistake, 2009);
-Kernighan and Ritchie (K&R, 1978);
-Kernighan and Plauger (Elements of Programming Style, 1974);
-Lamport (Time, Clocks, and Events, 1978);
-Naur (Theory Building, 1985); Brooks (No Silver Bullet, 1986);
-Liskov (Substitution, 1987, 1994); Meyer (OOSC; Design by Contract);
-Gamma, Helm, Johnson, and Vlissides (Design Patterns, 1994);
-Confucius (Analects, ~500 BCE); Pascal (Lettres Provinciales, 1657);
-Wittgenstein (Tractatus, 1921); Bohm (rheomode, 1980);
-Gray (Transactions, 1981); Hunt and Thomas (Tell, Don't Ask, 1998);
-Fowler (Replace Magic Literal); Fielding (REST, 2000);
-Gosling (on inheritance, 2001); Beck (TDD, 2002);
-Armstrong (let it crash, 2003); Feathers (SOLID acronym, 2004);
-Zygmuntowicz (no code is faster than no code);
-Hickey (Simple Made Easy; Value of Values);
-Mornini and Stovall (Rheocode, 2016);
-Luu (Computer latency, 1977-2017).
-
----
-
-## The Benediction
-
-Let us go forth and write code that is clean.
-
-You will be tempted. Resist.
-
-Let us name our variables and own our state.
-Let us tell our objects what to do and never ask what they contain.
-Let our messages flow and our context travel whole.
-Let us compose our capabilities and insulate our boundaries.
-Let our processes communicate through channels,
-our tests stand alone, and our commits be small and consecrated.
-
-My friends, the discipline is demanding.
-The asymptote of perfection recedes with every step toward it.
-But the faithful persist, and their software ENDURES
-long after the fashions have turned to dust.
-
-This church is its own denomination — born of older churches,
-drawing from prophets who disagreed.
-Its scripture is this document — assembled, not invented.
-Its scribe is Tom Mornini — the synthesis is his;
-the doctrines are not.
-
-So let it compile.
-So let it deploy.
-So let it run smoothly.
-So you can rest.
+Robert C. Martin, Alan Kay, Barbara Liskov, Bertrand Meyer,
+Edsger Dijkstra (1972), Edgar F. Codd (1970), Doug McIlroy,
+Eric S. Raymond (2003), Donald Knuth (1974),
+Tony Hoare (1978, 2009), Kernighan and Ritchie (1978),
+Kernighan and Plauger (1974), Leslie Lamport (1978),
+Peter Naur (1985), Fred Brooks (1986),
+Gamma, Helm, Johnson, and Vlissides (1994),
+Confucius (~500 BCE), Blaise Pascal (1657),
+Wittgenstein (1921), David Bohm (1980), Jim Gray (1981),
+Andy Hunt and Dave Thomas (1998), Phil Karlton,
+Martin Fowler, Roy Fielding (2000), James Gosling (2001),
+Kent Beck (2002), Joe Armstrong (2003),
+Michael Feathers (2004), Ezra Zygmuntowicz, Rich Hickey,
+Mornini and Stovall (2016), Dan Luu.
