@@ -460,7 +460,7 @@ premature optimization is the root of all evil.
 
 But hear me, my friends — Knuth did not say *forget* optimization.
 He said forget *small* efficiencies ninety-seven percent of the time.
-The other three — the CRITICAL three — is real.
+The other three — the CRITICAL three — are real.
 Measure to find it, measure to PROVE it, then optimize without apology.
 The sin is not optimization; the sin is optimization without measurement.
 
