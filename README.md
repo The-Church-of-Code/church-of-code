@@ -70,7 +70,7 @@ into eight sections:
 - **The Articles of Faith** — what the faithful practice:
   SOLID, tell-don't-ask, composition,
   messaging, adapters, and more
-- **The Book of Abominations** — eighteen sins to avoid,
+- **The Book of Abominations** — twenty-two sins to avoid,
   ordered by causal chain from the Original Sin
   (premature optimization) through its consequences
 - **The Daily Offices** — disciplines observed daily:
@@ -78,7 +78,8 @@ into eight sections:
   verification, interface design, commentary
 - **The Unwritten Scrolls** — principles acknowledged
   but not yet codified
-- **The Benediction** — the closing charge
+- **The Practice of Revision** — how the doctrine
+  evolves while remaining doctrine
 
 ## The Twelve Commandments
 
