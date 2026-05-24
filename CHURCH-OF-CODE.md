@@ -475,10 +475,10 @@ on the altar of a phantom god.
 
 *Better.* You think it's *better*.
 
-As Phil Karlton has named them, the two hard things in
-Computer Science are cache invalidation and naming things.
 We now face cache invalidation —
 the Original Sin of Premature Optimization at its sharpest.
+The Article on speaking our own idiom has named
+the framework; this Sin diagnoses the half it owns.
 
 The cache is the last refuge of the optimizer who has not measured.
 
