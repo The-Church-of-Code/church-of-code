@@ -9,10 +9,6 @@ authored by Tom Mornini,
 drawn from the foundational teachings
 of the field's most consequential thinkers.
 
-These are not guidelines. They are not best practices.
-They are strictures — binding, inviolate,
-and intended to be enforced.
-
 ## Why This Exists
 
 AI coding agents are among the most impressive
@@ -54,68 +50,6 @@ It is an instruction.
 For a deeper exploration of why the religious framing
 itself may improve AI code generation,
 see [WHY-THIS-WORKS.md](WHY-THIS-WORKS.md).
-
-## What's Inside
-
-**CHURCH-OF-CODE.md** is organized
-into eight sections:
-
-- **The Preamble** — declares the document's authority
-  and its stance: violations are not bugs, they are sins
-- **The Sacred Scrolls** — the foundational texts
-  from which the strictures descend,
-  with prophetic attributions
-- **The Twelve Commandments** — the core hierarchy
-  of values, ordered from most to least important
-- **The Articles of Faith** — what the faithful practice:
-  SOLID, tell-don't-ask, composition,
-  messaging, adapters, and more
-- **The Book of Abominations** — twenty-two sins to avoid,
-  ordered by causal chain from the Original Sin
-  (premature optimization) through its consequences
-- **The Daily Offices** — disciplines observed daily:
-  formatting, commits, timestamps,
-  verification, interface design, commentary
-- **The Unwritten Scrolls** — principles acknowledged
-  but not yet codified
-- **The Practice of Revision** — how the doctrine
-  evolves while remaining doctrine
-
-## The Twelve Commandments
-
-In order of importance, from most to least:
-
-1. **Reliability** — the bedrock upon which all else rests
-2. **Security** — a compromised system is a fallen system
-3. **Uniformity** — call a thing a thing, in all things
-4. **Logic** — less wrong, never fallacious
-5. **Clarity** — dense, high-information communication
-6. **Immutability** — eliminate "why did THAT happen?"
-7. **Idempotency** — PUT, GET, DELETE, not INSERT, UPDATE, DELETE
-8. **Simplicity** — the fruit of great effort, not its absence
-9. **Generality** — never generalize before exploratory duplication
-10. **Atomicity** — design so you rarely need it
-11. **Efficiency** — true when the above eleven are honored
-12. **Performance** — every wasted millisecond is a small death
-
-## The Prophets
-
-The strictures stand on the shoulders of:
-
-Dijkstra, Codd, Hoare, Lamport,
-Knuth, Gray, Brooks, Bohm,
-Naur, Kay, Liskov, Meyer,
-Gamma, Helm, Johnson, Vlissides,
-McIlroy, Raymond, Fielding, Martin,
-Beck, Hunt, Thomas, Pascal,
-Gosling, Hickey, Armstrong, Fowler,
-Luu, Kernighan, Ritchie, Plauger,
-Feathers, Zygmuntowicz, Karlton,
-Confucius, Wittgenstein, Mornini,
-and Stovall.
-
-Each teaching is cited with its source
-in the Sacred Scrolls.
 
 ## How to Use This
 
