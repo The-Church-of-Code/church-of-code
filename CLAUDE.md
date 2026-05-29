@@ -73,13 +73,7 @@ Each file carries `*v{N} — {size}*` immediately below the title. The git tag a
 
 ## Commit Discipline
 
-Commits in this repo follow the **Office of the Commit** from the scripture — applied recursively to work on the scripture itself.
-
-- Single subject line, ~50 characters
-- Imperative mood: "When applied, this commit will ___"
-- If a commit needs a subject and body, it is too large — split it with `git commit -p` instead. Trailers (`Co-Authored-By:`, etc.) are not bodies.
-
-A repository publishing commit discipline must obey it first.
+Commits in this repo follow the **Office of the Commit** in [CHURCH-OF-CODE.md](CHURCH-OF-CODE.md) — applied recursively to work on the scripture itself. A repository publishing commit discipline must obey it first.
 
 ## Document Structure
 
