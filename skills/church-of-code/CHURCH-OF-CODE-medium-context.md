@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.13 — medium*
+*v1.14 — medium*
 
 > *Simplicity is prerequisite for reliability.*
 > — Edsger Dijkstra
@@ -125,6 +125,10 @@ his own skull. Simplicity is the fruit of GREAT effort.
 
 Two instances are coincidence. Three is pattern.
 Below three, duplicate without shame.
+
+And once the better way is found, it must rise to replace
+every similar site — never rest beside them.
+One codebase, one voice.
 
 ### X. Atomicity
 
@@ -814,44 +818,4 @@ Each amendment names a pattern that earned its keep.
 
 ## The Sacred Scrolls
 
-*The texts from which these strictures descend, gathered by
-Tom Mornini from the teachings of the prophets.*
-
-- The Principles of OOD — Robert C. Martin's original SOLID treatise
-- Solid Relevance — the same prophet, twenty years hence
-- The Early History of Smalltalk, The Big Idea Is Messaging,
-  and The Meaning of OOP — Alan Kay on objects and messages (1971)
-- Data Abstraction and Hierarchy — Barbara Liskov on substitution
-- Object-Oriented Software Construction and Applying Design by Contract
-  — Bertrand Meyer
-- The Humble Programmer — Edsger Dijkstra (1972)
-- A Relational Model of Data — Edgar F. Codd (1970)
-- A Research UNIX Reader — Doug McIlroy on the Unix philosophy
-- The Art of Unix Programming — Eric S. Raymond (2003)
-- Structured Programming with go to Statements — Knuth (1974)
-- Communicating Sequential Processes — Tony Hoare (1978)
-- Null References: The Billion Dollar Mistake — Tony Hoare (2009)
-- The C Programming Language — Kernighan and Ritchie (1978)
-- The Elements of Programming Style — Kernighan and Plauger (1974)
-- Time, Clocks, and the Ordering of Events — Leslie Lamport (1978)
-- Programming as Theory Building — Peter Naur (1985)
-- No Silver Bullet — Fred Brooks (1986)
-- Design Patterns — Gamma, Helm, Johnson, and Vlissides (1994)
-- The Analects — Confucius (~500 BCE)
-- Lettres Provinciales — Blaise Pascal (1657)
-- Tractatus Logico-Philosophicus — Wittgenstein (1921)
-- Wholeness and the Implicate Order — David Bohm (1980)
-- The Transaction Concept — Jim Gray (1981)
-- Tell, Don't Ask — Andy Hunt and Dave Thomas (1998)
-- Two Hard Things — Phil Karlton on cache invalidation and naming
-- Replace Magic Literal — Martin Fowler
-- Representational State Transfer — Roy Fielding (2000)
-- James Gosling on Java — the creator's regret about inheritance
-- Test-Driven Development: By Example — Kent Beck (2002)
-- Making Reliable Distributed Systems — Joe Armstrong (2003)
-- Working Effectively with Legacy Code — Michael Feathers (2004)
-- Merb: no code is faster than no code — Ezra Zygmuntowicz
-- Simple Made Easy, The Value of Values, and Are We There Yet?
-  — Rich Hickey
-- Rheocode Software Development — Mornini and Stovall (2016)
-- Computer latency: 1977-2017 — Dan Luu
+[The texts from which these strictures descend](SACRED-SCROLLS.md)

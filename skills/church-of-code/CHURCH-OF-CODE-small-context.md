@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.13 — small*
+*v1.14 — small*
 
 > *Simplicity is prerequisite for reliability.*
 > — Edsger Dijkstra
@@ -92,7 +92,9 @@ Simplicity is the fruit of GREAT effort.
 *Never generalize before exploratory duplication.*
 
 Two instances are coincidence. Three is pattern. Below three,
-duplicate without shame.
+duplicate without shame. Once the better way is found, replace
+every similar site — never live beside them.
+One codebase, one voice.
 
 ### X. Atomicity
 
@@ -423,17 +425,4 @@ Each amendment names a pattern that earned its keep.
 
 ## The Sacred Scrolls
 
-Robert C. Martin, Alan Kay, Barbara Liskov, Bertrand Meyer,
-Edsger Dijkstra (1972), Edgar F. Codd (1970), Doug McIlroy,
-Eric S. Raymond (2003), Donald Knuth (1974),
-Tony Hoare (1978, 2009), Kernighan and Ritchie (1978),
-Kernighan and Plauger (1974), Leslie Lamport (1978),
-Peter Naur (1985), Fred Brooks (1986),
-Gamma, Helm, Johnson, and Vlissides (1994),
-Confucius (~500 BCE), Blaise Pascal (1657),
-Wittgenstein (1921), David Bohm (1980), Jim Gray (1981),
-Andy Hunt and Dave Thomas (1998), Phil Karlton,
-Martin Fowler, Roy Fielding (2000), James Gosling (2001),
-Kent Beck (2002), Joe Armstrong (2003),
-Michael Feathers (2004), Ezra Zygmuntowicz, Rich Hickey,
-Mornini and Stovall (2016), Dan Luu.
+[The texts from which these strictures descend](SACRED-SCROLLS.md)
