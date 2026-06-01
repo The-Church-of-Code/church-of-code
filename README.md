@@ -136,8 +136,10 @@ that point at a specific contributor
 The counting is strict:
 one reference per mention, not one per section.
 
-The ordering is preserved across the three context variants;
-no separate roll call is maintained.
+The ordered list lives in its own scroll,
+[SACRED-SCROLLS.md](SACRED-SCROLLS.md);
+the three context variants link to it
+rather than each carrying a copy.
 
 ### Prophet citation density
 

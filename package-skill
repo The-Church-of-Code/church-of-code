@@ -20,6 +20,11 @@ SOURCES=(
   "CHURCH-OF-CODE-small-context.md"
 )
 
+# Auxiliary files bundled with the skill but not version-stamped.
+AUX_SOURCES=(
+  "SACRED-SCROLLS.md"
+)
+
 SKILL_DIR="skills/church-of-code"
 PLUGIN_JSON=".claude-plugin/plugin.json"
 MARKETPLACE_JSON=".claude-plugin/marketplace.json"
@@ -30,6 +35,9 @@ fail() { echo "package-skill: $1" >&2; exit "${2:-1}"; }
 # 1. Preflight — canonical sources must exist.
 for src in "${SOURCES[@]}"; do
   [[ -f "$src" ]] || fail "missing canonical scripture: $src" 2
+done
+for src in "${AUX_SOURCES[@]}"; do
+  [[ -f "$src" ]] || fail "missing bundled file: $src" 2
 done
 
 # 2. Preflight — plugin metadata must exist (hand-authored, not generated).
@@ -67,9 +75,9 @@ write_json_version() {
 write_json_version "$PLUGIN_JSON"
 write_json_version "$MARKETPLACE_JSON"
 
-# 6. Copy canonical sources into the skill directory.
+# 6. Copy canonical sources and bundled auxiliaries into the skill directory.
 mkdir -p "$SKILL_DIR"
-for src in "${SOURCES[@]}"; do
+for src in "${SOURCES[@]}" "${AUX_SOURCES[@]}"; do
   cp -f "$src" "$SKILL_DIR/$src"
 done
 

@@ -146,7 +146,7 @@ earns its keep survives. Cuts are surgical.
 | Book of Abominations | Keep all 22 titles + italic objections. Articles teach belief; Abominations teach diagnosis. Sins with diagnostic content get 4-6 lines (symptoms, tells). Sins with partial unique content get title + italic + 1 distinctive sentence. Sins with unique prophetic witnesses get title + italic + 1-2 sentences preserving the prophet attribution and core argument. |
 | Daily Offices | Keep all 7 offices and all specific rules (78 chars, 4 spaces, RFC-3339, ~50 char commits, force-push as catastrophe-only, commit-before-build workflow, etc.). Trim metaphorical flourishes only. |
 | Unwritten Scrolls | Verbatim |
-| Sacred Scrolls | Remove the URL reference-link block at the end of the section. Convert `[text][ref]` markdown links to plain text. Keep all annotated entries with author, title, and description. |
+| Sacred Scrolls | The source section is a single relative link to SACRED-SCROLLS.md. Carry the heading + link through verbatim. |
 
 ---
 
@@ -172,7 +172,7 @@ of the source structure.
 | Book of Abominations | Section heading + intro + all 22 sins as compact single lines: `**On [Name]** — *"[italic objection]"*` No body text. The section must exist because the document self-references it ("the Articles of Faith precede the Book of Abominations"). |
 | Daily Offices | All 7 offices, all specific rules preserved. Strip all metaphor. |
 | Unwritten Scrolls | Verbatim |
-| Sacred Scrolls | Section heading + intro + compact author roster: names and years in paragraph form, no annotations, no URLs. |
+| Sacred Scrolls | Section heading + the single relative link to SACRED-SCROLLS.md, verbatim. |
 
 ### Unique teachings — where they live in v1.8+
 
@@ -229,7 +229,7 @@ and is the first to be trimmed.
 Within each file, process sections in this order:
 
 1. Book of Abominations (largest cut, most complex)
-2. Sacred Scrolls (clean mechanical operation)
+2. Sacred Scrolls (carry the link through verbatim)
 3. Twelve Commandments (trim elaboration)
 4. Articles of Faith (trim)
 5. Daily Offices (trim metaphor, preserve rules)
@@ -280,6 +280,8 @@ Each release of the scripture is identified by:
    the new version into `.claude-plugin/plugin.json`
    and `.claude-plugin/marketplace.json` and copies
    the scripture files into `skills/church-of-code/`
+   (including SACRED-SCROLLS.md, bundled beside the scripture
+   so the Sacred Scrolls relative link resolves there too)
 6. Commit the package output:
    - `git add .claude-plugin/ skills/church-of-code/`
    - `git commit -m "Package v{N}"`
