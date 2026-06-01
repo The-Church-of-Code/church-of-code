@@ -1,6 +1,6 @@
 # The Church of Code
 
-*v1.13 — full*
+*v1.14 — full*
 
 > *Simplicity is prerequisite for reliability.*
 > — Edsger Dijkstra
