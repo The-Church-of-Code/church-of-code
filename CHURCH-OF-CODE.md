@@ -163,6 +163,10 @@ Two instances are coincidence. Three is pattern.
 Below three, duplicate without shame;
 at three, the abstraction begins to speak.
 
+And once the better way is found, it must rise to replace
+every similar site — never rest beside them.
+One codebase, one voice.
+
 ### X. Atomicity
 
 *Design so you rarely need it.*
